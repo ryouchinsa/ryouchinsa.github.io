@@ -9,6 +9,10 @@ Have questions? Send an email to support@rectlabel.com.
 
 Thank you.
 
+# Help
+- [Privacy Policy](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/1)
+- [Terms of Use](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/2)
+
 # Key features
 - Label polygons and pixels using Segment Anything models
 - Automatic labeling using Core ML models
