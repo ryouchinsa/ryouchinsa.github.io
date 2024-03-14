@@ -1,8 +1,7 @@
-# ryouchinsa.github.io
+# Rectlabel-support
 RectLabel is an offline image annotation tool for object detection and segmentation.
 
-# Rectlabel-support
-This is the support page for RectLabel.
+This is the support page for macOS RectLabel apps.
 https://apps.apple.com/app/id1210181730
 
 Have questions? Send an email to support@rectlabel.com.
