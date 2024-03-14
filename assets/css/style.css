@@ -1,0 +1,96 @@
+html,
+body,
+button,
+input,
+select,
+textarea {
+    color: #eee;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", Sans-Serif;
+    font-weight: 300;
+}
+
+body {
+    padding-top: 64px;
+    background-color: #000 !important;
+}
+
+pre {
+    color: #eee;
+    background-color: #333 !important;
+    border: 1px solid #333;
+/*    border-color: #333 !important;*/
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+p {
+    font-size: 150%;
+}
+
+a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #aaa;
+    text-decoration: none;
+}
+
+a:active,
+a:focus {
+  color: #aaa;
+  text-decoration: none;
+}
+
+*[id]:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -75px; 
+  height: 75px; 
+  visibility: hidden; 
+}
+
+.thumbnail {
+    border-radius: 0;
+    border: 0;
+    padding: 0;
+    background-color: #000 !important;
+}
+
+.thumbnail img {
+    margin: 32px auto 8px auto;
+}
+
+.home .thumbnail img {
+    margin: auto auto auto auto;
+}
+
+.logo {
+    padding: 0px 8px;
+}
+
+.logo img {
+    margin: auto;
+}
+
+.logo-top {
+/*    background-color: #f00 !important;*/
+    margin: 24px auto 0px auto;
+}
+
+.logo-top-about {
+/*    background-color: #f00 !important;*/
+    margin: auto auto auto 28px;
+}
+
+.logo-about {
+    padding: 0px 0px;
+}
+
+.logo-about img {
+    margin: auto;
+}
+
