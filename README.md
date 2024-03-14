@@ -1,8 +1,9 @@
 # RectLabel
 An offline image annotation tool for object detection and segmentation.
 
-This is the support page for macOS apps [RectLabel](https://apps.apple.com/app/id1210181730) and [RectLabel Pro](https://apps.apple.com/app/id1490990105).
-
+To download RectLabel apps.
+- [RectLabel](https://apps.apple.com/app/id1210181730)
+- [RectLabel Pro](https://apps.apple.com/app/id1490990105)
 
 Have questions? Send an email to support@rectlabel.com.
 
