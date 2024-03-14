@@ -12,6 +12,12 @@ Thank you.
 # Help
 - [Privacy Policy](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/1)
 - [Terms of Use](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/2)
+- [Settings menus](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/3)
+- [File menus](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/4)
+- [Export menus](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/5)
+- [Edit menus](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/6)
+- [Core ML menus](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/7)
+- [View menus](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/8)
 
 # Key features
 - Label polygons and pixels using Segment Anything models
