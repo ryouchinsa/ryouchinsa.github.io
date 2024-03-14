@@ -3,3 +3,31 @@
 
 @import "{{ site.theme }}";
 
+html,
+body,
+button,
+input,
+select,
+textarea {
+    color: #eee;
+}
+
+body {
+    background-color: #000 !important;
+}
+
+a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #aaa;
+    text-decoration: none;
+}
+
+a:active,
+a:focus {
+  color: #aaa;
+  text-decoration: none;
+}
