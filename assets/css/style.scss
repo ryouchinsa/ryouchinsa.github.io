@@ -31,3 +31,13 @@ a:focus {
   color: #aaa;
   text-decoration: none;
 }
+
+.markdown-body {
+  h1 {
+    border-bottom: none;
+  }
+
+  h2 {
+    border-bottom: none;
+  }
+}
