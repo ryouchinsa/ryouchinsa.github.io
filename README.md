@@ -12,6 +12,8 @@ Have questions? Send an email to support@rectlabel.com.
 Thank you.
 
 # Help
+- [Papers cited RectLabel](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/9)
+- [About team](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/10)
 - [Privacy Policy](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/1)
 - [Terms of Use](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/2)
 - [Settings menus](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/3)
