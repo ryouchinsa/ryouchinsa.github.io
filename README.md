@@ -12,7 +12,7 @@ Have questions? Send an email to support@rectlabel.com.
 Thank you.
 
 # Help
-- [Papers cited RectLabel](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/9)
+- [Papers cited RectLabel](https://rectlabel.com/papers)
 - [About team](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/10)
 - [Privacy Policy](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/1)
 - [Terms of Use](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/2)
