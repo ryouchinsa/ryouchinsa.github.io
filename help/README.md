@@ -14,8 +14,8 @@ Thank you.
 # Help
 - [Papers cited RectLabel](https://rectlabel.com/papers)
 - [About team](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/10)
-- [Privacy Policy](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/1)
-- [Terms of Use](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/2)
+- [Privacy Policy](https://rectlabel.com/privacy)
+- [Terms of Use](https://rectlabel.com/terms)
 - [Settings menus](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/3)
 - [File menus](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/4)
 - [Export menus](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/5)
