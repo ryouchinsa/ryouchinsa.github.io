@@ -19,7 +19,9 @@ body {
 pre {
     color: #eee;
     background-color: #333 !important;
-    border: none;
+    border: 1px solid #333;
+    border-radius: 3px;
+    border-color: #f00 !important;
 }
 
 a {
