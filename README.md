@@ -17,11 +17,11 @@ Thank you.
 - [Privacy Policy](https://rectlabel.com/privacy)
 - [Terms of Use](https://rectlabel.com/terms)
 - [Settings menus](https://rectlabel.com/settings)
-- [File menus](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/4)
-- [Export menus](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/5)
-- [Edit menus](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/6)
-- [Core ML menus](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/7)
-- [View menus](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/8)
+- [File menus](https://rectlabel.com/file)
+- [Export menus](https://rectlabel.com/export)
+- [Edit menus](https://rectlabel.com/edit)
+- [Core ML menus](https://rectlabel.com/coreml)
+- [View menus](https://rectlabel.com/view)
 
 # Key features
 - Label polygons and pixels using Segment Anything models
