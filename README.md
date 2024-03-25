@@ -16,7 +16,7 @@ Thank you.
 - [About team](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/10)
 - [Privacy Policy](https://rectlabel.com/privacy)
 - [Terms of Use](https://rectlabel.com/terms)
-- [Settings menus](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/3)
+- [Settings menus](https://rectlabel.com/settings)
 - [File menus](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/4)
 - [Export menus](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/5)
 - [Edit menus](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/6)
