@@ -16,6 +16,7 @@ Annotation files are exported as an [Create ML JSON file](https://developer.appl
 Put training images and the JSON file into the same folder.
 
 [Do not put any other files in the folder and be sure that image file names do not contain spaces](https://stackoverflow.com/questions/65314564/empty-table-from-specified-data-source-error-in-create-ml).
+
 ```
 [{
     "image": "sneakers-1.jpg",
@@ -42,6 +43,7 @@ Put training images and the JSON file into the same folder.
     }]
 }]
 ```
+
 # Import Create ML JSON file
 The Create ML JSON file is imported to annotation files in the current folder.
 
@@ -53,6 +55,7 @@ RectLabel can import from "imagefilename" and "annotation" keys, too.
 All images are exported into object-named subfolders.
 
 [Creating an Image Classifier Model on Create ML](https://developer.apple.com/documentation/createml/creating-an-image-classifier-model).
+
 ```
 └── saved_folder
     ├── object0
@@ -70,6 +73,7 @@ Annotation files are exported as an [COCO JSON file](http://cocodataset.org/#for
 [Detectron2](https://github.com/facebookresearch/detectron2) is Facebook AI Research's next generation library that provides state-of-the-art detection and segmentation algorithms.
 
 For a box object, "segmentation" is exported as empty.
+
 ```
 "annotations": [
 {
@@ -82,7 +86,9 @@ For a box object, "segmentation" is exported as empty.
     "segmentation": []
 },
 ```
+
 For a rotated box, polygon, line, and point object, "segmentation" is exported as polygons.
+
 ```
 "annotations": [
 {
@@ -97,9 +103,11 @@ For a rotated box, polygon, line, and point object, "segmentation" is exported a
     ]
 },
 ```
+
 For a pixels object, "segmentation" is exported as RLE.
 
 RLE is encoding the mask image using the [COCO Mask API](https://github.com/cocodataset/cocoapi/tree/master/PythonAPI/pycocotools).
+
 ```
 "annotations": [
 {
@@ -116,9 +124,11 @@ RLE is encoding the mask image using the [COCO Mask API](https://github.com/coco
     }
 },
 ```
+
 For a keypoints object, "keypoints" and "num_keypoints" are exported.
 
 You can export a keypoints object combined with a polygon object when you aligned the keypoints object at the row and the polygon object at the row + 1 on the label table.
+
 ```
 "annotations": [
 {
@@ -135,7 +145,9 @@ You can export a keypoints object combined with a polygon object when you aligne
     ]
 },
 ```
+
 You can export a keypoints object combined with a cubic bezier object or a pixels object when you aligned the keypoints object at the row and the cubic bezier object or the pixels object at the row + 1 on the label table.
+
 ```
 "annotations": [
 {
@@ -154,7 +166,9 @@ You can export a keypoints object combined with a cubic bezier object or a pixel
     }
 },
 ```
+
 In "categories", "keypoints" and "skeleton" are exported.
+
 ```
 "categories": [
 {
@@ -181,6 +195,7 @@ In "categories", "keypoints" and "skeleton" are exported.
     ]
 },
 ```
+
 ![keypoints_pixels_coco](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/cd35f0c1-4e3a-4977-9356-dca5b1a3ea7c)
 
 # Import COCO JSON file
@@ -194,6 +209,7 @@ You can import the COCO RLE JSON files of the [SA-1B dataset](https://github.com
 This COCO format does not include the "category_id" so that each label name is set from the first element of the label name history.
 
 Before importing, be sure that you opened images folder and annotations folder.
+
 ```
 {
     "image":
@@ -223,8 +239,10 @@ Before importing, be sure that you opened images folder and annotations folder.
     ...
 }
 ```
+
 # Export Labelme JSON files
 Annotation files are exported as [Labelme JSON files](https://github.com/wkentaro/labelme).
+
 ```
 {
     "flags":
@@ -288,6 +306,7 @@ Annotation files are exported as [Labelme JSON files](https://github.com/wkentar
     "version": "4.0.0"
 }
 ```
+
 # Import Labelme JSON files
 The Labelme JSON files are imported to annotation files in the current folder.
 
@@ -295,6 +314,7 @@ Before importing, be sure that you opened images folder and annotations folder.
 
 # Export YOLO txt files
 Annotation files are exported in the YOLO text format.
+
 ```
 ├── datasets
 │   └── sneakers
@@ -304,29 +324,36 @@ Annotation files are exported in the YOLO text format.
     └── data
         └── sneakers.yaml
 ```
+
 A YOLO text file is saved per an image.
 
 For a box object, the bounding box is saved.
 
 Where center_x, center_y, width, and height are float values relative to width and height of the image.
+
 ```
 class_index center_x center_y width height
 0 0.464615 0.594724 0.680000 0.769784
 ```
+
 For a rotated box, polygon, cubic bezier, line, point, and pixels object, the points coordinates are saved.
 
 This format is for [YOLOv5](https://github.com/ultralytics/yolov5) and [YOLOv8](https://github.com/ultralytics/ultralytics) Instance Segmentation.
+
 ```
 class_index x1 y1 x2 y2 x3 y3 ...
 0 0.180027 0.287930 0.181324 0.280698 0.183726 0.270573 ...
 ```
+
 For a keypoints object, the bounding box and the points coordinates are saved.
 
 This format is for [YOLOv8](https://github.com/ultralytics/ultralytics) and [YOLO-Pose](https://github.com/TexasInstruments/edgeai-yolov5/tree/yolo-pose).
+
 ```
 class_index center_x center_y width height x1 y1 v1 x2 y2 v2 x3 y3 v3 ...
 0 0.545230 0.616880 0.298794 0.766239 0.522073 0.309332 2 0.540170 0.293193 2 0.499589 0.296503 2 ...
 ```
+
 ![yolo_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/1e4c385d-b97d-4bea-9a9c-3028904e3ad6)
 
 # Import YOLO txt files
@@ -338,10 +365,12 @@ Before importing, be sure that you opened images folder and annotations folder.
 Annotation files are exported in the [DOTA oriented bounding box (OBB) text format](https://captain-whu.github.io/DOTA/dataset.html).
 
 This format is for [Yolov5 for Oriented Object Detection](https://github.com/hukaixuan19970627/yolov5_obb), [MMRotate](https://github.com/open-mmlab/mmrotate), and [YOLOv8 OBB](https://github.com/ultralytics/ultralytics).
+
 ```
 x1 y1 x2 y2 x3 y3 x4 y4 category difficult
 1300.536987 1413.503784 1192.848755 1535.568848 530.876038 951.562073 638.564270 829.497009 truck 0
 ```
+
 ![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/8931280f-bec5-4554-aa8f-045a8f8e990e)
 
 # Import DOTA txt files
@@ -364,23 +393,28 @@ Specify the split ratio "80/10/10" so that all images are split into train, vali
 When the shuffle checkbox is ON, images are randomly shuffled everytime you export. When the shuffle checkbox is OFF, images are taken from the current sort according to the split ratio.
 
 In the specified folder, train.txt, val.txt, and test.txt are saved.
+
 ```
 sneakers-1.jpg
 sneakers-2.jpg
 ...
 ```
+
 Using "Full path" option, you can save full paths. Or you can add prefix to file names.
+
 ```
 /Users/ryo/Desktop/test_annotations/sneakers/images/sneakers-1.jpg
 /Users/ryo/Desktop/test_annotations/sneakers/images/sneakers-2.jpg
 ...
 ```
+
 # Export object names file
 The object names file is created from the objects table on the settings dialog.
 
 [YOLOv5](https://github.com/ultralytics/yolov5) and [YOLOv8](https://github.com/ultralytics/ultralytics) yaml file as dictionary.
 
 The "flip_idx" array is to flip the "left" included keypoint position and the "right" included keypoint position.
+
 ```
 path: ../datasets/keypoints
 train: images
@@ -392,7 +426,9 @@ flip_idx: [0, 2, 1, 4, 3, 6, 5, 8, 7, 10, 9, 12, 11, 14, 13, 16, 15]
 names:
   0: person
 ```
+
 [YOLOv5](https://github.com/ultralytics/yolov5) yaml file as array.
+
 ```
 path: ../datasets/sneakers
 train: images
@@ -401,12 +437,16 @@ val: images
 nc: 2
 names: ['sneakers', 'ignore']
 ```
+
 Object names text file.
+
 ```
 sneakers
 ignore
 ```
+
 [Tensorflow Object Detection API](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md) label map file.
+
 ```
 item {
   id: 1
@@ -418,6 +458,7 @@ item {
   name: 'ignore'
 }
 ```
+
 # Import object names file
 You can import an object names file or import object names from xml files.
 
