@@ -21,6 +21,7 @@ You can drag & drop each images folder and annotations folder to the open table.
 "Sort images" is to sort images by Alphabetic, Numeric, and Last modified.
 
 After opening images, we recommend to remove EXIF orientation flags.
+
 ```
 ├── images
 │   ├── 0.jpg
@@ -29,11 +30,14 @@ After opening images, we recommend to remove EXIF orientation flags.
     ├── 0.xml or 0.txt
     └── 1.xml or 1.txt
 ```
+
 Once opened images and annotations folders when the first launch, from the second launch, you can give command line arguments to RectLabel which image files should be opened.
+
 ```
 open -a RectLabel --args -images 000000000872.jpg,000000180011.jpg
 open -a RectLabel\ Pro --args -images 000000000872.jpg,000000180011.jpg
 ```
+
 Image file names which include "_pixels" are skipped because the suffix is used in the pixels image file.
 
 Image file names which include "_depth" are skipped because the suffix is used in the depth image file.
@@ -44,14 +48,17 @@ To copy the current image file name, click on the image file name shown at the t
 
 # Open images folder
 For the annotations folder, we use "images/annotations" folder.
+
 ```
 └── images
     ├── annotations
     ├── 0.jpg
     └── 1.jpg
 ```
+
 # Open a folder which includes a yaml file
 For the exported YOLOv5 or YOLOv8 folder from Roboflow, you can open train/valid/test folders at once and import the object names from the yaml file.
+
 ```
 └── exported_YOLOv5_YOLOv8_folder
     ├── data.yaml
@@ -65,6 +72,7 @@ For the exported YOLOv5 or YOLOv8 folder from Roboflow, you can open train/valid
         ├── images
         └── labels
 ```
+
 # Convert video to image frames
 For "Video file", open a video file.
 
@@ -118,6 +126,7 @@ Searching images, you can copy searched images to another folder.
 The annotation file is saved as {image_file_name}.xml in the PASCAL VOC xml format or {image_file_name}.txt in the YOLO text format.
 
 For the PASCAL VOC xml format, the top-left pixel in the image has coordinates (1, 1).
+
 ```
 <annotation>
     <folder>test</folder>
@@ -283,8 +292,8 @@ For the PASCAL VOC xml format, the top-left pixel in the image has coordinates (
         </bndbox>
     </object>
 </annotation>
-
 ```
+
 # Close folder
 You can close current images and annotations folders.
 
