@@ -34,7 +34,7 @@ Thank you.
 - Label pixels with brushes and superpixels
 - Settings for objects, attributes, hotkeys, and labeling fast
 - Search object, attribute, and image names in a gallery view
-- Export to COCO, Labelme, CreateML, YOLO, DOTA, and CSV formats
+- Export to COCO, Labelme, CreateML, YOLO, and DOTA formats
 - Export indexed color mask image and grayscale mask images
 - Video to image frames, augment images, etc.
 
