@@ -16,14 +16,6 @@ body {
     background-color: #000 !important;
 }
 
-.highlight pre {
-    color: #eee;
-    background-color: #f00 !important;
-    border: 0;
-    border-radius: 0;
-}
-
-
 a {
     color: #ccc;
     text-decoration: none;
@@ -48,4 +40,27 @@ a:focus {
   h2 {
     border-bottom: none;
   }
+}
+
+.highlight {
+    margin-bottom: 16px
+}
+
+.markdown-body .highlight pre {
+    margin-bottom: 0;
+    word-break: normal
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f00;
+    border-radius: 3px
+}
+
+.highlight {
+    background-color: #f00
 }
