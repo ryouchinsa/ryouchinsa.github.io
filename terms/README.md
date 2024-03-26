@@ -24,6 +24,6 @@ If you installed RectLabel on your new computer, authorize or deauthorize your c
 There is a free trial version, and although the trial is untimed, a license must be purchased for continued use.
 [Manage your subscriptions](https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/manageSubscriptions)
 
-You can use RectLabel apps to develop the commercial object detection and segmentation system.
+You can use RectLabel apps to develop your commercial object detection and segmentation systems.
 
 Have questions? Send an email to support@rectlabel.com.
