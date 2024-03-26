@@ -13,7 +13,6 @@ Thank you.
 
 # Projects
 You can manage multiple projects so that each project includes different objects and attributes tables.
-
 To use the project, check on the "Primary" check box.
 
 To import projects from another settings file, import the settings file.
