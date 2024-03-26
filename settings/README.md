@@ -12,10 +12,9 @@ Have questions? Send an email to support@rectlabel.com.
 Thank you.
 
 # Projects
-You can manage multiple projects so that each project includes different objects and attributes tables.
-To use the project, check on the "Primary" check box.
-
-To import projects from another settings file, import the settings file.
+A project contains an objects table and an attributes table.
+To switch the project, check on the "Primary" check box.
+To import projects from another settings file, use RectLabel menu -> Import settings file.
 
 ![projects](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d89ed448-7d9d-4c92-8ff2-25e7f5936dc4)
 
