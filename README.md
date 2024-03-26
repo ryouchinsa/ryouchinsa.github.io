@@ -13,7 +13,7 @@ Thank you.
 
 # Help
 - [Papers cited RectLabel](https://rectlabel.com/papers)
-- [About team](https://github.com/ryouchinsa/ryouchinsa.github.io/issues/10)
+- [About team](https://rectlabel.com/about)
 - [Privacy Policy](https://rectlabel.com/privacy)
 - [Terms of Use](https://rectlabel.com/terms)
 - [Settings menus](https://rectlabel.com/settings)
