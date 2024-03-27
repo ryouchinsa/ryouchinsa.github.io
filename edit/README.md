@@ -13,34 +13,24 @@ Thank you.
 
 # Create box
 Change the mode to "Create box".
-
 To draw a box, click 2 points.
+When you finished drawing, the label dialog opens, and the selected label is added to the label table.
 
-If necessary, click 4 points for xmin, xmax, ymin, and ymax of the object.
-
-Press enter key to finish drawing when the number of points is less than 4.
-
-When you finished drawing, the label dialog would open, and the label would be added to the label table.
+If necessary, use “Click 4 points when draw boxes” on the settings.
+Press an enter key to finish drawing when the number of points is less than 4.
 
 Drag the center of the box to move the box.
-
 Drag one of the four corner points to transform the box.
-
-If necessary, show edit points between box corners.
-
+If necessary, use "Show edit points between box corners" on the settings.
 Drag on the box pressing the option key, the box size is scaled up/down from the center.
 
 Drag a box pressing the command key, you can select multiple boxes.
-
 When you select multiple boxes and right click on them, you can merge boxes.
 
 To change the box color, use the color picker at the top-right corner.
-
 To change the cross hairs color, deselect all boxes and change the default color.
-
-You can hide the cross hairs.
-
-You can show labels on boxes.
+To hide cross hairs, use View menu -> "Hide cross hairs".
+To show the label name on the box, use View menu -> "Show labels on boxes".
 
 ![drag_to_select](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/25fe9bc3-259c-4dfa-8c36-ef9b64f33b08)
 
