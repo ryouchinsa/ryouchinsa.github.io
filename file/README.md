@@ -17,6 +17,7 @@ You can drag & drop each images folder and annotations folder to the open table.
 "Sort images" is to sort images by Alphabetic, Numeric, and Last modified.
 After opening images, we recommend to use File menu -> Remove EXIF orientation flags.
 To copy the current image file name, click on the image file name shown at the top-left corner.
+Image file names which include "_pixels" or "_depth" are skipped.
 
 ```
 ├── images
@@ -34,12 +35,10 @@ open -a RectLabel --args -images 000000000872.jpg,000000010363.jpg
 open -a RectLabel\ Pro --args -images 000000000872.jpg,000000010363.jpg
 ```
 
-Image file names which include "_pixels" or "_depth" are skipped because the suffix is used in the pixels or depth image file.
-
 ![open_table](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/31463bca-5ad5-42bf-831c-d95228c432cd)
 
 # Open images folder
-For the annotations folder, we use "images/annotations" folder.
+For the annotations folder, RectLabel uses "images/annotations" folder.
 
 ```
 └── images
@@ -49,7 +48,7 @@ For the annotations folder, we use "images/annotations" folder.
 ```
 
 # Open a folder which includes a yaml file
-For the exported YOLOv5 or YOLOv8 folder from Roboflow, you can open train/valid/test folders at once and import the object names from the yaml file.
+You can open the YOLOv5/YOLOv8 folder exported from Roboflow.
 
 ```
 └── exported_YOLOv5_YOLOv8_folder
