@@ -95,6 +95,8 @@ If you put empty string to the keypoint name, the keypoint name is hidden.
 - "Make labeled but not visible" to make the point as labeled but not visible.
 - "Delete edge" to delete the edge with the point.
 
+![keypoints](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/96d99cfd-51d4-4ad9-9a6d-616df41e96d8)
+
 When you right click on the label, edit menu opens.
 - "Clear bounding box" to clear the current bounding box.
 To show and edit the bounding box, use View menu -> "Show boxes on keypoints".
