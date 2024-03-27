@@ -54,7 +54,7 @@ Customize settings to make your labeling work faster.
 - "Skip backup dialog when overwrite" is to skip the backup dialog when overwrite.
 - "Clear existing labels when auto label all images" is to clear existing labels when auto label all images.
 - "Skip label dialog when create" is to skip the label dialog when create.
-- "Close label dialog when select" is to close the label dialog when select an object.
+- "Close label dialog when select" is to close the label dialog when select an object name.
 - "Change label when press an object/attribute hotkey" is to change the label using hotkeys.
 - "Add an image label when press an object hotkey" is to add an image label using hotkeys.
 - "Use 1-click buttons" is to show 1-click buttons of object names on the label dialog.
