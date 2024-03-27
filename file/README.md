@@ -80,18 +80,13 @@ If necessary, you can rotate the image using Edit menu -> Rotate the image right
 
 # Resize images
 You can resize images and annotations.
-
 For "Image size", both width and height would be less than or equal to the size.
-
 If "Image size" is empty, images are not resized but annotations are resized to the same size as images.
 
 # Next image and Prev image
 To show the next image, press the right arrow key.
-
 To show the previous image, press the left arrow key.
-
 Pressing Command + right/left arrow key, the step size becomes 10.
-
 You can use Trackpad gestures and Magic Mouse gestures.
 
 # Jump to image number
@@ -99,17 +94,14 @@ You can specify the image number to show.
 
 # Move images
 You can move all images or random fraction of total to another folder.
-
 Searching images, you can move searched images to another folder.
 
 # Copy images
 You can copy all images or random fraction of total to another folder.
-
 Searching images, you can copy searched images to another folder.
 
 # Save
 The annotation file is saved as {image_file_name}.xml in the PASCAL VOC xml format or {image_file_name}.txt in the YOLO text format.
-
 For the PASCAL VOC xml format, the top-left pixel in the image has coordinates (1, 1).
 
 ```
