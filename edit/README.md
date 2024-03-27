@@ -36,41 +36,26 @@ To show the label name on the box, use View menu -> "Show labels on boxes".
 
 # Create polygon, cubic bezier, line, and point
 Change the mode to "Create polygon", "Create cubic bezier", "Create line", or "Create point".
-
 Click to add points.
+Press an enter key to finish drawing.
+Press an escape key to cancel drawing.
 
-Press enter key to finish drawing.
-
-Press escape key to cancel drawing.
-
-When you right click on the point, edit menu would open.
-
-"Add a point forward/backward" to add a point.
-
+When you right click on the point, edit menu opens.
+- "Add a point forward/backward" to add a point.
 You can add a new point to the polygon/cubic bezier/line, clicking a point along the shape.
-
-"Delete this point" to delete the point.
-
+- "Delete this point" to delete the point.
 You can delete a point on the polygon/cubic bezier/line/point, clicking a point pressing the option key.
+- "Set to the first point" to set the point to the first point.
+- "Point size up/down" to change the size of points.
 
-"Set to the first point" to set the point to the first point for DOTA text format.
-
-"Point size up/down" to change the size of points.
-
-When you right click on the label, edit menu would open.
-
-"Copy as erase mask" to copy the polygon as an erase mask.
-
-"Paste as erase mask" to paste the copied erase mask to the polygon.
-
-"Convert to polygon" to change to polygon.
-
-"Convert to cubic bezier" to change to cubic bezier.
-
-"Convert to rotated box" to change to rotated box.
+When you right click on the polygon, edit menu opens.
+- "Copy as erase mask" to copy the polygon as an erase mask.
+- "Cut using erase mask" to cut the polygon using the erase mask.
+- "Convert to polygon" to change to polygon.
+- "Convert to cubic bezier" to change to cubic bezier.
+- "Convert to rotated box" to change to rotated box.
 
 When you select multiple polygons and right click on them, you can merge polygons.
-
 To separate the merged polygon to multiple polygons, right click on the merged polygon.
 
 ![edit_points](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/83d29639-cef4-49f0-860e-011ace0ddf6b)
