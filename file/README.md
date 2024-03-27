@@ -12,15 +12,11 @@ Have questions? Send an email to support@rectlabel.com.
 Thank you.
 
 # Open images folder and annotations folder
-You can open images and annotations folders.
-
 You can drag & drop each images folder and annotations folder to the open table.
-
 "Label format" is to change the label format to read/write in the PASCAL VOC xml format or YOLO text format.
-
 "Sort images" is to sort images by Alphabetic, Numeric, and Last modified.
-
-After opening images, we recommend to remove EXIF orientation flags.
+After opening images, we recommend to use File menu -> Remove EXIF orientation flags.
+To copy the current image file name, click on the image file name shown at the top-left corner.
 
 ```
 ├── images
@@ -31,18 +27,14 @@ After opening images, we recommend to remove EXIF orientation flags.
     └── 1.xml or 1.txt
 ```
 
-Once opened images and annotations folders when the first launch, from the second launch, you can give command line arguments to RectLabel which image files should be opened.
+Once opened images and annotations folders, from the second launch, you can give command line arguments to RectLabel which image files should be opened.
 
 ```
-open -a RectLabel --args -images 000000000872.jpg,000000180011.jpg
-open -a RectLabel\ Pro --args -images 000000000872.jpg,000000180011.jpg
+open -a RectLabel --args -images 000000000872.jpg,000000010363.jpg
+open -a RectLabel\ Pro --args -images 000000000872.jpg,000000010363.jpg
 ```
 
-Image file names which include "_pixels" are skipped because the suffix is used in the pixels image file.
-
-Image file names which include "_depth" are skipped because the suffix is used in the depth image file.
-
-To copy the current image file name, click on the image file name shown at the top-left corner.
+Image file names which include "_pixels" or "_depth" are skipped because the suffix is used in the pixels or depth image file.
 
 ![open_table](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/31463bca-5ad5-42bf-831c-d95228c432cd)
 
