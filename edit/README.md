@@ -48,7 +48,7 @@ You can delete a point on the polygon/cubic bezier/line/point, clicking a point 
 - "Set to the first point" to set the point to the first point.
 - "Point size up/down" to change the size of points.
 
-When you right click on the polygon, edit menu opens.
+When you right click on the label, edit menu opens.
 - "Copy as erase mask" to copy the polygon as an erase mask.
 - "Cut using erase mask" to cut the polygon using the erase mask.
 - "Convert to polygon" to change to polygon.
@@ -62,16 +62,12 @@ To separate the merged polygon to multiple polygons, right click on the merged p
 
 # Create polygon using SAM
 Change the mode to "Create polygon using SAM".
-
 Select a model among [MobileSAM](https://github.com/ChaoningZhang/MobileSAM), [EfficientSAM](https://github.com/yformer/EfficientSAM), [HQ-SAM](https://github.com/SysCV/sam-hq), and [Segment Anything models](https://github.com/facebookresearch/segment-anything).
 
 Press start button to start downloading the model and preprocessing the image. After preprocessing, you can click positive and negative points.
-
 Pressing the option key, you can switch the positive mode and negative mode.
-
-Press enter key to finish labeling.
-
-Press escape key to cancel labeling.
+Press an enter key to finish labeling.
+Press an escape key to cancel labeling.
 
 ![sam_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/09f08a66-cafa-4145-862e-409abadb3800)
 
@@ -79,54 +75,35 @@ Press escape key to cancel labeling.
 
 # Create keypoints
 Change the mode to "Create keypoints".
-
 Click to add points.
+Press an enter key to finish drawing.
+Press an escape key to cancel drawing.
 
-Click holding option + command button, the point is added as not labeled.
-
-Click holding option button, the point is added as labeled but not visible.
-
-Press enter key to finish drawing.
-
-Press escape key to cancel drawing.
+Each keypoint has a visibility flag v defined as v=0: not labeled, v=1: labeled but not visible, and v=2: labeled and visible. [Read more](http://cocodataset.org/#format-data)
+- Click holding option + command button, the point is added as not labeled.
+- Click holding option button, the point is added as labeled but not visible.
 
 To add an edge, drag from one to another point holding option button.
-
 Drag an point pressing the shift key, the line angle between the point and the neighbor point is locked during the transformation.
 
-[Each keypoint has a visibility flag v defined as v=0: not labeled, v=1: labeled but not visible, and v=2: labeled and visible](http://cocodataset.org/#format-data).
-
-When you right click on the point, edit menu would open.
-
-"Change keypoint name" to change the keypoint name.
-
-You can hide keypoints names.
-
-"Change keypoint color" to change the keypoint color and the edge color is defined by the source point color.
-
-"Make not labeled" to make the point not labeled.
-
-"Make labeled but not visible" to make the point as labeled but not visible.
-
-"Delete edge" to delete the edge with the point.
-
+When you right click on the point, edit menu opens.
+- "Change keypoint name" to change the keypoint name.
+To hide keypoints names, use View menu -> "Hide keypoints names".
 If you put empty string to the keypoint name, the keypoint name is hidden.
+- "Change keypoint color" to change the keypoint color and the edge color is defined by the source point color.
+- "Make not labeled" to make the point not labeled.
+- "Make labeled but not visible" to make the point as labeled but not visible.
+- "Delete edge" to delete the edge with the point.
 
-When you right click on the label, edit menu would open.
-
-"Clear bounding box" to clear the current bounding box.
-
-To show and edit the bounding box, show boxes on keypoints.
-
-"Flip horizontally" to flip the "left" included keypoint position and the "right" included keypoint position.
-
-"Make visible" to make the point visible.
+When you right click on the label, edit menu opens.
+- "Clear bounding box" to clear the current bounding box.
+To show and edit the bounding box, use View menu -> "Show boxes on keypoints".
+- "Flip horizontally" to flip the "left" included keypoint position and the "right" included keypoint position.
+- "Make visible" to make the point visible.
 
 Keypoints names and edges are saved in the settings file.
-
-For the first keypoints object, you have to press enter key to finish drawing, change keypoints names, and add edges.
-
-From the second keypoints object, if currently selected object or lastly selected object has keypoints names and edges, the label dialog would appear without pressing the enter key and keypoints names and edges are automatically shown.
+For the first keypoints object, you have to press an enter key to finish drawing, change keypoints names, and add edges.
+From the second keypoints object, if currently selected object or lastly selected object has keypoints names and edges, the label dialog appears without pressing an enter key and keypoints names and edges are automatically shown.
 
 ![keypoints](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/1655cc03-5ed0-4fb0-b16b-c0fd8b3744e8)
 
