@@ -47,49 +47,30 @@ Customize hotkeys to make your labeling work faster.
 ![hotkeys](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/5636160e-ebe2-40b9-98f2-186aae86a236)
 
 # Label fast
-"Auto save" is to skip the confirmation dialog when save.
+Customize settings to make your labeling work faster.
 
-"Auto copy from previous image" is to copy annotations from the previous image.
-
-"Skip backup dialog when overwrite" is to skip the backup dialog when overwrite.
-
-"Clear existing labels when auto label all images" is to clear existing labels when auto label all images.
-
-"Skip label dialog when create" is to skip the label dialog when create.
-
-"Close label dialog when select" is to close the label dialog when select an object.
-
-"Change label when press an object/attribute hotkey" is to change the label using hotkeys.
-
-"Add an image label when press an object hotkey" is to add an image label using hotkeys.
-
-"Use 1-click buttons" is to show 1-click buttons of object names on the label dialog.
-
-"Maintain zoom and position" is to maintain zoom and position when you change the image.
-
-"Do not move image position" is to fix the image position.
-
-"Show circle edit points" is to show circle edit points instead of rectangle edit points.
-
-"Show all edit points" is to show edit points of all objects.
-
-"Show edit points between box corners" is to show edit points between box corners.
-
-"Show the first point of the box" is to show the first point of the box.
-
-"Click 4 points when draw boxes" is to draw a box clicking xmin, xmax, ymin, and ymax of the object.
-
-"Use truncated, occluded, and difficult tags" is to show truncated, occluded, and difficult checkboxes on the label dialog.
-
-"Rotate boxes as rotated boxes when augment" is to rotate boxes as rotated boxes when augment.
-
-"Separate merged polygons when read YOLO format" is to separate merged polygons when read YOLO format.
-
-"Save confidence values when YOLO format" is to save confidence values when YOLO format.
-
-"Save as floating-point values" is to save coordinates as floating-point values.
-
-"Use English as an app language" is to change the app language to English.
+- "Auto save" is to skip the confirmation dialog when save.
+- "Auto copy from previous image" is to copy annotations from the previous image.
+- "Skip backup dialog when overwrite" is to skip the backup dialog when overwrite.
+- "Clear existing labels when auto label all images" is to clear existing labels when auto label all images.
+- "Skip label dialog when create" is to skip the label dialog when create.
+- "Close label dialog when select" is to close the label dialog when select an object.
+- "Change label when press an object/attribute hotkey" is to change the label using hotkeys.
+- "Add an image label when press an object hotkey" is to add an image label using hotkeys.
+- "Use 1-click buttons" is to show 1-click buttons of object names on the label dialog.
+- "Maintain zoom and position" is to maintain zoom and position when you change the image.
+- "Do not move image position" is to fix the image position.
+- "Show circle edit points" is to show circle edit points instead of rectangle edit points.
+- "Show all edit points" is to show edit points of all objects.
+- "Show edit points between box corners" is to show edit points between box corners.
+- "Show the first point of the box" is to show the first point of the box.
+- "Click 4 points when draw boxes" is to draw a box clicking xmin, xmax, ymin, and ymax of the object.
+- "Use truncated, occluded, and difficult tags" is to show truncated, occluded, and difficult checkboxes on the label dialog.
+- "Rotate boxes as rotated boxes when augment" is to rotate boxes as rotated boxes when augment.
+- "Separate merged polygons when read YOLO format" is to separate merged polygons when read YOLO format.
+- "Save confidence values when YOLO format" is to save confidence values when YOLO format.
+- "Save as floating-point values" is to save coordinates as floating-point values.
+- "Use English as an app language" is to change the app language to English.
 
 ![label_fast](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/55ec35bf-aff8-4532-a6dd-3546d4c332cb)
 
