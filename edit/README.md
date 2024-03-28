@@ -24,18 +24,19 @@ Drag a box pressing the command key, you can select multiple boxes.
 To change the box color, use the color picker at the top-right corner.
 To change the cross hairs color, deselect all boxes and change the default color.
 
-- Use View menu -> "Focus box" to quick zoom to the selected box.
-- Use View menu -> "Hide cross hairs" to hide cross hairs.
-- Use View menu -> "Hide other boxes" to hide other boxes.
-- Use View menu -> "Show labels on boxes" to show labels on boxes.
-- Use View menu -> "Show coordinates on boxes" to show (x, y) coordinates on boxes.
-- Use View menu -> "Show indexes on labels table" to show each row number on the labels table.
-- Use View menu -> "Show checkboxes on labels table" to show a checkbox to show/hide for each row on the labels table.
-- Use View menu -> "Show depth image" to show the depth image.
+You can use View menus and Settings.
+- View menu -> "Focus box" to quick zoom to the selected box.
+- View menu -> "Hide cross hairs" to hide cross hairs.
+- View menu -> "Hide other boxes" to hide other boxes.
+- View menu -> "Show labels on boxes" to show labels on boxes.
+- View menu -> "Show coordinates on boxes" to show (x, y) coordinates on boxes.
+- View menu -> "Show indexes on labels table" to show each row number on the labels table.
+- View menu -> "Show checkboxes on labels table" to show a checkbox to show/hide for each row on the labels table.
+- View menu -> "Show depth image" to show the depth image.
 
-- Use Settings -> "Use 1-click buttons" is to show 1-click buttons of object names on the label dialog.
-- Use Settings -> "Show edit points between box corners" is to show edit points between box corners.
-- Use Settings -> "Click 4 points when draw boxes" is to draw a box clicking xmin, xmax, ymin, and ymax of the object.
+- Settings -> "Use 1-click buttons" is to show 1-click buttons of object names on the label dialog.
+- Settings -> "Show edit points between box corners" is to show edit points between box corners.
+- Settings -> "Click 4 points when draw boxes" is to draw a box clicking xmin, xmax, ymin, and ymax of the object.
 
 ![drag_to_select](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/25fe9bc3-259c-4dfa-8c36-ef9b64f33b08)
 
