@@ -67,8 +67,6 @@ Merge polygons and separate the polygon.
 - Select multiple polygons and right click on them, you can merge polygons.
 - Right click on the merged polygon, you can separate the merged polygon.
 
-![edit_points](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/83d29639-cef4-49f0-860e-011ace0ddf6b)
-
 # Create polygon using SAM
 Change the mode to "Create polygon using SAM".
 Select a model among [MobileSAM](https://github.com/ChaoningZhang/MobileSAM), [EfficientSAM](https://github.com/yformer/EfficientSAM), [HQ-SAM](https://github.com/SysCV/sam-hq), and [Segment Anything models](https://github.com/facebookresearch/segment-anything).
