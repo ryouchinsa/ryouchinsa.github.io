@@ -238,11 +238,6 @@ Clear the object color to the default color.
 
 # Search images
 You can search object, attribute, and image names in a gallery view.
-
-To show all images again, clear search images.
-
-You can use [Wildcard(*), AND(&), OR(|), NOT(!), and more](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/SearchKitConcepts/searchKit_concepts/searchKit_concepts.html#//apple_ref/doc/uid/TP40002844-BAJFJGFF) in the search text.
-
 To search labeled images, use "notempty" search text. To search unlabeled images, use "" search text.
 
 ![search](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/18eaeed8-07c0-4688-85f8-f78a6eb4b4ea)
