@@ -43,16 +43,16 @@ You can use View menus and Settings.
 ![box](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/af32d354-6159-42d0-9b00-20293c14b53c)
 
 # Create polygon, cubic bezier, line, and point
-Change the mode to "Create polygon", "Create cubic bezier", "Create line", or "Create point".
-Click to add points.
-Press an enter key to finish drawing.
-Press an escape key to cancel drawing.
+Create a polygon.
+- Click to add points.
+- Press an enter key to finish drawing.
+- Press an escape key to cancel drawing.
 
 When you right click on the point, edit menu opens.
 - "Add a point forward/backward" to add a point.
-You can add a new point to the polygon/cubic bezier/line, clicking a point along the shape.
+You can add a new point clicking a point along the shape.
 - "Delete this point" to delete the point.
-You can delete a point on the polygon/cubic bezier/line/point, clicking a point pressing the option key.
+You can delete a point clicking a point pressing the option key.
 - "Set to the first point" to set the point to the first point.
 - "Point size up/down" to change the size of points.
 
@@ -82,10 +82,10 @@ Press an escape key to cancel labeling.
 ![sam_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/a6d7a1b4-b611-461a-91e2-1a707a602b3e)
 
 # Create keypoints
-Change the mode to "Create keypoints".
-Click to add points.
-Press an enter key to finish drawing.
-Press an escape key to cancel drawing.
+Create keypoints.
+- Click to add points.
+- Press an enter key to finish drawing.
+- Press an escape key to cancel drawing.
 
 Each keypoint has a visibility flag v defined as v=0: not labeled, v=1: labeled but not visible, and v=2: labeled and visible. [Read more](http://cocodataset.org/#format-data)
 - Click holding option + command button, the point is added as not labeled.
