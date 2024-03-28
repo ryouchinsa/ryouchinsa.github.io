@@ -12,17 +12,20 @@ Have questions? Send an email to support@rectlabel.com.
 Thank you.
 
 # Create box
-Change the mode to "Create box".
 To draw a box, click 2 points.
 When you finished drawing, the label dialog opens, and the selected label is added to the label table.
 
-Drag the center of the box to move the box.
-Drag one of the four corner points to transform the box.
-Drag on the box pressing the option key, the box size is scaled up/down from the center.
-Drag a box pressing the command key, you can select multiple boxes.
+Move the box.
+- Drag the center of the box to move the box.
+- Drag one of the four corner points to transform the box.
+- Drag on the box pressing the option key, the box size is scaled up/down from the center.
 
-To change the box color, use the color picker at the top-right corner.
-To change the cross hairs color, deselect all boxes and change the default color.
+Select multiple boxes.
+- Drag a box pressing the command key, you can select multiple boxes.
+
+Change color.
+- To change the box color, use the color picker at the top-right corner.
+- To change the cross hairs color, deselect all boxes and change the default color.
 
 You can use View menus and Settings.
 - View menu -> "Focus box" to quick zoom to the selected box.
@@ -33,7 +36,6 @@ You can use View menus and Settings.
 - View menu -> "Show indexes on labels table" to show each row number on the labels table.
 - View menu -> "Show checkboxes on labels table" to show a checkbox to show/hide for each row on the labels table.
 - View menu -> "Show depth image" to show the depth image.
-
 - Settings -> "Use 1-click buttons" is to show 1-click buttons of object names on the label dialog.
 - Settings -> "Show edit points between box corners" is to show edit points between box corners.
 - Settings -> "Click 4 points when draw boxes" is to draw a box clicking xmin, xmax, ymin, and ymax of the object.
