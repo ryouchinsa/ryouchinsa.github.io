@@ -16,21 +16,26 @@ Change the mode to "Create box".
 To draw a box, click 2 points.
 When you finished drawing, the label dialog opens, and the selected label is added to the label table.
 
-If necessary, use “Click 4 points when draw boxes” on the settings.
-Press an enter key to finish drawing when the number of points is less than 4.
-
 Drag the center of the box to move the box.
 Drag one of the four corner points to transform the box.
-If necessary, use "Show edit points between box corners" on the settings.
 Drag on the box pressing the option key, the box size is scaled up/down from the center.
-
 Drag a box pressing the command key, you can select multiple boxes.
-When you select multiple boxes and right click on them, you can merge boxes.
 
 To change the box color, use the color picker at the top-right corner.
 To change the cross hairs color, deselect all boxes and change the default color.
-To hide cross hairs, use View menu -> "Hide cross hairs".
-To show the label name on the box, use View menu -> "Show labels on boxes".
+
+- Use View menu -> "Focus box" to quick zoom to the selected box.
+- Use View menu -> "Hide cross hairs" to hide cross hairs.
+- Use View menu -> "Hide other boxes" to hide other boxes.
+- Use View menu -> "Show labels on boxes" to show labels on boxes.
+- Use View menu -> "Show coordinates on boxes" to show (x, y) coordinates on boxes.
+- Use View menu -> "Show indexes on labels table" to show each row number on the labels table.
+- Use View menu -> "Show checkboxes on labels table" to show a checkbox to show/hide for each row on the labels table.
+- Use View menu -> "Show depth image" to show the depth image.
+
+- Use Settings -> "Use 1-click buttons" is to show 1-click buttons of object names on the label dialog.
+- Use Settings -> "Show edit points between box corners" is to show edit points between box corners.
+- Use Settings -> "Click 4 points when draw boxes" is to draw a box clicking xmin, xmax, ymin, and ymax of the object.
 
 ![drag_to_select](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/25fe9bc3-259c-4dfa-8c36-ef9b64f33b08)
 
