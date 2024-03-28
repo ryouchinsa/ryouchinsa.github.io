@@ -48,7 +48,7 @@ Create a polygon.
 - Press an enter key to finish drawing.
 - Press an escape key to cancel drawing.
 
-When you right click on the point, edit menu opens.
+Right click on the point.
 - "Add a point forward/backward" to add a point.
 You can add a new point clicking a point along the shape.
 - "Delete this point" to delete the point.
@@ -56,7 +56,7 @@ You can delete a point clicking a point pressing the option key.
 - "Set to the first point" to set the point to the first point.
 - "Point size up/down" to change the size of points.
 
-When you right click on the label, edit menu opens.
+Right click on the label.
 - "Copy as erase mask" to copy the polygon as an erase mask.
 - "Cut using erase mask" to cut the polygon using the erase mask.
 - "Convert to polygon" to change to polygon.
