@@ -27,7 +27,7 @@ Change color.
 - To change the box color, use the color picker at the top-right corner.
 - To change the cross hairs color, deselect all boxes and change the default color.
 
-You can use View menus and Settings.
+View menus and Settings.
 - View menu -> "Focus box" to quick zoom to the selected box.
 - View menu -> "Hide cross hairs" to hide cross hairs.
 - View menu -> "Hide other boxes" to hide other boxes.
