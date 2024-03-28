@@ -11,9 +11,6 @@ Have questions? Send an email to support@rectlabel.com.
 
 Thank you.
 
-# Use an iPad as a second display
-[With Sidecar, you can use your iPad as a display that extends or mirrors your Mac desktop](https://support.apple.com/en-us/HT210380).
-
 # Trackpad gestures
 Slide two fingers to move the image.
 
