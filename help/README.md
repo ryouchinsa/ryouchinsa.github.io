@@ -12,16 +12,16 @@ Have questions? Send an email to support@rectlabel.com.
 Thank you.
 
 # Help
-- [Papers cited RectLabel](https://rectlabel.com/papers)
-- [About team](https://rectlabel.com/about)
-- [Privacy Policy](https://rectlabel.com/privacy)
-- [Terms of Use](https://rectlabel.com/terms)
 - [Settings menus](https://rectlabel.com/settings)
 - [File menus](https://rectlabel.com/file)
 - [Export menus](https://rectlabel.com/export)
 - [Edit menus](https://rectlabel.com/edit)
 - [Core ML menus](https://rectlabel.com/coreml)
 - [View menus](https://rectlabel.com/view)
+- [Privacy Policy](https://rectlabel.com/privacy)
+- [Terms of Use](https://rectlabel.com/terms)
+- [About team](https://rectlabel.com/about)
+- [Papers cited RectLabel](https://rectlabel.com/papers)
 
 # Key features
 - Label polygons and pixels using Segment Anything models
