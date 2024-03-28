@@ -63,8 +63,9 @@ Right click on the label.
 - "Convert to cubic bezier" to change to cubic bezier.
 - "Convert to rotated box" to change to rotated box.
 
-When you select multiple polygons and right click on them, you can merge polygons.
-To separate the merged polygon to multiple polygons, right click on the merged polygon.
+Merge polygons and separate the polygon.
+- Select multiple polygons and right click on them, you can merge polygons.
+- Right click on the merged polygon, you can separate the merged polygon.
 
 ![edit_points](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/83d29639-cef4-49f0-860e-011ace0ddf6b)
 
