@@ -237,7 +237,8 @@ Clear the object color to the default color.
 
 # Search images
 You can search object, attribute, and image names in a gallery view.
-To search labeled images, use "notempty" search text. To search unlabeled images, use "" search text.
+- To search labeled images, use "notempty" search text.
+- To search unlabeled images, use "" search text.
 
 ![search](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/18eaeed8-07c0-4688-85f8-f78a6eb4b4ea)
 
