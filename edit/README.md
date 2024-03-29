@@ -12,8 +12,11 @@ Have questions? Send an email to support@rectlabel.com.
 Thank you.
 
 # Create box
-To draw a box, click 2 points.
-When you finished drawing, the label dialog opens, and the selected label is added to the label table.
+
+Create a box.
+- Click 2 points.
+- The label dialog opens, select an object name and attribute names.
+- Press OK button, and the selected label is added to the label table.
 
 Move the box.
 - Drag the center of the box to move the box.
