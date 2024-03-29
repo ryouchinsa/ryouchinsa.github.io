@@ -40,7 +40,7 @@ View menus and Settings.
 - Settings -> "Show edit points between box corners" is to show edit points between box corners.
 - Settings -> "Click 4 points when draw boxes" is to draw a box clicking xmin, xmax, ymin, and ymax of the object.
 
-![box](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/af32d354-6159-42d0-9b00-20293c14b53c)
+![box](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/ec048abd-e3e9-4c4c-812e-745df2b43305)
 
 # Create polygon, cubic bezier, line, and point
 Create a polygon.
