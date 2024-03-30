@@ -130,19 +130,17 @@ View menus.
 ![keypoints](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d7a314e4-93de-4c49-acde-0ced5833edd0)
 
 # Create pixels
-You can label pixels using brushes and superpixels.
+Create pixels using brushes.
+- Drag to draw pixels.
+- Change the brush size using command + option + mouse wheel up/down.
+- Erase is used to erase pixels.
+- Polygon is used to label pixels using the polygon tool.
 
-You can change the brush size using command + option + mouse wheel up/down.
-
-Brush size 1 means 1px in the image.
-
-Erase is used to erase pixels.
-
-When [sidecar](https://support.apple.com/en-us/HT210380), double tap on Apple Pencil toggles the pixels erase checkbox.
-
-Polygon is used to label pixels using the polygon tool.
-
-Right clicking on the pixels, "Convert to polygon", "Flood Fill", "Clear pixels", and "Import pixels" menus appear.
+Right click on the pixels.
+- "Convert to polygon"
+- "Flood Fill"
+- "Clear pixels"
+- "Import pixels"
 
 You can drag & drop grayscale mask images to the labels table.
 
