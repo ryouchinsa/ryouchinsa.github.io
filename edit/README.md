@@ -96,31 +96,36 @@ Create keypoints.
 - Press an enter key to finish drawing.
 - Press an escape key to cancel drawing.
 
-Each keypoint has a visibility flag v defined as v=0: not labeled, v=1: labeled but not visible, and v=2: labeled and visible. [Read more](http://cocodataset.org/#format-data)
+Each keypoint has a visibility flag v defined as below. [Read more](http://cocodataset.org/#format-data)
+- v=0: not labeled
+- v=1: labeled but not visible
+- v=2: labeled and visible
+
+Change visibility when click each keypoint.
 - Click holding option + command button, the point is added as not labeled.
 - Click holding option button, the point is added as labeled but not visible.
 
 To add an edge, drag from one to another point holding option button.
 Drag an point pressing the shift key, the line angle between the point and the neighbor point is locked during the transformation.
 
-When you right click on the point, edit menu opens.
-- "Change keypoint name" to change the keypoint name.
-To hide keypoints names, use View menu -> "Hide keypoints names".
-If you put empty string to the keypoint name, the keypoint name is hidden.
-- "Change keypoint color" to change the keypoint color and the edge color is defined by the source point color.
+Right click on the point.
+- "Change keypoint name" to change the keypoint name. 
+- "Change keypoint color" to change the keypoint color. The edge color is defined by the source point color.
 - "Make not labeled" to make the point not labeled.
 - "Make labeled but not visible" to make the point as labeled but not visible.
-- "Delete edge" to delete the edge with the point.
+- "Delete edge" to delete the edge connected with the point.
 
-When you right click on the label, edit menu opens.
+Right click on the label.
 - "Clear bounding box" to clear the current bounding box.
-To show and edit the bounding box, use View menu -> "Show boxes on keypoints".
 - "Flip horizontally" to flip the "left" included keypoint position and the "right" included keypoint position.
 - "Make visible" to make the point visible.
 
 Keypoints names and edges are saved in the settings file.
 For the first keypoints object, you have to press an enter key to finish drawing, change keypoints names, and add edges.
-From the second keypoints object, if currently selected object or lastly selected object has keypoints names and edges, the label dialog appears without pressing an enter key and keypoints names and edges are automatically shown.
+
+View menus.
+- View menu -> "Hide keypoints names" to hide keypoints names.
+- View menu -> "Show boxes on keypoints" to show and edit the bounding box.
 
 ![keypoints](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/96d99cfd-51d4-4ad9-9a6d-616df41e96d8)
 
