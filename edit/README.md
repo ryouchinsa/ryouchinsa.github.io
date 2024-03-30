@@ -72,16 +72,24 @@ Merge polygons and separate the polygon.
 
 # Create polygon using SAM
 Change the mode to "Create polygon using SAM".
-Select a model among [MobileSAM](https://github.com/ChaoningZhang/MobileSAM), [EfficientSAM](https://github.com/yformer/EfficientSAM), [HQ-SAM](https://github.com/SysCV/sam-hq), and [Segment Anything models](https://github.com/facebookresearch/segment-anything).
+Select a model.
+- [MobileSAM](https://github.com/ChaoningZhang/MobileSAM)
+- [EfficientSAM](https://github.com/yformer/EfficientSAM)
+- [Segment Anything models](https://github.com/facebookresearch/segment-anything).
+- [HQ-SAM](https://github.com/SysCV/sam-hq)
 
-Press start button to start downloading the model and preprocessing the image. After preprocessing, you can click positive and negative points.
-Pressing the option key, you can switch the positive mode and negative mode.
-Press an enter key to finish labeling.
-Press an escape key to cancel labeling.
+Select a create type.
+- box
+- polygon
+- pixels
 
-![sam_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/09f08a66-cafa-4145-862e-409abadb3800)
+Create using SAM.
+- Press start button to start downloading the model and preprocessing the image.
+- Click positive and negative points. Pressing the option key, you can switch the positive/negative mode.
+- Press an enter key to finish drawing.
+- Press an escape key to cancel drawing.
 
-![sam_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/a6d7a1b4-b611-461a-91e2-1a707a602b3e)
+![donut](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/da3a1f7a-2af4-4d34-8a6e-2864a0edf26d)
 
 # Create keypoints
 Create keypoints.
