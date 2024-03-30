@@ -71,7 +71,6 @@ Merge polygons and separate the polygon.
 - Right click on the merged polygon, you can separate the merged polygon.
 
 # Create polygon using SAM
-Change the mode to "Create polygon using SAM".
 Select a model.
 - [MobileSAM](https://github.com/ChaoningZhang/MobileSAM)
 - [EfficientSAM](https://github.com/yformer/EfficientSAM)
