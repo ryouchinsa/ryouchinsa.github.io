@@ -127,7 +127,7 @@ View menus.
 - View menu -> "Hide keypoints names" to hide keypoints names.
 - View menu -> "Show boxes on keypoints" to show and edit the bounding box.
 
-![keypoints](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/96d99cfd-51d4-4ad9-9a6d-616df41e96d8)
+![keypoints](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/8474d218-35d9-46a5-81e4-c358b7e47f1f)
 
 # Create pixels
 You can label pixels using brushes and superpixels.
