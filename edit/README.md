@@ -88,7 +88,7 @@ Create using SAM.
 - Press an enter key to finish drawing.
 - Press an escape key to cancel drawing.
 
-![donut](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/da3a1f7a-2af4-4d34-8a6e-2864a0edf26d)
+![donut](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/6b5d8c30-bae4-454e-89e5-5b4728ee39c6)
 
 # Create keypoints
 Create keypoints.
