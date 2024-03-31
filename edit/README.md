@@ -158,7 +158,7 @@ View menus.
 - View menu -> "Show small pixels" to show small pixels areas.
 - View menu -> "Show other pixels" to show other pixels objects.
 
-![brush](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d0ed1017-4057-4e51-89af-92b045ba104c)
+![brush](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/b55af384-30a9-4aa7-80a7-d83726b0f4aa)
 
 Create pixels using superpixels.
 - Click each superpixel or drag multiple superpixels.
