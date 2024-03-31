@@ -172,8 +172,8 @@ Create pixels using superpixels.
 ![superpixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/f8519c77-b73b-4be3-960a-0aaf282cc02d)
 
 # Create image label
-You can label the whole image without drawing boxes.
-To train an image classifier model, use Export menu -> "Export images for classification".
+Create an image label.
+- To train an image classifier model, use Export menu -> "Export images for classification".
 
 # Move
 Select an object.
