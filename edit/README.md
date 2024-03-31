@@ -167,7 +167,7 @@ Create pixels using superpixels.
 - On the pixels panel, right/left arrow keys change the superpixel size by 1px.
 - If superpixels are not shown, reselect the label on the label table.
 
-![superpixel](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/b253bc32-86bc-4bc9-ae7e-8f49394898bb)
+![superpixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/f8519c77-b73b-4be3-960a-0aaf282cc02d)
 
 # Create image label
 You can label the whole image without drawing boxes.
