@@ -160,17 +160,12 @@ View menus.
 
 ![brush](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d0ed1017-4057-4e51-89af-92b045ba104c)
 
-Click or drag on the superpixels.
-
-Superpixel size is used to adjust the segmentation size.
-
-Superpixel smoothness is used to adjust the segmentation smoothness.
-
-On the pixels panel, right or left arrow key changes the superpixel size by 1px.
-
-You can hide superpixels.
-
-If the superpixels are not shown, reselect the label on the label table.
+Create pixels using superpixels.
+- Click each superpixel or drag multiple superpixels.
+- Superpixel size is used to adjust the segmentation size.
+- Superpixel smoothness is used to adjust the segmentation smoothness.
+- On the pixels panel, right/left arrow keys change the superpixel size by 1px.
+- If superpixels are not shown, reselect the label on the label table.
 
 ![superpixel](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/b253bc32-86bc-4bc9-ae7e-8f49394898bb)
 
