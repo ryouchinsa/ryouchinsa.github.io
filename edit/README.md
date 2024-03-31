@@ -59,7 +59,7 @@ You can delete a point clicking a point pressing the option key.
 - "Set to the first point" to set the point to the first point.
 - "Point size up/down" to change the size of points.
 
-Right click on the label.
+Right click on the object.
 - "Copy as erase mask" to copy the polygon as an erase mask.
 - "Cut using erase mask" to cut the polygon using the erase mask.
 - "Convert to polygon" to change to polygon.
@@ -117,7 +117,7 @@ Right click on the point.
 - "Make labeled but not visible" to make the point as labeled but not visible.
 - "Delete edge" to delete the edge connected with the point.
 
-Right click on the label.
+Right click on the object.
 - "Clear bounding box" to clear the current bounding box.
 - "Flip horizontally" to flip the "left" included keypoint position and the "right" included keypoint position.
 - "Make visible" to make the point visible.
@@ -138,11 +138,11 @@ Create pixels using brushes.
 - Erase is used to erase pixels.
 - Polygon is used to label pixels using the polygon tool.
 
-Right click on the pixels.
-- "Convert to polygon"
-- "Flood Fill"
-- "Clear pixels"
-- "Import pixels"
+Right click on the object.
+- "Convert to polygon" to convert the pixels to polygon.
+- "Flood Fill" to fill the closed pixels area.
+- "Clear pixels" to clear the pixels.
+- "Import pixels" to import a mask image as pixels.
 
 Import pixels.
 - You can drag & drop grayscale mask images to the labels table.
