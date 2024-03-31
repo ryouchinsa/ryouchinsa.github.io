@@ -213,15 +213,13 @@ Change the layer order of the object.
 ![layer_order](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d454efc7-0c00-4d60-932e-22827eec7cfb)
 
 # Toggle erase
-For creating polygon mode, toggling the erase mode, the "Erase polygon" panel is shown, and you can use the polygon tool for erasing multiple points of the selected polygon.
+Erase points/mask when Create polygon mode.
+- "Erase points" erases polygon points inside the drawn dashed area.
+- "Erase mask" erases polygon points in the same way as pixels mask.
 
-"Erase points" erases polygon points inside the drawn dashed area.
+![erase](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/10eb172b-e9a3-4bf0-9a01-13e7550f1479)
 
-"Erase mask" erases polygon points in the same way as pixels mask.
-
-![erase_points](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/2e1affe2-139c-47b1-93c6-f87258274d55)
-
-![erase_mask](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/86a0e55c-2b7f-4c44-a24b-ad34c44b8ae1)
+Erase pixels when Create pixels mode.
 
 ![erase_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/c0d998d5-d058-4c2d-acff-7e0807285367)
 
