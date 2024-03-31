@@ -186,7 +186,7 @@ Move an object/image.
 - You can select multiple objects and move them.
 - You can use mouse wheel to move the image position.
 
-Right click on the label.
+Right click on the object.
 - "Focus" to quick zoom to the selected object.
 - "Edit" to open the label dialog. Double click on the object, the label dialog opens.
 - "Copy" to copy the object.
@@ -194,7 +194,7 @@ Right click on the label.
 
 # Rotate
 Rotate an object.
-- Drag up/down on the box to rotate the box.
+- Drag up/down on the object to rotate the object.
 - You can select multiple objects and rotate them.
 
 ![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/8fa54081-a002-4879-bdd2-19fe3025a005)
@@ -203,10 +203,10 @@ Rotate an object.
 You can rotate the image and annotation to the right/left by 90 degrees.
 
 # Delete
-You can select multiple boxes and delete them.
+You can select multiple objects and delete them.
 
 # Layer up/down
-Change the layer order of the box.
+Change the layer order of the object.
 
 ![layer_order](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d454efc7-0c00-4d60-932e-22827eec7cfb)
 
