@@ -193,11 +193,9 @@ Right click on the label.
 - "Delete" to delete the object.
 
 # Rotate
-Change the mode to "Rotate".
-
-Drag up/down on the box to rotate the box.
-
-You can select multiple boxes and rotate them.
+Rotate an object.
+- Drag up/down on the box to rotate the box.
+- You can select multiple objects and rotate them.
 
 ![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/8fa54081-a002-4879-bdd2-19fe3025a005)
 
