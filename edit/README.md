@@ -142,23 +142,23 @@ Right click on the pixels.
 - "Clear pixels"
 - "Import pixels"
 
-You can drag & drop grayscale mask images to the labels table.
+Import pixels.
+- You can drag & drop grayscale mask images to the labels table.
+- You can drag & drop the COCO RLE JSON file of the [SA-1B dataset](https://github.com/facebookresearch/segment-anything) to the labels table.
 
-You can drag & drop the COCO RLE JSON file of the [SA-1B dataset](https://github.com/facebookresearch/segment-anything) to the labels table to import mask annotations.
-
-Changing to the Move mode, you can click to select each pixels object on the image.
-
-Changing to the Create box mode, dragging a box, you can select multiple pixels objects.
-
-You can hide pixels.
-
-You can show other pixels.
+Select pixels.
+- Changing to the Move mode, you can click to select each pixels object on the image.
+- Changing to the Create box mode, dragging a box, you can select multiple pixels objects.
 
 The pixels file is saved as {image_file_name}_pixels{pixels_idx}.png in the annotations folder.
 
-![brush](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d0ed1017-4057-4e51-89af-92b045ba104c)
+View menus.
+- View menu -> "Hide pixels" to toggle pixels alpha.
+- View menu -> "Hide superpixels" to toggle superpixels alpha.
+- View menu -> "Show small pixels" to show small pixels areas.
+- View menu -> "Show other pixels" to show other pixels objects.
 
-![pixels_to_polygons](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/fc6a66b2-a03a-4083-afaf-627da74671e5)
+![brush](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d0ed1017-4057-4e51-89af-92b045ba104c)
 
 Click or drag on the superpixels.
 
