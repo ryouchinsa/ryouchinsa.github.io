@@ -173,31 +173,24 @@ Create pixels using superpixels.
 
 # Create image label
 You can label the whole image without drawing boxes.
-
-To train an image classifier model, export images for classification.
+To train an image classifier model, use Export menu -> "Export images for classification".
 
 # Move
-Change the mode to "Move".
+Select an object.
+- Click an object to select.
+- Pressing the command key, click multiple objects to select.
+- To switch between Create and Move mode, hold the space key when Create mode.
 
-To switch between Create and Move mode, hold space key when Create mode.
+Move an object/image.
+- Drag an object or the image to move the position.
+- You can select multiple objects and move them.
+- You can use mouse wheel to move the image position.
 
-Drag the box or the image to move the position.
-
-You can use mouse wheel to move the image position.
-
-You can select multiple boxes and move them.
-
-When you click on the box or the label, four corner points would appear.
-
-Drag one of the four corner points to transform the box.
-
-When you right click on the box or the label, edit menu would open.
-
-"Focus" to quick zoom to the selected box, "Edit" to open the label dialog, "Duplicate" to duplicate the box, and "Delete" to delete the box.
-
-When you double click on the box or the label, the label dialog would open.
-
-To change the layer order, drag the label up/down on the label table.
+Right click on the label.
+- "Focus" to quick zoom to the selected object.
+- "Edit" to open the label dialog. Double click on the object, the label dialog opens.
+- "Copy" to copy the object.
+- "Delete" to delete the object.
 
 # Rotate
 Change the mode to "Rotate".
