@@ -192,6 +192,8 @@ Right click on the object.
 - "Copy" to copy the object.
 - "Delete" to delete the object.
 
+![move](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/ebc81120-8c52-4918-abb9-0a7ad8e09244)
+
 # Rotate
 Rotate an object.
 - Drag up/down on the object to rotate the object.
