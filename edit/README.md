@@ -199,7 +199,7 @@ Rotate an object.
 - Drag up/down on the object to rotate the object.
 - You can select multiple objects and rotate them.
 
-![rotate](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/c23b5f32-23ba-4ab1-bfd5-0e0d7cdeab34)
+![rotate](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/b4972887-af58-4866-b1b5-283b5f77da7b)
 
 # Rotate the image right/left
 You can rotate the image and annotation to the right/left by 90 degrees.
