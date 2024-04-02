@@ -60,13 +60,10 @@ All images are exported into object-named subfolders.
 ```
 
 # Export COCO JSON file
-Specify the split ratio "80/10/10" so that all images are split into train, validation, and test sets.
-
-When the shuffle checkbox is ON, images are randomly shuffled everytime you export. When the shuffle checkbox is OFF, images are taken from the current sort according to the split ratio.
-
 Annotation files are exported as an [COCO JSON file](http://cocodataset.org/#format-data).
-
-[Detectron2](https://github.com/facebookresearch/detectron2) is Facebook AI Research's next generation library that provides state-of-the-art detection and segmentation algorithms.
+- Specify the split ratio "80/10/10" so that all images are split into train, validation, and test sets.
+- When the shuffle checkbox is ON, images are randomly shuffled everytime you export. 
+- [Detectron2](https://github.com/facebookresearch/detectron2) is Facebook AI Research's next generation library that provides state-of-the-art detection and segmentation algorithms.
 
 For a box object, "segmentation" is exported as empty.
 
@@ -83,7 +80,7 @@ For a box object, "segmentation" is exported as empty.
 },
 ```
 
-For a rotated box, polygon, line, and point object, "segmentation" is exported as polygons.
+For a rotated box/polygon/line/point object, "segmentation" is exported as polygons.
 
 ```
 "annotations": [
@@ -101,8 +98,7 @@ For a rotated box, polygon, line, and point object, "segmentation" is exported a
 ```
 
 For a pixels object, "segmentation" is exported as RLE.
-
-RLE is encoding the mask image using the [COCO Mask API](https://github.com/cocodataset/cocoapi/tree/master/PythonAPI/pycocotools).
+- RLE is encoding the mask image using the [COCO Mask API](https://github.com/cocodataset/cocoapi/tree/master/PythonAPI/pycocotools).
 
 ```
 "annotations": [
@@ -121,9 +117,8 @@ RLE is encoding the mask image using the [COCO Mask API](https://github.com/coco
 },
 ```
 
-For a keypoints object, "keypoints" and "num_keypoints" are exported.
-
-You can export a keypoints object combined with a polygon object when you aligned the keypoints object at the row and the polygon object at the row + 1 on the label table.
+For a keypoints object, "keypoints" and "num_keypoints" are exported. 
+- You can export a keypoints object combined with a polygon object when you aligned the keypoints object at the row and the polygon object at the row + 1 on the label table.
 
 ```
 "annotations": [
@@ -142,7 +137,7 @@ You can export a keypoints object combined with a polygon object when you aligne
 },
 ```
 
-You can export a keypoints object combined with a cubic bezier object or a pixels object when you aligned the keypoints object at the row and the cubic bezier object or the pixels object at the row + 1 on the label table.
+- You can export a keypoints object combined with a pixels object when you aligned the keypoints object at the row and the pixels object at the row + 1 on the label table.
 
 ```
 "annotations": [
@@ -195,16 +190,13 @@ In "categories", "keypoints" and "skeleton" are exported.
 ![keypoints_pixels_coco](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/cd35f0c1-4e3a-4977-9356-dca5b1a3ea7c)
 
 # Import COCO JSON file
-The COCO JSON file is imported to annotation files in the current folder.
-
-Before importing, be sure that you opened images folder and annotations folder.
+- The COCO JSON file is imported to annotation files in the current folder.
+- Before importing, be sure that you opened images folder and annotations folder.
 
 # Import COCO JSON per image files
 You can import the COCO RLE JSON files of the [SA-1B dataset](https://github.com/facebookresearch/segment-anything).
-
-This COCO format does not include the "category_id" so that each label name is set from the first element of the label name history.
-
-Before importing, be sure that you opened images folder and annotations folder.
+- This COCO format does not include the "category_id" so that each label name is set from the first element of the label name history.
+- Before importing, be sure that you opened images folder and annotations folder.
 
 ```
 {
