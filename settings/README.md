@@ -13,31 +13,27 @@ Thank you.
 
 # Projects
 A project contains an objects table and an attributes table.
-To switch the project, check on the "Primary" check box.
-To import projects from another settings file, use RectLabel menu -> Import settings file.
+- To switch the project, check on the "Primary" check box.
+- To import projects from another settings file, use RectLabel menu -> Import settings file.
 
 ![projects](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d89ed448-7d9d-4c92-8ff2-25e7f5936dc4)
 
 # Objects
 The objects table describes each object name and the object index.
-You can assign 0-9 number keys and A-Z alphabet keys to objects.
-To add objects from a text file, use Export menu -> Import an object names from a file.
-You can drag & drop an object names file to the objects table.
-You can copy object names from a text file to your pasteboard and paste to the objects table.
-Right clicking on the objects table header, "Sort alphabetically" menu appears.
+- You can assign 0-9 number keys and A-Z alphabet keys to objects.
+- To import objects from a text file, use Export menu -> Import an object names from a file. You can drag & drop an object names file to the objects table.
+- Right clicking on the objects table header, "Sort alphabetically" menu appears.
 
 ![objects](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/35ebf61e-f40b-4d56-a1d8-2a9ad5b2d6d4)
 
 # Attributes
 The label "sneakers-converse-yellow" is a combination of the object name and attribute names.
-'-' is used as a separator so that '-' in the object name and attribute name is replaced with '\_'.
-The prefix is used such as '-' + prefix + attribute name.
-If any objects are not using attributes, '-' in the object name is not replaced with '\_'.
-The attribute types are "Single select", "Multiple select", and "Text input".
-To change the name on the items table, single click, double click, or press an enter key on the selected item.
-For "Single select" type, you can use an empty string item so that the default label becomes the object name.
-You can assign 0-9 number keys and A-Z alphabet keys to items.
-Right clicking on the attributes table header, "Sort alphabetically" menu appears.
+- '-' is used as a separator so that '-' in the object name and attribute name is replaced with '\_'.
+- If any objects are not using attributes, '-' in the object name is not replaced with '\_'.
+- The prefix is used such as '-' + prefix + attribute name.
+- The attribute types are "Single select", "Multiple select", and "Text input".
+- You can assign 0-9 number keys and A-Z alphabet keys to items.
+- Right clicking on the attributes table header, "Sort alphabetically" menu appears.
 
 ![attributes](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/97dd3b07-950f-42dd-afd2-c3026f2f9c23)
 
