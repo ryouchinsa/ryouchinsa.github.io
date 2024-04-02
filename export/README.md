@@ -296,12 +296,11 @@ Annotation files are exported as [Labelme JSON files](https://github.com/wkentar
 ```
 
 # Import Labelme JSON files
-The Labelme JSON files are imported to annotation files in the current folder.
-
-Before importing, be sure that you opened images folder and annotations folder.
+- The Labelme JSON files are imported to annotation files in the current folder.
+- Before importing, be sure that you opened images folder and annotations folder.
 
 # Export YOLO txt files
-Annotation files are exported in the YOLO text format.
+Annotation files are exported as YOLO text files. A YOLO text file is saved per an image.
 
 ```
 ├── datasets
@@ -313,29 +312,21 @@ Annotation files are exported in the YOLO text format.
         └── sneakers.yaml
 ```
 
-A YOLO text file is saved per an image.
-
-For a box object, the bounding box is saved.
-
-Where center_x, center_y, width, and height are float values relative to width and height of the image.
+For a box object, the bounding box is saved. center_x, center_y, width, and height are float values relative to width and height of the image.
 
 ```
 class_index center_x center_y width height
 0 0.464615 0.594724 0.680000 0.769784
 ```
 
-For a rotated box, polygon, cubic bezier, line, point, and pixels object, the points coordinates are saved.
-
-This format is for [YOLOv5](https://github.com/ultralytics/yolov5) and [YOLOv8](https://github.com/ultralytics/ultralytics) Instance Segmentation.
+For a rotated box/polygon/cubic bezier/line/point/pixels object, the points coordinates are saved. This format is for [YOLOv5](https://github.com/ultralytics/yolov5) and [YOLOv8](https://github.com/ultralytics/ultralytics) Instance Segmentation.
 
 ```
 class_index x1 y1 x2 y2 x3 y3 ...
 0 0.180027 0.287930 0.181324 0.280698 0.183726 0.270573 ...
 ```
 
-For a keypoints object, the bounding box and the points coordinates are saved.
-
-This format is for [YOLOv8](https://github.com/ultralytics/ultralytics) and [YOLO-Pose](https://github.com/TexasInstruments/edgeai-yolov5/tree/yolo-pose).
+For a keypoints object, the bounding box and the points coordinates are saved. This format is for [YOLOv8](https://github.com/ultralytics/ultralytics) and [YOLO-Pose](https://github.com/TexasInstruments/edgeai-yolov5/tree/yolo-pose).
 
 ```
 class_index center_x center_y width height x1 y1 v1 x2 y2 v2 x3 y3 v3 ...
@@ -345,14 +336,11 @@ class_index center_x center_y width height x1 y1 v1 x2 y2 v2 x3 y3 v3 ...
 ![yolo_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/1e4c385d-b97d-4bea-9a9c-3028904e3ad6)
 
 # Import YOLO txt files
-The YOLO text files are imported to annotation files in the current folder.
-
-Before importing, be sure that you opened images folder and annotations folder.
+- The YOLO text files are imported to annotation files in the current folder.
+- Before importing, be sure that you opened images folder and annotations folder.
 
 # Export DOTA txt files
-Annotation files are exported in the [DOTA oriented bounding box (OBB) text format](https://captain-whu.github.io/DOTA/dataset.html).
-
-This format is for [Yolov5 for Oriented Object Detection](https://github.com/hukaixuan19970627/yolov5_obb), [MMRotate](https://github.com/open-mmlab/mmrotate), and [YOLOv8 OBB](https://github.com/ultralytics/ultralytics).
+Annotation files are exported as [DOTA text files](https://captain-whu.github.io/DOTA/dataset.html). This format is for [Yolov5 for Oriented Object Detection](https://github.com/hukaixuan19970627/yolov5_obb), [MMRotate](https://github.com/open-mmlab/mmrotate), and [YOLOv8 OBB](https://github.com/ultralytics/ultralytics).
 
 ```
 x1 y1 x2 y2 x3 y3 x4 y4 category difficult
@@ -362,9 +350,8 @@ x1 y1 x2 y2 x3 y3 x4 y4 category difficult
 ![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/8931280f-bec5-4554-aa8f-045a8f8e990e)
 
 # Import DOTA txt files
-The DOTA text files are imported to annotation files in the current folder.
-
-Before importing, be sure that you opened images folder and annotations folder.
+- The DOTA text files are imported to annotation files in the current folder.
+- Before importing, be sure that you opened images folder and annotations folder.
 
 # Export train/val/test folders
 Specify the split ratio "80/10/10" so that all images are split into train, validation, and test sets.
