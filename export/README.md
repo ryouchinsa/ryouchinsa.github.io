@@ -50,13 +50,13 @@ Annotation files are exported as an [Create ML JSON file](https://developer.appl
 
 # Export images for classification
 All images are exported into object-named subfolders.
-[Creating an Image Classifier Model on Create ML](https://developer.apple.com/documentation/createml/creating-an-image-classifier-model)
+- [Creating an Image Classifier Model on Create ML](https://developer.apple.com/documentation/createml/creating-an-image-classifier-model).
 
 ```
 └── saved_folder
-    ├── object0
-    ├── object1
-    └── object2
+    ├── object_name0
+    ├── object_name1
+    └── object_name2
 ```
 
 # Export COCO JSON file
