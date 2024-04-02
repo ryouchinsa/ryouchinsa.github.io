@@ -13,8 +13,8 @@ Thank you.
 
 # Export Create ML JSON file
 Annotation files are exported as an [Create ML JSON file](https://developer.apple.com/videos/play/wwdc2019/424/).
-Put training images and the JSON file into the same folder.
-If you encouter errors, read this page. [Empty table from specified data source](https://stackoverflow.com/questions/65314564/empty-table-from-specified-data-source-error-in-create-ml)
+- Put training images and the JSON file into the same folder.
+- If you encouter errors, [Empty table from specified data source](https://stackoverflow.com/questions/65314564/empty-table-from-specified-data-source-error-in-create-ml).
 
 ```
 [{
@@ -44,9 +44,9 @@ If you encouter errors, read this page. [Empty table from specified data source]
 ```
 
 # Import Create ML JSON file
-The Create ML JSON file is imported to annotation files in the current folder.
-Before importing, be sure that you opened images folder and annotations folder.
-RectLabel can import from "imagefilename" and "annotation" keys, too.
+- The Create ML JSON file is imported to annotation files in the current folder.
+- Before importing, be sure that you opened images folder and annotations folder.
+- RectLabel can import from "imagefilename" and "annotation" keys, too.
 
 # Export images for classification
 All images are exported into object-named subfolders.
