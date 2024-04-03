@@ -420,30 +420,23 @@ item {
 You can import an object names file or import object names from xml files.
 
 # Export mask images
-The mask images are exported in the PNG format.
-
-[Run an instance segmentation model on Tensorflow Object Detection API](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/instance_segmentation.md).
-
 You can specify which mask image to export.
-
 - Export an image includes all objects: An indexed color image which includes all objects is saved as {image_file_name}_all_objects.png.
 - Export an image per object class: A grayscale image per object class is saved as {image_file_name}_class_{class_name}.png.
 - Export an image per object: A grayscale image per object is saved as {image_file_name}_object{object_idx}.png.
 
-For the indexed color image, overlaps of objects are based on the layer order on the labels table.
-
-Pixel values are set based on the object index on the objects table and 0 is set for the background.
-
-The indexed color table is created from object colors on the objects table.
-
-For grayscale images, pixel values are set 255 for the foreground and 0 for the background.
+For the indexed color image.
+- The indexed color table is created from object colors on the objects table.
+- Overlaps of objects are based on the layer order on the labels table.
 
 ![mask](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/5b0eecd8-a554-40d7-b7c2-1ae4daaf53b5)
 
 # Export screenshots
 You can export images and annotations as jpg images.
 
-It exports labels when showing labels on boxes and exports coordinates when showing coordinates on boxes.
+View menus.
+- View menu -> “Show labels on boxes” to show labels on boxes.
+- View menu -> “Show coordinates on boxes” to show (x, y) coordinates on boxes.
 
 ![screenshot](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/fe2ec8a8-2696-49a2-9262-3665a6e1ffc1)
 
