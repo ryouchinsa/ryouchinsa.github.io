@@ -73,11 +73,17 @@ Hide other boxes except the selected box.
 # Hide keypoints names
 Hide keypoints names.
 
+![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/e7468a2a-e776-47ea-94e4-7fd89008b6ff)
+
 # Hide pixels
 Toggle pixels alpha.
 
+![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/01107e76-7bf7-4cdf-b2e0-f6f0e539ae74)
+
 # Hide superpixels
 Toggle superpixels alpha.
+
+![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/eeafd8c3-4cba-487f-b1b7-74f790ead27a)
 
 # Show small pixels
 You can show small pixels areas which are less than 0.01 of the image size.
