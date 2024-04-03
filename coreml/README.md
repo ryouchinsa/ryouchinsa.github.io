@@ -59,10 +59,8 @@ Settings menus.
 
 # Auto text recognition for lines and words
 Using [Vision Framework](https://developer.apple.com/documentation/vision), automatic text recognition is performed.
-
-You can change the language according to your document type.
-
-You can change the type so that it recognizes by lines or by words.
+- You can change the language.
+- You can change the type to lines or words.
 
 ![ocr](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/3cbf40cd-ece4-451b-b2e8-12ea6e4724c7)
 
