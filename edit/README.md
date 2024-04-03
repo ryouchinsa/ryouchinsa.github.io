@@ -136,7 +136,7 @@ View menus.
 # Create pixels
 Create pixels using brushes.
 - Drag to draw pixels.
-- Change the brush size using command + option + mouse wheel up/down.
+- Change the brush size mouse wheel up/down pressing the command + option keys.
 - Erase is used to erase pixels.
 - Polygon is used to label pixels using the polygon tool.
 
