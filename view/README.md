@@ -58,7 +58,7 @@ You can quick zoom to the selected box.
 ![focus](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/1e0d94de-9577-41fe-be48-c400dbbaf625)
 
 # Hide buttons
-Open, Create, etc. buttons are hidden and the image and labels table is shown largely.
+Top-bar buttons are hidden and the image and labels table is shown largely.
 
 ![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/aa5a88bf-6d5b-4a58-9c81-2c49b7a98d7f)
 
