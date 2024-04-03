@@ -60,10 +60,9 @@ All images are exported into object-named subfolders.
 ```
 
 # Export COCO JSON file
-Annotation files are exported as an [COCO JSON file](http://cocodataset.org/#format-data).
+Annotation files are exported as an [COCO JSON file](http://cocodataset.org/#format-data). This format is for [Detectron2](https://github.com/facebookresearch/detectron2).
 - Specify the split ratio "80/10/10" so that all images are split into train, validation, and test sets.
 - When the shuffle checkbox is ON, images are randomly shuffled everytime you export. 
-- [Detectron2](https://github.com/facebookresearch/detectron2) is Facebook AI Research's next generation library that provides state-of-the-art detection and segmentation algorithms.
 
 For a box object, "segmentation" is exported as empty.
 
