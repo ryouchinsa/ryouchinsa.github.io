@@ -86,7 +86,7 @@ You can open the YOLOv5/YOLOv8 folder exported from Roboflow.
 # Next image and Prev image
 - To show the next image, press the right arrow key.
 - To show the previous image, press the left arrow key.
-- Pressing Command + right/left arrow key, the step size becomes 10.
+- Pressing the command key, the step size becomes 10.
 - You can use Trackpad gestures and Magic Mouse gestures.
 
 # Jump to image number
