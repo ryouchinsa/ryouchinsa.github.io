@@ -195,7 +195,7 @@ In "categories", "keypoints" and "skeleton" are exported.
 
 # Import COCO JSON per image files
 You can import the COCO RLE JSON files of the [SA-1B dataset](https://github.com/facebookresearch/segment-anything).
-- This COCO format does not include the "category_id" so that each label name is set from the first element of the label name history.
+- This COCO format does not include the "category_id" so that each label name is set to the recently used label name.
 - Before importing, be sure that you opened images folder and annotations folder.
 
 ```
