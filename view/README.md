@@ -60,13 +60,15 @@ You can quick zoom to the selected box.
 # Hide buttons
 Open, Create, etc. buttons are hidden and the image and labels table is shown largely.
 
-![hide_buttons](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/febb8fa6-1605-49a9-93e1-1dad3f15b086)
+![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/aa5a88bf-6d5b-4a58-9c81-2c49b7a98d7f)
 
 # Hide cross hairs
 Hide cross hairs when creating box.
 
 # Hide other boxes
 Hide other boxes except the selected box.
+
+![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/a580fb19-23b4-4a0b-af2f-c6243d4ab258)
 
 # Hide keypoints names
 Hide keypoints names.
