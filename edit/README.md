@@ -30,18 +30,20 @@ Change color.
 - To change the box color, use the color picker at the top-right corner.
 - To change the cross hairs color, deselect all boxes and change the default color.
 
-View menus and Settings.
-- View menu -> "Focus box" to quick zoom to the selected box.
-- View menu -> "Hide cross hairs" to hide cross hairs.
-- View menu -> "Hide other boxes" to hide other boxes.
-- View menu -> "Show labels on boxes" to show labels on boxes.
-- View menu -> "Show coordinates on boxes" to show (x, y) coordinates on boxes.
-- View menu -> "Show indexes on labels table" to show each row number on the labels table.
-- View menu -> "Show checkboxes on labels table" to show a checkbox to show/hide for each row on the labels table.
-- View menu -> "Show depth image" to show the depth image.
-- Settings -> "Use 1-click buttons" is to show 1-click buttons of object names on the label dialog.
-- Settings -> "Show edit points between box corners" is to show edit points between box corners.
-- Settings -> "Click 4 points when draw boxes" is to draw a box clicking xmin, xmax, ymin, and ymax of the object.
+View menus.
+- "Focus box" to quick zoom to the selected box.
+- "Hide cross hairs" to hide cross hairs.
+- "Hide other boxes" to hide other boxes.
+- "Show labels on boxes" to show labels on boxes.
+- "Show coordinates on boxes" to show (x, y) coordinates on boxes.
+- "Show indexes on labels table" to show each row number on the labels table.
+- "Show checkboxes on labels table" to show a checkbox to show/hide for each row on the labels table.
+- "Show depth image" to show the depth image.
+
+Settings menus.
+- "Use 1-click buttons" is to show 1-click buttons of object names on the label dialog.
+- "Show edit points between box corners" is to show edit points between box corners.
+- "Click 4 points when draw boxes" is to draw a box clicking xmin, xmax, ymin, and ymax of the object.
 
 ![box](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/cce579b7-5ebc-4e20-9e8a-b92587d57848)
 
@@ -126,8 +128,8 @@ Keypoints names and edges are saved in the settings file.
 For the first keypoints object, you have to press an enter key to finish drawing, change keypoints names, and add edges.
 
 View menus.
-- View menu -> "Hide keypoints names" to hide keypoints names.
-- View menu -> "Show boxes on keypoints" to show and edit the bounding box.
+- "Hide keypoints names" to hide keypoints names.
+- "Show boxes on keypoints" to show and edit the bounding box.
 
 ![keypoints](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d7a314e4-93de-4c49-acde-0ced5833edd0)
 
@@ -155,10 +157,10 @@ Select pixels.
 The pixels file is saved as {image_file_name}_pixels{pixels_idx}.png in the annotations folder.
 
 View menus.
-- View menu -> "Hide pixels" to toggle pixels alpha.
-- View menu -> "Hide superpixels" to toggle superpixels alpha.
-- View menu -> "Show small pixels" to show small pixels areas.
-- View menu -> "Show other pixels" to show other pixels objects.
+- "Hide pixels" to toggle pixels alpha.
+- "Hide superpixels" to toggle superpixels alpha.
+- "Show small pixels" to show small pixels areas.
+- "Show other pixels" to show other pixels objects.
 
 ![brush](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/b55af384-30a9-4aa7-80a7-d83726b0f4aa)
 
