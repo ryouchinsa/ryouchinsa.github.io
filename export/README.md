@@ -441,37 +441,27 @@ View menus.
 ![screenshot](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/fe2ec8a8-2696-49a2-9262-3665a6e1ffc1)
 
 # Export augmented images
-Images and annotations are augmented using "Flip", "Crop", "Contrast", and "Rotate".
-
-For "Flip", each image is flipped horizontally with 0.5 probability.
-
-For "Crop", each image is cropped to [100% - value, 100%] of the original size.
-
-For "Contrast", each image contrast is changed to [100% - value, 100% + value].
-
-For "Rotate", each image is rotated to [-value, value] degrees.
-
-For "Number of augmented images", the number of generated images from an image through the augmentation.
-
-If the object is cut out so that the bounding box size is less than 0.01 of the original size, the object is removed.
-
-To flip keypoints horizontally, use "left" and "right" prefix or suffix for each keypoint name.
+You can augment images and annotations using "Flip", "Crop", "Contrast", and "Rotate".
+- For "Flip", each image is flipped horizontally with 0.5 probability.
+- For "Crop", each image is cropped to [100% - value, 100%] of the original size.
+- For "Contrast", each image contrast is changed to [100% - value, 100% + value].
+- For "Rotate", each image is rotated to [-value, value] degrees.
+- For "Number of augmented images", it means the number of augmented images from an image.
+- If the object is cut out so that the bounding box size is less than 0.01 of the original size, the object is removed.
+- To flip keypoints horizontally, use "left" and "right" in each keypoint name.
 
 ![augment](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/b0bdea27-dc58-43b4-9f68-9af8d9c9dc53)
 
 # Export sliced images
-Images and annotations are sliced horizontally and vertically.
-
-For "Horizontal slices", each image is sliced horizontally by the number of horizontal slices.
-
-For "Vertical slices", each image is sliced vertically by the number of vertical slices.
+You can slice images and annotations horizontally and vertically.
+- For "Horizontal slices", each image is sliced horizontally by the number of horizontal slices.
+- For "Vertical slices", each image is sliced vertically by the number of vertical slices.
 
 ![slice](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/edfc8dc5-06d7-4f0a-80cd-6a60b28be9a3)
 
 # Export objects and attributes stats
-The number of used objects is saved as objects_stats.txt file.
-
-The number of used attributes is saved as attributes_stats.txt file.
+- The number of used objects is saved as objects_stats.txt file.
+- The number of used attributes is saved as attributes_stats.txt file.
 
 
 
