@@ -47,6 +47,8 @@ Click a position to zoom in/out.
 - To switch zoom in/out, hold the option key.
 - Pressing the command key, and mouse wheel down/up, you can zoom in/out.
 
+![zoom](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/2f7f96de-4328-4f39-b675-bfefd48e1061)
+
 # Zoom fit
 Clear zoom.
 
