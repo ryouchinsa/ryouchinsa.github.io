@@ -124,11 +124,9 @@ Show a checkbox for each row on the labels table.
 ![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/5e22bd9a-898a-4f55-b00e-51e036a8b500)
 
 # Show depth image
-When the rgb image name is image_name.jpg, put the depth image as image_name_depth.png in the same folder.
+Toggle depth image alpha. When the rgb image name is image_name.jpg, put the depth image as image_name_depth.png in the same folder.
 
-Toggle depth image alpha.
-
-![depth](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/cbbab4c6-188c-4d06-8226-3b12e6588d09)
+![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/a5accaec-c98b-43dc-8f69-34c4cde9fd48)
 
 # Reload the image
 Reload the current image and annotation file.
