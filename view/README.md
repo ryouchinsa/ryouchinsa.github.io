@@ -133,12 +133,10 @@ Reload the current image and annotation file.
 
 # Enter gallery view
 Toggle entering gallery view.
-
-Thumbnails are updated when you open folders or change the label format, and saved in the folder "~/Library/Containers/RectLabel/Data/thumbnails".
-
-To remove thumbnails in the folder, close folder.
-
-![search](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/8d534420-2e96-4323-bade-5a49a067f6b4)
+- Thumbnails are updated when you open folders or change the label format.
+- To remove thumbnails in the folder, close folder.
+- 
+![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/625f612b-5fb4-40e1-b4fb-bfe2126983c9)
 
 # Enter full screen
 Toggle entering full screen.
