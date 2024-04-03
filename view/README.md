@@ -88,7 +88,7 @@ Toggle superpixels alpha.
 # Show small pixels
 You can show small pixels areas which are less than 0.01 of the image size.
 
-![small_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/b95c5463-5ea6-4a7c-b3d3-fa0d7a776d8b)
+![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/f53e93f2-d634-4a47-a131-5ffea15f8fb1)
 
 # Show other pixels
 You can show other pixels objects.
