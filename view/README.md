@@ -98,15 +98,17 @@ You can show other pixels objects.
 # Show boxes on keypoints
 You can edit the bounding box for each keypoints object.
 
+![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/b2e21d9f-a2a3-4666-917b-4a126703b311)
+
 # Show labels on boxes
 Show labels on boxes.
 
-Hiding other boxes, only selected boxes are shown.
+![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/3640a47c-5a6a-4aed-806c-6b15b128aaa8)
 
 # Show coordinates on boxes
 Show (x, y) coordinates on boxes.
 
-Hiding other boxes, only selected boxes are shown.
+![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/1cfdb289-15d0-4b38-ad4c-5885dadd2e2b)
 
 # Show indexes on points
 Show each index for each point.
