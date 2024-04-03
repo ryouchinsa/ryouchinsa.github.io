@@ -340,6 +340,9 @@ class_index center_x center_y width height x1 y1 v1 x2 y2 v2 x3 y3 v3 ...
 # Export DOTA txt files
 Annotation files are exported as [DOTA text files](https://captain-whu.github.io/DOTA/dataset.html). This format is for [Yolov5 for Oriented Object Detection](https://github.com/hukaixuan19970627/yolov5_obb), [MMRotate](https://github.com/open-mmlab/mmrotate), and [YOLOv8 OBB](https://github.com/ultralytics/ultralytics).
 
+Settings menu.
+- “Use truncated, occluded, and difficult tags” is to show truncated, occluded, and difficult checkboxes on the label dialog.
+
 ```
 x1 y1 x2 y2 x3 y3 x4 y4 category difficult
 1300.536987 1413.503784 1192.848755 1535.568848 530.876038 951.562073 638.564270 829.497009 truck 0
@@ -449,6 +452,9 @@ You can augment images and annotations using "Flip", "Crop", "Contrast", and "Ro
 - For "Number of augmented images", it means the number of augmented images from an image.
 - If the object is cut out so that the bounding box size is less than 0.01 of the original size, the object is removed.
 - To flip keypoints horizontally, use "left" and "right" in each keypoint name.
+
+Settings menu.
+- “Rotate boxes as rotated boxes when augment” is to rotate boxes as rotated boxes when augment.
 
 ![augment](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/b0bdea27-dc58-43b4-9f68-9af8d9c9dc53)
 
