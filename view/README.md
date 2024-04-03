@@ -45,7 +45,7 @@ Change the image.
 # Zoom in, Zoom out
 Click a position to zoom in/out.
 - Pression the option button, zoom in/out is switched.
-- Pressing command + mouse wheel down/up, you can zoom in/out.
+- Pressing the command key, and mouse wheel down/up, you can zoom in/out.
 
 # Zoom fit
 Clear zoom.
