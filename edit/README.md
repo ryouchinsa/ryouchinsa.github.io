@@ -174,8 +174,10 @@ Create pixels using superpixels.
 ![superpixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/f8519c77-b73b-4be3-960a-0aaf282cc02d)
 
 # Create image label
-Create an image label.
-- To train an image classifier model, use Export menu -> "Export images for classification".
+Create an image label without drawing the box.
+
+Settings menu.
+- “Add an image label when press an object hotkey” is to add an image label using hotkeys.
 
 # Move
 Select an object.
@@ -200,6 +202,9 @@ Right click on the object.
 Rotate an object.
 - Drag up/down on the object to rotate the object.
 - You can select multiple objects and rotate them.
+
+Settings menu.
+- “Show the first point of the box” is to show the first point of the box.
 
 ![rotate](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/b4972887-af58-4866-b1b5-283b5f77da7b)
 
