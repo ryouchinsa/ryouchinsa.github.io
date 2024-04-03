@@ -369,11 +369,8 @@ x1 y1 x2 y2 x3 y3 x4 y4 category difficult
 ```
 
 # Export object names file
-The object names file is created from the objects table on the settings dialog.
-
-[YOLOv5](https://github.com/ultralytics/yolov5) and [YOLOv8](https://github.com/ultralytics/ultralytics) yaml file as dictionary.
-
-The "flip_idx" array is to flip the "left" included keypoint position and the "right" included keypoint position.
+Export a yaml file as dictionary for [YOLOv5](https://github.com/ultralytics/yolov5) and [YOLOv8](https://github.com/ultralytics/ultralytics).
+- The "flip_idx" array is to flip the "left" included keypoint position and the "right" included keypoint position.
 
 ```
 path: ../datasets/keypoints
@@ -387,7 +384,7 @@ names:
   0: person
 ```
 
-[YOLOv5](https://github.com/ultralytics/yolov5) yaml file as array.
+Export a yaml file as array for [YOLOv5](https://github.com/ultralytics/yolov5).
 
 ```
 path: ../datasets/sneakers
@@ -398,14 +395,14 @@ nc: 2
 names: ['sneakers', 'ignore']
 ```
 
-Object names text file.
+Export an object names text file.
 
 ```
 sneakers
 ignore
 ```
 
-[Tensorflow Object Detection API](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md) label map file.
+Export a label map file for [Tensorflow Object Detection API](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md).
 
 ```
 item {
