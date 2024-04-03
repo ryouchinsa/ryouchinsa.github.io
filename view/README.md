@@ -12,19 +12,19 @@ Have questions? Send an email to support@rectlabel.com.
 Thank you.
 
 # Trackpad gestures
-Slide two fingers to move the image.
-
-Double-tap with two fingers for smart zoom.
-
-Pinch with two fingers to zoom in/out.
-
-Swipe left or right with three fingers to change the image.
-
 System Preferences > Trackpad > More Gestures tab.
+- For "Swipe between pages", select "Swipe with two or three fingers" or "Swipe with three fingers".
+- For "Swipe between full-screen apps", select "Swipe left or right with four fingers".
 
-For "Swipe between pages", select "Swipe with two or three fingers" or "Swipe with three fingers".
+Zoom in/out.
+- Double-tap with two fingers for smart zoom.
+- Pinch with two fingers to zoom in/out.
 
-For "Swipe between full-screen apps", select "Swipe left or right with four fingers".
+Move the image.
+- Slide two fingers to move the image.
+
+Change the image.
+- Swipe left or right with three fingers to change the image.
 
 # Magic Mouse gestures
 Slide a finger to move the image.
