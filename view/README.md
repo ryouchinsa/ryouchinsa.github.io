@@ -132,10 +132,8 @@ Toggle depth image alpha. When the rgb image name is image_name.jpg, put the dep
 Reload the current image and annotation file.
 
 # Enter gallery view
-Toggle entering gallery view.
-- Thumbnails are updated when you open folders or change the label format.
-- To remove thumbnails in the folder, close folder.
-- 
+Toggle entering gallery view. Thumbnails are updated when you open folders or change the label format.
+
 ![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/625f612b-5fb4-40e1-b4fb-bfe2126983c9)
 
 # Enter full screen
