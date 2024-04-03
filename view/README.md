@@ -27,17 +27,20 @@ Change the image.
 - Swipe left or right with three fingers to change the image.
 
 # Magic Mouse gestures
-Slide a finger to move the image.
-
-Double-tap with a finger for smart zoom.
-
-Swipe left or right with two fingers to change the image.
-
 System Preferences > Mouse > Point & Click tab > Smart zoom.
+- Check on the Smart zoom.
 
 System Preferences > Mouse > More Gestures tab.
+- For "Swipe between pages", select "Swipe with two fingers".
 
-For "Swipe between pages", select "Swipe with two fingers".
+Zoom in/out.
+- Double-tap with a finger for smart zoom.
+
+Move the image.
+- Slide a finger to move the image.
+
+Change the image.
+- Swipe left or right with two fingers to change the image.
 
 # Zoom in, Zoom out
 Click a position to zoom in/out.
