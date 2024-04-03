@@ -438,8 +438,8 @@ For the indexed color image.
 You can export images and annotations as jpg images.
 
 View menus.
-- View menu -> “Show labels on boxes” to show labels on boxes.
-- View menu -> “Show coordinates on boxes” to show (x, y) coordinates on boxes.
+- “Show labels on boxes” to show labels on boxes.
+- “Show coordinates on boxes” to show (x, y) coordinates on boxes.
 
 ![screenshot](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/fe2ec8a8-2696-49a2-9262-3665a6e1ffc1)
 
