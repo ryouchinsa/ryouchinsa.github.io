@@ -116,7 +116,7 @@ For a pixels object, "segmentation" is exported as RLE. RLE is encoding the mask
 ```
 
 For a keypoints object, "keypoints" and "num_keypoints" are exported. 
-- You can export a keypoints object combined with a polygon object when you aligned the keypoints object at the row and the polygon object at the row + 1 on the label table.
+- You can export a keypoints object combined with a polygon object when you aligned the keypoints object at the row and the polygon object at the row + 1 on the labels table.
 
 ```
 "annotations": [
@@ -135,7 +135,7 @@ For a keypoints object, "keypoints" and "num_keypoints" are exported.
 },
 ```
 
-- You can export a keypoints object combined with a pixels object when you aligned the keypoints object at the row and the pixels object at the row + 1 on the label table.
+- You can export a keypoints object combined with a pixels object when you aligned the keypoints object at the row and the pixels object at the row + 1 on the labels table.
 
 ```
 "annotations": [
@@ -446,7 +446,7 @@ You can specify which mask image to export.
 - Export an image per object class: A grayscale image per object class is saved as {image_file_name}_class_{class_name}.png.
 - Export an image per object: A grayscale image per object is saved as {image_file_name}_object{object_idx}.png.
 
-For the indexed color image, overlaps of objects are based on the layer order on the label table.
+For the indexed color image, overlaps of objects are based on the layer order on the labels table.
 
 Pixel values are set based on the object index on the objects table and 0 is set for the background.
 
