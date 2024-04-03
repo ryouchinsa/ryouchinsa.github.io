@@ -15,21 +15,6 @@ Thank you.
 - Apple provides [Core ML Models](https://developer.apple.com/machine-learning/models/).
 - To convert your ML model to the Core ML format, use [coremltools](https://github.com/apple/coremltools).
 - You can convert [YOLOv5](https://github.com/ultralytics/yolov5), [YOLOv8](https://github.com/ultralytics/ultralytics), [MobileNetV2 + SSDLite](https://machinethink.net/blog/mobilenet-ssdlite-coreml/), and [Turi Create](https://apple.github.io/turicreate/docs/userguide/object_detection/export-coreml.html) models to Core ML models.
-- RectLabel recognizes the model type through the file name and the short description. Such as YOLOv3, YOLOv5, YOLOv8, DeepLab, PoseNet, and FCRN-Depth.
-
-If the Core ML model has 'classes' meta data, RectLabel uses these object names instead of the current objects table.
-
-```
-import coremltools
-coreml_file = 'DeepLab.mlmodel'
-coreml_model = coremltools.models.MLModel(coreml_file)
-coreml_model.short_description = "DeepLab"
-labels = [
-    "background", "aeroplane", "bicycle", "bird", "board", "bottle", "bus", "car", "cat", "chair", "cow", "diningTable", "dog", "horse", "motorbike", "person", "pottedPlant", "sheep", "sofa", "train", "tvOrMonitor"
-]
-coreml_model.user_defined_metadata['classes'] = ",".join(labels)
-coreml_model.save(coreml_file)
-```
 
 # Clear Core ML model
 Clear the loaded Core ML model to close the Confidence/Overlap threshold panel.
