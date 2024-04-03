@@ -106,10 +106,10 @@ Each keypoint has a visibility flag v defined as below. [Read more](http://cocod
 - v=2: labeled and visible
 
 Change visibility when click each keypoint.
-- Click holding option + command button, the point is added as not labeled.
-- Click holding option button, the point is added as labeled but not visible.
+- Click pressing the option + command keys, the point is added as not labeled.
+- Click pressing the option key, the point is added as labeled but not visible.
 
-To add an edge, drag from one to another point holding option button.
+To add an edge, drag from one to another point pressing the option key.
 Drag an point pressing the shift key, the line angle between the point and the neighbor point is locked during the transformation.
 
 Right click on the point.
