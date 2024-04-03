@@ -93,6 +93,8 @@ You can show small pixels areas which are less than 0.01 of the image size.
 # Show other pixels
 You can show other pixels objects.
 
+![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/e74e6aec-865d-46db-8d96-c6468d311ad3)
+
 # Show boxes on keypoints
 You can edit the bounding box for each keypoints object.
 
