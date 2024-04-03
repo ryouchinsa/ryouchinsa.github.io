@@ -352,28 +352,15 @@ x1 y1 x2 y2 x3 y3 x4 y4 category difficult
 - Before importing, be sure that you opened images folder and annotations folder.
 
 # Export train/val/test folders
-Specify the split ratio "80/10/10" so that all images are split into train, validation, and test sets.
-
-When the shuffle checkbox is ON, images are randomly shuffled everytime you export. When the shuffle checkbox is OFF, images are taken from the current sort according to the split ratio.
-
-You can export train/val/test folders and the yaml file at once in the YOLO format or PASCAL VOC XML format. 
-
-This exported folder can be uploaded to Roboflow directly.
+- Specify the split ratio "80/10/10" so that images are split into train, validation, and test sets.
+- When the shuffle checkbox is ON, images are randomly shuffled everytime you export. 
+- You can export train/val/test folders and the yaml file at once in the YOLO format. This exported folder can be uploaded to Roboflow directly.
 
 # Export train/val/test.txt files
-Specify the split ratio "80/10/10" so that all images are split into train, validation, and test sets.
-
-When the shuffle checkbox is ON, images are randomly shuffled everytime you export. When the shuffle checkbox is OFF, images are taken from the current sort according to the split ratio.
-
-In the specified folder, train.txt, val.txt, and test.txt are saved.
-
-```
-sneakers-1.jpg
-sneakers-2.jpg
-...
-```
-
-Using "Full path" option, you can save full paths. Or you can add prefix to file names.
+- Specify the split ratio "80/10/10" so that images are split into train, validation, and test sets.
+- When the shuffle checkbox is ON, images are randomly shuffled everytime you export. 
+- Using "Full path" option, you can save full paths. Or you can add prefix to file names.
+- In the specified folder, train.txt, val.txt, and test.txt are saved.
 
 ```
 /Users/ryo/Desktop/test_annotations/sneakers/images/sneakers-1.jpg
