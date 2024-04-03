@@ -39,9 +39,17 @@ coreml_model.save(coreml_file)
 Clear the loaded Core ML model to close the Confidence/Overlap threshold panel.
 
 # Auto labeling
-You can change the confidence threshold, and if the model does not include non-maximum suppression, you can change the overlap threshold.
+Auto label images using the loaded Core ML model.
+- You can change the confidence threshold.
+- if the model does not include the non-maximum suppression, you can change the overlap threshold.
 
-To show the label and the confidence, use "Show labels on boxes" on View menu.
+View menu.
+- “Show labels on boxes” to show confidences on boxes.
+
+Settings menus.
+- “Skip backup dialog when overwrite” is to skip the backup dialog when overwrite.
+- “Clear existing labels when auto label all images” is to clear existing labels when auto label all images.
+- “Save confidence values when YOLO format” is to save confidence values when YOLO format.
 
 ![coreml](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/c6ddc6d7-448e-450f-a4a8-985c301ce7c5)
 
