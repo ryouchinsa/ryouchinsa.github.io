@@ -96,8 +96,7 @@ For a rotated box/polygon/line/point object, "segmentation" is exported as polyg
 },
 ```
 
-For a pixels object, "segmentation" is exported as RLE.
-- RLE is encoding the mask image using the [COCO Mask API](https://github.com/cocodataset/cocoapi/tree/master/PythonAPI/pycocotools).
+For a pixels object, "segmentation" is exported as RLE. RLE is encoding the mask image using the [COCO API](https://github.com/cocodataset/cocoapi/tree/master/PythonAPI/pycocotools).
 
 ```
 "annotations": [
