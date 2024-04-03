@@ -113,15 +113,15 @@ Show (x, y) coordinates on boxes.
 # Show indexes on points
 Show each index for each point.
 
+![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/7fd4c2e3-1908-4e97-86a6-518b29e7226c)
+
 # Show indexes on labels table
 Show each row number on the labels table.
 
 # Show checkboxes on labels table
 Show a checkbox for each row on the labels table.
 
-It hides each label and makes viewing and selecting other labels easier.
-
-![show_checkboxes](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/03f827b2-6b10-4905-8896-d9ae247c1ebd)
+![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/5e22bd9a-898a-4f55-b00e-51e036a8b500)
 
 # Show depth image
 When the rgb image name is image_name.jpg, put the depth image as image_name_depth.png in the same folder.
