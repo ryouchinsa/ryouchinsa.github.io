@@ -47,7 +47,7 @@ Click a position to zoom in/out.
 - To switch zoom in/out, hold the option key.
 - Pressing the command key, and mouse wheel down/up, you can zoom in/out.
 
-![zoom](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/2f7f96de-4328-4f39-b675-bfefd48e1061)
+![zoom](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/b978cef4-d8e9-42d0-9f1c-71188131de1f)
 
 # Zoom fit
 Clear zoom.
@@ -55,7 +55,7 @@ Clear zoom.
 # Focus box
 You can quick zoom to the selected box.
 
-![focus](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/c99a21cd-1632-4165-8a87-965700b4de40)
+![focus](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/1e0d94de-9577-41fe-be48-c400dbbaf625)
 
 # Hide buttons
 Open, Create, etc. buttons are hidden and the image and labels table is shown largely.
