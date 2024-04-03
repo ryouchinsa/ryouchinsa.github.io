@@ -12,14 +12,10 @@ Have questions? Send an email to support@rectlabel.com.
 Thank you.
 
 # Load Core ML model
-Apple provides [Core ML Models](https://developer.apple.com/machine-learning/models/).
-
-To convert your ML model to the Core ML format, use [coremltools](https://github.com/apple/coremltools).
-
-You can convert [YOLOv5](https://github.com/ultralytics/yolov5), [YOLOv8](https://github.com/ultralytics/ultralytics), [MobileNetV2 + SSDLite](https://machinethink.net/blog/mobilenet-ssdlite-coreml/), and [Turi Create](https://apple.github.io/turicreate/docs/userguide/object_detection/export-coreml.html) models to Core ML models.
-RectLabel recognizes the model type through the file name and the short description. Such as YOLOv3, YOLOv5, YOLOv8, DeepLab, PoseNet, and FCRN-Depth.
-
-If the output layers are interpreted as [VNRecognizedObjectObservation](https://developer.apple.com/documentation/vision/vnrecognizedobjectobservation), [VNClassificationObservation](https://developer.apple.com/documentation/vision/vnclassificationobservation), and [VNPixelBufferObservation](https://developer.apple.com/documentation/vision/vnpixelbufferobservation), RectLabel can decode the output layers without checking the file name and the short description.
+- Apple provides [Core ML Models](https://developer.apple.com/machine-learning/models/).
+- To convert your ML model to the Core ML format, use [coremltools](https://github.com/apple/coremltools).
+- You can convert [YOLOv5](https://github.com/ultralytics/yolov5), [YOLOv8](https://github.com/ultralytics/ultralytics), [MobileNetV2 + SSDLite](https://machinethink.net/blog/mobilenet-ssdlite-coreml/), and [Turi Create](https://apple.github.io/turicreate/docs/userguide/object_detection/export-coreml.html) models to Core ML models.
+- RectLabel recognizes the model type through the file name and the short description. Such as YOLOv3, YOLOv5, YOLOv8, DeepLab, PoseNet, and FCRN-Depth.
 
 If the Core ML model has 'classes' meta data, RectLabel uses these object names instead of the current objects table.
 
