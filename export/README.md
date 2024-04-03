@@ -348,7 +348,7 @@ x1 y1 x2 y2 x3 y3 x4 y4 category difficult
 1300.536987 1413.503784 1192.848755 1535.568848 530.876038 951.562073 638.564270 829.497009 truck 0
 ```
 
-![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/8931280f-bec5-4554-aa8f-045a8f8e990e)
+![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/37c1fdd8-5a68-47ca-9df9-b192ceed171e)
 
 # Import DOTA txt files
 - The DOTA text files are imported to annotation files in the current folder.
