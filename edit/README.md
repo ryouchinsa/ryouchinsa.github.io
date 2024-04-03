@@ -16,7 +16,7 @@ Thank you.
 Create a box.
 - Click 2 points.
 - The label dialog opens, select an object name and attribute names.
-- Press OK button, and the selected label is added to the label table.
+- Press OK button, and the selected label is added to the labels table.
 
 Move the box.
 - Drag the center of the box to move the box.
@@ -167,7 +167,7 @@ Create pixels using superpixels.
 - Superpixel size is used to adjust the segmentation size.
 - Superpixel smoothness is used to adjust the segmentation smoothness.
 - On the pixels panel, right/left arrow keys change the superpixel size by 1px.
-- If superpixels are not shown, reselect the label on the label table.
+- If superpixels are not shown, reselect the label on the labels table.
 
 ![superpixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/f8519c77-b73b-4be3-960a-0aaf282cc02d)
 
