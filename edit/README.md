@@ -12,7 +12,6 @@ Have questions? Send an email to support@rectlabel.com.
 Thank you.
 
 # Create box
-
 Create a box.
 - Click 2 points.
 - The label dialog opens, select an object name and attribute names.
@@ -109,8 +108,9 @@ Change visibility when click each keypoint.
 - Click pressing the option + command keys, the point is added as not labeled.
 - Click pressing the option key, the point is added as labeled but not visible.
 
-To add an edge, drag from one to another point pressing the option key.
-Drag an point pressing the shift key, the line angle between the point and the neighbor point is locked during the transformation.
+Create the skeleton.
+- To add an edge, drag from one to another point pressing the option key.
+- Drag an point pressing the shift key, the line angle between the point and the neighbor point is locked.
 
 Right click on the point.
 - "Change keypoint name" to change the keypoint name. 
