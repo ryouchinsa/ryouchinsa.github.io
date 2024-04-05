@@ -12,6 +12,7 @@ Have questions? Send an email to support@rectlabel.com.
 Thank you.
 
 # Papers cited RectLabel
+- [PedAnalyze - Pedestrian Behavior Annotator and Ontology](https://www.researchgate.net/publication/379507635_PedAnalyze_-_Pedestrian_Behavior_Annotator_and_Ontology)
 - [Blastocyst Formation Prediction Based on Deep Learning Model from 3-Day Embryo Images in Time-Lapse Incubator Using Data Augmentation](https://www.worldscientific.com/doi/abs/10.1142/S2661318223744132)
 - [Ultrasound-Based Image Analysis for Predicting Carotid Artery Stenosis Risk: A Comprehensive Review of the Problem, Techniques, Datasets, and Future Directions](https://www.researchgate.net/publication/373010736_Ultrasound-Based_Image_Analysis_for_Predicting_Carotid_Artery_Stenosis_Risk_A_Comprehensive_Review_of_the_Problem_Techniques_Datasets_and_Future_Directions)
 - [Preprocessing Technique for Oral Lesion Classification using U-NET Segmentation](https://ieeexplore.ieee.org/abstract/document/10322048)
