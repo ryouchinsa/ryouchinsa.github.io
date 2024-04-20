@@ -15,7 +15,7 @@ Thank you.
 - You can drag & drop each images folder and annotations folder to the open table.
 - "Label format" is to change the label format to read/write in the PASCAL VOC xml format or YOLO text format.
 - "Sort images" is to sort images by Alphabetic, Numeric, and Last modified.
-- "Read images folder recursively" is to read all images from the root folder.
+- "Read images folder recursively" is to read all images from the root folder. You can search sub folder names in searching image name feature.
 - After opening images, we recommend to use File menu -> Remove EXIF orientation flags.
 - Image file names which include "_pixels" or "_depth" are skipped.
 - To copy the current image file name, click on the image file name shown at the top-left corner.
