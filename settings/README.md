@@ -70,4 +70,9 @@ Customize settings to make your labeling work faster.
 
 ![label_fast](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/55ec35bf-aff8-4532-a6dd-3546d4c332cb)
 
+# Export/Import settings file
+You can export the current settings file and import to another computer.
+
+# Open app folder
+You can open an app folder and delete the cache files.
 
