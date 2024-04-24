@@ -12,6 +12,7 @@ Have questions? Send an email to support@rectlabel.com.
 Thank you.
 
 # Papers cited RectLabel
+- [SqueakOut: Autoencoder-based segmentation of mouse ultrasonic vocalizations](https://www.biorxiv.org/content/10.1101/2024.04.19.590368v1.full.pdf)
 - [DeepSTARia: enabling autonomous, targeted observations of ocean life in the deep sea](https://www.frontiersin.org/articles/10.3389/fmars.2024.1357879/full)
 - [Automatic Semantic Segmentation of Indoor Datasets](https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1842045)
 - [PedAnalyze - Pedestrian Behavior Annotator and Ontology](https://www.researchgate.net/publication/379507635_PedAnalyze_-_Pedestrian_Behavior_Annotator_and_Ontology)
