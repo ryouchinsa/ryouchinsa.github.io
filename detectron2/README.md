@@ -81,8 +81,8 @@ Run training.
 ```
 cd detectron2/demo
 vi ../tools/my_train_net.py
-cfg.INPUT.MASK_FORMAT = "polygon"
-cfg.INPUT.MASK_FORMAT = "bitmask"
+cfg.INPUT.MASK_FORMAT = "polygon" # "segmentation" is a polygon array.
+cfg.INPUT.MASK_FORMAT = "bitmask" # "segmentation" is a RLE mask.
 python ../tools/my_train_net.py
 ```
 
