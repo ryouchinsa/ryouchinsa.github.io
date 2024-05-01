@@ -39,14 +39,59 @@ sudo apt install libcudnn8-dev=${cudnn_version}-1+${cuda_version}
 sudo apt install libcudnn8-samples=${cudnn_version}-1+${cuda_version}
 ```
 
+Install PyTorch and OpenCV.
+```
+sudo apt-get update
+sudo apt-get install build-essential tar curl zip unzip autopoint libtool bison libx11-dev libxft-dev libxext-dev libxrandr-dev libxi-dev libxcursor-dev libxdamage-dev libxinerama-dev libxtst-dev
 
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+source ~/.bashrc
 
+conda create --name my_env python=3.9
+conda activate my_env
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 
+import torch
+torch.cuda.is_available()
 
+pip install opencv-python
+import cv2 as cv
+print(cv.__version__)
+```
 
+Install Detectron2.
+```
+git clone https://github.com/facebookresearch/detectron2.git
+python -m pip install -e detectron2
+```
 
+Download datasets and training/inference scripts.
+```
+unzip _detectron2.zip
+mv _detectron2/my_train_net.py detectron2/tools
+mv _detectron2/my_predictor.py detectron2/demo
+mv _detectron2/visualizer.py detectron2/detectron2/utils
+mv _detectron2/_test_min_rle_donut detectron2/demo
+mv _detectron2/_test_min_bbox detectron2/demo
+```
 
+Run training.
+```
+cd detectron2/demo
+vi ../tools/my_train_net.py
+cfg.INPUT.MASK_FORMAT = "polygon"
+cfg.INPUT.MASK_FORMAT = "bitmask"
+python ../tools/my_train_net.py
+```
 
+Run inference.
+```
+cd detectron2/demo
+python my_predictor.py
+```
+
+![andy-hay-GBfNe3ZZjhI-unsplash](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/7ec01e8b-2c89-4584-9b84-0990dd88d915)
 
 
 
