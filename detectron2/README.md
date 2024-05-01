@@ -68,6 +68,7 @@ python -m pip install -e detectron2
 
 Download datasets and training/inference scripts.
 ```
+wget https://huggingface.co/datasets/rectlabel/datasets/resolve/main/_detectron2.zip
 unzip _detectron2.zip
 mv _detectron2/my_train_net.py detectron2/tools
 mv _detectron2/my_predictor.py detectron2/demo
