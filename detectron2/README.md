@@ -12,7 +12,7 @@ Have questions? Send an email to support@rectlabel.com.
 Thank you.
 
 # Train Detectron2 models on Ubuntu 22.04
-[Detectron2](https://github.com/facebookresearch/detectron2) is Facebook AI Research's next generation library that provides state-of-the-art detection and segmentation algorithms
+[Detectron2](https://github.com/facebookresearch/detectron2) is Facebook AI Research's next generation library that provides state-of-the-art detection and segmentation algorithms.
 
 Install CUDA and cuDNN.
 ```
