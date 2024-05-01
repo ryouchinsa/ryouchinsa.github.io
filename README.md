@@ -18,6 +18,7 @@ Thank you.
 - [Edit menus](https://rectlabel.com/edit)
 - [Core ML menus](https://rectlabel.com/coreml)
 - [View menus](https://rectlabel.com/view)
+- [Train Detectron2 models](https://rectlabel.com/detectron2)
 - [Privacy Policy](https://rectlabel.com/privacy)
 - [Terms of Use](https://rectlabel.com/terms)
 - [About team](https://rectlabel.com/about)
