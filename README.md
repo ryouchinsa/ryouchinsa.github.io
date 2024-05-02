@@ -5,13 +5,24 @@ To download RectLabel apps.
 - [RectLabel](https://apps.apple.com/app/id1210181730)
 - [RectLabel Pro](https://apps.apple.com/app/id1490990105)
 
-Read our [Help page](https://rectlabel.com/help).
-
 Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-support/issues).
 
 Have questions? Send an email to support@rectlabel.com.
 
 Thank you.
+
+# Help
+- [Settings menus](https://rectlabel.com/settings)
+- [File menus](https://rectlabel.com/file)
+- [Export menus](https://rectlabel.com/export)
+- [Edit menus](https://rectlabel.com/edit)
+- [Core ML menus](https://rectlabel.com/coreml)
+- [View menus](https://rectlabel.com/view)
+- [Train Detectron2 models](https://rectlabel.com/detectron2)
+- [Privacy Policy](https://rectlabel.com/privacy)
+- [Terms of Use](https://rectlabel.com/terms)
+- [About team](https://rectlabel.com/about)
+- [Papers cited RectLabel](https://rectlabel.com/papers)
 
 # Key features
 - Label polygons and pixels using Segment Anything models
