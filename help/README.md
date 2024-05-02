@@ -41,7 +41,6 @@ Thank you.
 - Export indexed color mask image and grayscale mask images
 - Video to image frames, augment images, etc.
 
-# ScreenShots
 ![sam_polygon](https://github.com/ryouchinsa/Rectlabel-support/assets/1954306/3574eecf-3097-45d9-851d-bbf7e17e2ed0)
 ![sam_pixels](https://github.com/ryouchinsa/Rectlabel-support/assets/1954306/9ebbe1a7-fe2f-4dbd-8b97-378f959d37d7)
 ![coreml_polygon](https://github.com/ryouchinsa/Rectlabel-support/assets/1954306/582a0172-d1b1-47a0-ad2f-c89d6fc1d79a)
