@@ -1,16 +1,3 @@
-# [RectLabel](https://rectlabel.com)
-An offline image annotation tool for object detection and segmentation.
-
-To download RectLabel apps.
-- [RectLabel](https://apps.apple.com/app/id1210181730)
-- [RectLabel Pro](https://apps.apple.com/app/id1490990105)
-
-Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-support/issues).
-
-Have questions? Send an email to support@rectlabel.com.
-
-Thank you.
-
 # Load Core ML model
 - Apple provides [Core ML Models](https://developer.apple.com/machine-learning/models/).
 - To convert your ML model to the Core ML format, use [coremltools](https://github.com/apple/coremltools).

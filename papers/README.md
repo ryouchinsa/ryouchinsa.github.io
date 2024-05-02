@@ -1,16 +1,3 @@
-# [RectLabel](https://rectlabel.com)
-An offline image annotation tool for object detection and segmentation.
-
-To download RectLabel apps.
-- [RectLabel](https://apps.apple.com/app/id1210181730)
-- [RectLabel Pro](https://apps.apple.com/app/id1490990105)
-
-Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-support/issues).
-
-Have questions? Send an email to support@rectlabel.com.
-
-Thank you.
-
 # Papers cited RectLabel
 - [MCGC: A Multi-scale Chain Growth Clustering Algorithm for Generating Infrared Small Target Mask under Single-point Supervision](https://ieeexplore.ieee.org/abstract/document/10506340)
 - [SqueakOut: Autoencoder-based segmentation of mouse ultrasonic vocalizations](https://www.biorxiv.org/content/10.1101/2024.04.19.590368v1.full.pdf)
