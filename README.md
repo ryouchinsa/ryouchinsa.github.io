@@ -13,19 +13,6 @@ Have questions? Send an email to support@rectlabel.com.
 
 Thank you.
 
-# Help
-- [Settings menus](https://rectlabel.com/settings)
-- [File menus](https://rectlabel.com/file)
-- [Export menus](https://rectlabel.com/export)
-- [Edit menus](https://rectlabel.com/edit)
-- [Core ML menus](https://rectlabel.com/coreml)
-- [View menus](https://rectlabel.com/view)
-- [Train Detectron2 models](https://rectlabel.com/detectron2)
-- [Privacy Policy](https://rectlabel.com/privacy)
-- [Terms of Use](https://rectlabel.com/terms)
-- [About team](https://rectlabel.com/about)
-- [Papers cited RectLabel](https://rectlabel.com/papers)
-
 # Key features
 - Label polygons and pixels using Segment Anything models
 - Automatic labeling using Core ML models
