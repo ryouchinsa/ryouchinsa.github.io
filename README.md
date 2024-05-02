@@ -1,4 +1,4 @@
-# RectLabel
+# [RectLabel](https://rectlabel.com)
 An offline image annotation tool for object detection and segmentation.
 
 To download RectLabel apps.
