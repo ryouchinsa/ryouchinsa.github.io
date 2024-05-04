@@ -31,7 +31,11 @@ mv detectron2_scripts/my_predictor.py detectron2/demo
 mv detectron2_scripts/visualizer.py detectron2/detectron2/utils
 ```
 
-Download donuts dataset.
+To label your custom dataset.
+- [Label polygons with holes using Segment Anything models](https://rectlabel.com/label_polygons_with_holes/)
+- [Label RLE masks using Segment Anything models](https://rectlabel.com/label_rle_masks/)
+
+Or download donuts dataset.
 ```
 wget https://huggingface.co/datasets/rectlabel/datasets/resolve/main/donuts.zip
 unzip donuts.zip
