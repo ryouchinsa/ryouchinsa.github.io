@@ -44,8 +44,8 @@ mv donuts detectron2/demo
 ![スクリーンショット 2024-05-04 14 35 58](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d6a10a45-053e-4c64-bb26-86a3855ba915)
 
 This is the training script.
-- When you train coco_labels_polygon.json, `set cfg.INPUT.MASK_FORMAT = "polygon"`.
-- When you train coco_labels_rle.json, `set cfg.INPUT.MASK_FORMAT = "bitmask"`.
+- When you train coco_labels_polygon.json, ```set cfg.INPUT.MASK_FORMAT = "polygon"```.
+- When you train coco_labels_rle.json, ```set cfg.INPUT.MASK_FORMAT = "bitmask"```.
 ```
 import os
 
@@ -62,22 +62,20 @@ class Trainer(DefaultTrainer):
 
 def main():
     images_path = "_test_min_rle_donut/images"
-    annotations_path = "_test_min_rle_donut/coco_train_labels.json"
+    annotations_path = "_test_min_rle_donut/coco_labels_polygon.json"
     register_coco_instances("dataset_train", {}, annotations_path, images_path)
     cfg = get_cfg()
     cfg.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"))
     cfg.DATASETS.TRAIN = ("dataset_train",)
     cfg.DATASETS.TEST = ()
     cfg.DATALOADER.NUM_WORKERS = 2
-    cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml")  # model zoo の学習済みモデルの重みで初期化
+    cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml")
     cfg.SOLVER.IMS_PER_BATCH = 2
     cfg.SOLVER.BASE_LR = 0.001
     cfg.SOLVER.MAX_ITER = 1000 
     cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 128
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
-    cfg.INPUT.MASK_FORMAT = "polygon" # "segmentation" is a polygon array.
-    # cfg.INPUT.MASK_FORMAT = "bitmask" # "segmentation" is a RLE mask.
-    # cfg.MODEL.DEVICE = "cpu"
+    cfg.INPUT.MASK_FORMAT = "polygon"
     os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
     trainer = Trainer(cfg)
     trainer.resume_or_load(resume=True)
