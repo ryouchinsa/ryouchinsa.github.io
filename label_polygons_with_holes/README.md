@@ -15,7 +15,7 @@ Thank you.
 Open your images and annotations folders. If you do not have, [download donuts dataset](https://huggingface.co/datasets/rectlabel/datasets/resolve/main/donuts.zip).
 
 - Edit menu -> Create polygon using SAM.
-- Select a model and press the start button.
+- Select a model, create polygon, and press the start button.
 - After preprocessing the image, click positive points and negative points.
 - Press enter key to finish drawing the polygon, and select the object name.
 
