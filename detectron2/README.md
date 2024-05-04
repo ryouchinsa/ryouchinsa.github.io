@@ -44,8 +44,8 @@ mv donuts detectron2/demo
 ![スクリーンショット 2024-05-04 14 35 58](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d6a10a45-053e-4c64-bb26-86a3855ba915)
 
 This is the training script.
-- When you train coco_labels_polygon.json, ```set cfg.INPUT.MASK_FORMAT = "polygon"```.
-- When you train coco_labels_rle.json, ```set cfg.INPUT.MASK_FORMAT = "bitmask"```.
+- When you train coco_labels_polygon.json, set cfg.INPUT.MASK_FORMAT = "polygon".
+- When you train coco_labels_rle.json, set cfg.INPUT.MASK_FORMAT = "bitmask".
 ```
 import os
 
