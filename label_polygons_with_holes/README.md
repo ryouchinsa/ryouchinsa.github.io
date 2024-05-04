@@ -21,6 +21,8 @@ Open your images and annotations folders. If you do not have, [download donuts d
 
 <video src="https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/506d5404-69c2-440d-9b3f-ddef52e8737e" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px"></video>
 
+<video src="https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/506d5404-69c2-440d-9b3f-ddef52e8737e" controls="controls" muted="muted" style="max-height:640px; min-height: 200px"></video>
+
 After labeling all images, Export menu -> Export COCO JSON file.
 
 ![スクリーンショット 2024-05-05 0 28 45](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/2f4245ca-6110-4a5f-90eb-5823d09d4cf1)
