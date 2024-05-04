@@ -46,6 +46,7 @@ mv donuts detectron2/demo
 This is the training script.
 - When you train coco_labels_polygon.json, set cfg.INPUT.MASK_FORMAT = "polygon".
 - When you train coco_labels_rle.json, set cfg.INPUT.MASK_FORMAT = "bitmask".
+
 ```
 import os
 
@@ -127,7 +128,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 ```
 
 Run the inference script.
