@@ -38,9 +38,6 @@ unzip donuts.zip
 mv donuts detectron2/demo
 ```
 
-- labels_polygon is labeled using the polygon tool and the exported coco file is coco_labels_polygon.json.
-- labels_rle is labeled using the pixels tool and the exported coco file is coco_labels_rle.json.
-
 ![スクリーンショット 2024-05-04 14 35 58](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d6a10a45-053e-4c64-bb26-86a3855ba915)
 
 This is the training script.
