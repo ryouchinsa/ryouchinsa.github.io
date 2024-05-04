@@ -22,18 +22,30 @@ git clone https://github.com/facebookresearch/detectron2.git
 python -m pip install -e detectron2
 ```
 
-Download datasets and training/inference scripts.
+Download training/inference scripts.
 ```
-wget https://huggingface.co/datasets/rectlabel/datasets/resolve/main/_detectron2.zip
-unzip _detectron2.zip
-mv _detectron2/my_train_net.py detectron2/tools
-mv _detectron2/my_predictor.py detectron2/demo
-mv _detectron2/visualizer.py detectron2/detectron2/utils
-mv _detectron2/_test_min_rle_donut detectron2/demo
-mv _detectron2/_test_min_bbox detectron2/demo
+wget https://huggingface.co/rectlabel/detectron2/resolve/main/detectron2_scripts.zip
+unzip detectron2_scripts.zip
+mv detectron2_scripts/my_train_net.py detectron2/tools
+mv detectron2_scripts/my_predictor.py detectron2/demo
+mv detectron2_scripts/visualizer.py detectron2/detectron2/utils
 ```
 
+Download donuts dataset.
+```
+wget https://huggingface.co/datasets/rectlabel/datasets/resolve/main/donuts.zip
+unzip donuts.zip
+mv donuts detectron2/demo
+```
+
+- labels_polygon is labeled using the polygon tool and the exported coco file is coco_labels_polygon.json.
+- labels_rle is labeled using the pixels tool and the exported coco file is coco_labels_rle.json.
+
+![スクリーンショット 2024-05-04 14 35 58](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d6a10a45-053e-4c64-bb26-86a3855ba915)
+
 This is the training script.
+- When you train coco_labels_polygon.json, `set cfg.INPUT.MASK_FORMAT = "polygon"`.
+- When you train coco_labels_rle.json, `set cfg.INPUT.MASK_FORMAT = "bitmask"`.
 ```
 import os
 
