@@ -61,8 +61,8 @@ class Trainer(DefaultTrainer):
         return COCOEvaluator(dataset_name, output_folder)
 
 def main():
-    images_path = "_test_min_rle_donut/images"
-    annotations_path = "_test_min_rle_donut/coco_labels_polygon.json"
+    images_path = "donuts/images"
+    annotations_path = "donuts/coco_labels_polygon.json"
     register_coco_instances("dataset_train", {}, annotations_path, images_path)
     cfg = get_cfg()
     cfg.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"))
@@ -105,7 +105,7 @@ from detectron2.engine import DefaultPredictor
 from detectron2.utils.visualizer import Visualizer
 
 def main():
-    images_path = "_test_min_rle_donut/images"
+    images_path = "donuts/images"
     MetadataCatalog.get("thing_classes").set(thing_classes=["donut"])
     cfg = get_cfg()
     cfg.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"))
@@ -113,7 +113,6 @@ def main():
     cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 128
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
     cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5
-    # cfg.MODEL.DEVICE = "cpu"
     cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "model_final.pth")
     predictor = DefaultPredictor(cfg)
     os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
@@ -128,6 +127,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 ```
 
 Run the inference script.
