@@ -26,6 +26,6 @@ After labeling all images, Export menu -> Export COCO JSON file.
 ![スクリーンショット 2024-05-05 0 28 45](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/2f4245ca-6110-4a5f-90eb-5823d09d4cf1)
 
 Using [this script](https://github.com/ryouchinsa/Rectlabel-support/blob/master/pycocoDemo.py), you can visualize the exported COCO file.
-To train a Mask R-CNN model, read [Train Detectron2 models on Ubuntu 22.04](https://rectlabel.com/detectron2).
+- To train a Mask R-CNN model, read [Train Detectron2 models on Ubuntu 22.04](https://rectlabel.com/detectron2).
 
 ![スクリーンショット 2024-05-03 18 46 23](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/4a78f0bf-fab9-49ae-84a4-53218b0c2337)
