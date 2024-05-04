@@ -19,7 +19,7 @@ Open your images and annotations folders. If you do not have, [download donuts d
 - After preprocessing the image, click positive points and negative points.
 - Press enter key to finish drawing the polygon, and select the object name.
 
-<video src="https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/16baaffa-1da5-4f47-9bd0-62dcaa549745" controls="controls"></video>
+<video src="https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/16baaffa-1da5-4f47-9bd0-62dcaa549745" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px"></video>
 
 After labeling all images, Export menu -> Export COCO JSON file.
 
