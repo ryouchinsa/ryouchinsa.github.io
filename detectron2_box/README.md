@@ -136,7 +136,7 @@ cd detectron2/demo
 python my_predictor_box.py
 ```
 
-
+![andy-hay-GBfNe3ZZjhI-unsplash](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/717157a9-0a82-4a7c-b3c5-015ca1ff0f98)
 
 
 
