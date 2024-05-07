@@ -11,7 +11,7 @@ Have questions? Send an email to support@rectlabel.com.
 
 Thank you.
 
-# Train a Faster R-CNN model on Detectron2
+# Train keypoints using a Keypoint R-CNN model on Detectron2
 [Detectron2](https://github.com/facebookresearch/detectron2) is Facebook AI Research's next generation library that provides state-of-the-art detection and segmentation algorithms.
 
 [Install CUDA, cuDNN, and PyTorch](https://rectlabel.com/pytorch/).
@@ -26,17 +26,22 @@ Download training/inference scripts.
 ```
 wget https://huggingface.co/rectlabel/detectron2/resolve/main/detectron2_scripts.zip
 unzip detectron2_scripts.zip
-mv detectron2_scripts/my_train_box.py detectron2/tools
-mv detectron2_scripts/my_predictor_box.py detectron2/demo
+mv detectron2_scripts/my_train_keypoints.py detectron2/tools
+mv detectron2_scripts/my_predictor_keypoints.py detectron2/demo
 mv detectron2_scripts/visualizer.py detectron2/detectron2/utils
 ```
 
-Download donuts dataset. To label your custom dataset, [Edit menu](https://rectlabel.com/edit) -> Create box, and [Export menu](https://rectlabel.com/export) -> Export COCO JSON file.
+Download person dataset. 
 ```
-wget https://huggingface.co/datasets/rectlabel/datasets/resolve/main/donuts.zip
-unzip donuts.zip
-mv donuts detectron2/demo
+wget https://huggingface.co/datasets/rectlabel/datasets/resolve/main/person.zip
+unzip person.zip
+mv person detectron2/demo
 ```
+
+To label your custom dataset, use [Edit menus](https://rectlabel.com/edit).
+- Create keypoints
+
+To export, use [Export menus](https://rectlabel.com/export) -> Export COCO JSON file.
 
 This is the training script.
 ```
@@ -45,6 +50,7 @@ import os
 from detectron2 import model_zoo
 from detectron2.config import get_cfg
 from detectron2.data.datasets import register_coco_instances
+from detectron2.data import MetadataCatalog
 from detectron2.engine import DefaultTrainer
 from detectron2.evaluation import COCOEvaluator
 
@@ -54,9 +60,9 @@ class Trainer(DefaultTrainer):
         return COCOEvaluator(dataset_name, output_folder)
 
 def main():
-    images_path = "donuts/images"
-    annotations_path = "donuts/coco_labels_box.json"
-    config_name = "COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml"
+    images_path = "person/images"
+    annotations_path = "person/coco_keypoints.json"
+    config_name = "COCO-Keypoints/keypoint_rcnn_R_50_FPN_3x.yaml"
     register_coco_instances("dataset_train", {}, annotations_path, images_path)
     cfg = get_cfg()
     cfg.merge_from_file(model_zoo.get_config_file(config_name))
@@ -69,11 +75,55 @@ def main():
     cfg.SOLVER.MAX_ITER = 2000 
     cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 128
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
-    # cfg.MODEL.DEVICE = "cpu"
+    cfg.MODEL.DEVICE = "cpu"
+    cfg.MODEL.ROI_KEYPOINT_HEAD.NUM_KEYPOINTS = 17
+    setConfigKeypoint(cfg)
     os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
     trainer = Trainer(cfg)
     trainer.resume_or_load(resume=True)
     trainer.train()
+
+def setConfigKeypoint(cfg):
+    keypoint_names = [
+        "nose",
+        "leftEye", "rightEye",
+        "leftEar", "rightEar",
+        "leftShoulder", "rightShoulder",
+        "leftElbow", "rightElbow",
+        "leftWrist", "rightWrist",
+        "leftHip", "rightHip",
+        "leftKnee", "rightKnee",
+        "leftAnkle", "rightAnkle",
+    ]
+    keypoint_flip_map = [
+        ("leftEye", "rightEye"),
+        ("leftEar", "rightEar"),
+        ("leftShoulder", "rightShoulder"),
+        ("leftElbow", "rightElbow"),
+        ("leftWrist", "rightWrist"),
+        ("leftHip", "rightHip"),
+        ("leftKnee", "rightKnee"),
+        ("leftAnkle", "rightAnkle"),
+    ]
+    keypoint_connection_rules = [
+        ("leftEar", "leftEye", (102, 204, 255)),
+        ("rightEar", "rightEye", (51, 153, 255)),
+        ("leftEye", "nose", (102, 0, 204)),
+        ("nose", "rightEye", (51, 102, 255)),
+        ("leftShoulder", "rightShoulder", (255, 128, 0)),
+        ("leftShoulder", "leftElbow", (153, 255, 204)),
+        ("rightShoulder", "rightElbow", (128, 229, 255)),
+        ("leftElbow", "leftWrist", (153, 255, 153)),
+        ("rightElbow", "rightWrist", (102, 255, 224)),
+        ("leftHip", "rightHip", (255, 102, 0)),
+        ("leftHip", "leftKnee", (255, 255, 77)),
+        ("rightHip", "rightKnee", (153, 255, 204)),
+        ("leftKnee", "leftAnkle", (191, 255, 128)),
+        ("rightKnee", "rightAnkle", (255, 195, 77)),
+    ]
+    MetadataCatalog.get("dataset_train").keypoint_names = keypoint_names
+    MetadataCatalog.get("dataset_train").keypoint_flip_map = keypoint_flip_map
+    MetadataCatalog.get("dataset_train").keypoint_connection_rules = keypoint_connection_rules
 
 if __name__ == "__main__":
     main()
@@ -82,7 +132,7 @@ if __name__ == "__main__":
 Run the training script.
 ```
 cd detectron2/demo
-python ../tools/my_train_box.py
+python ../tools/my_train_keypoints.py
 ```
 
 This is the inference script.
@@ -97,11 +147,12 @@ from detectron2.data.datasets import register_coco_instances
 from detectron2.data import MetadataCatalog
 from detectron2.engine import DefaultPredictor
 from detectron2.utils.visualizer import Visualizer
+from tools.my_train_keypoints import setConfigKeypoint
 
 def main():
-    images_path = "donuts/images"
-    config_name = "COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml"
-    MetadataCatalog.get("dataset_train").set(thing_classes=["donut"])
+    images_path = "person/images"
+    config_name = "COCO-Keypoints/keypoint_rcnn_R_50_FPN_3x.yaml"
+    MetadataCatalog.get("dataset_train").set(thing_classes=["person"])
     cfg = get_cfg()
     cfg.merge_from_file(model_zoo.get_config_file(config_name))
     cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "model_final.pth")
@@ -110,6 +161,7 @@ def main():
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
     cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5
     # cfg.MODEL.DEVICE = "cpu"
+    setConfigKeypoint(cfg)
     predictor = DefaultPredictor(cfg)
     os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
     image_paths = glob.glob(os.path.join(images_path, "*.jpg"))
@@ -123,13 +175,12 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 ```
 
 Run the inference script.
 ```
 cd detectron2/demo
-python my_predictor_box.py
+python my_predictor_keypoints.py
 ```
 
 
