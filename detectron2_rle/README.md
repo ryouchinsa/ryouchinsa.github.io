@@ -11,7 +11,7 @@ Have questions? Send an email to support@rectlabel.com.
 
 Thank you.
 
-# Train a Mask R-CNN model on Detectron2
+# Train RLE masks using a Mask R-CNN model on Detectron2
 [Detectron2](https://github.com/facebookresearch/detectron2) is Facebook AI Research's next generation library that provides state-of-the-art detection and segmentation algorithms.
 
 [Install CUDA, cuDNN, and PyTorch](https://rectlabel.com/pytorch/).
@@ -26,7 +26,6 @@ Download training/inference scripts.
 ```
 wget https://huggingface.co/rectlabel/detectron2/resolve/main/detectron2_scripts.zip
 unzip detectron2_scripts.zip
-mv detectron2_scripts/my_train_polygon.py detectron2/tools
 mv detectron2_scripts/my_train_rle.py detectron2/tools
 mv detectron2_scripts/my_predictor_segmentation.py detectron2/demo
 mv detectron2_scripts/visualizer.py detectron2/detectron2/utils
@@ -40,9 +39,7 @@ mv donuts detectron2/demo
 ```
 
 To label your custom dataset, use [Edit menus](https://rectlabel.com/edit).
-- Create polygon
 - Create polygon using SAM
-- Create cubic bezier
 - Create pixels
 
 To export, use [Export menus](https://rectlabel.com/export) -> Export COCO JSON file.
@@ -64,8 +61,7 @@ class Trainer(DefaultTrainer):
 
 def main():
     images_path = "donuts/images"
-    annotations_path = "donuts/coco_labels_polygon.json"
-    # annotations_path = "donuts/coco_labels_rle.json"
+    annotations_path = "donuts/coco_labels_rle.json"
     config_name = "COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"
     register_coco_instances("dataset_train", {}, annotations_path, images_path)
     cfg = get_cfg()
@@ -80,8 +76,7 @@ def main():
     cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 128
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
     # cfg.MODEL.DEVICE = "cpu"
-    cfg.INPUT.MASK_FORMAT = "polygon"
-    # cfg.INPUT.MASK_FORMAT = "bitmask"
+    cfg.INPUT.MASK_FORMAT = "bitmask"
     os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
     trainer = Trainer(cfg)
     trainer.resume_or_load(resume=True)
@@ -94,7 +89,6 @@ if __name__ == "__main__":
 Run the training script.
 ```
 cd detectron2/demo
-python ../tools/my_train_polygon.py
 python ../tools/my_train_rle.py
 ```
 
