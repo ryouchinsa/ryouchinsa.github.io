@@ -31,12 +31,17 @@ mv detectron2_scripts/my_predictor_box.py detectron2/demo
 mv detectron2_scripts/visualizer.py detectron2/detectron2/utils
 ```
 
-Download donuts dataset. To label your custom dataset, [Edit menu](https://rectlabel.com/edit) -> Create box, and [Export menu](https://rectlabel.com/export) -> Export COCO JSON file.
+Download donuts dataset.
 ```
 wget https://huggingface.co/datasets/rectlabel/datasets/resolve/main/donuts.zip
 unzip donuts.zip
 mv donuts detectron2/demo
 ```
+
+To label your custom dataset, use [Edit menus](https://rectlabel.com/edit).
+- Create box
+
+To export, use [Export menus](https://rectlabel.com/export) -> Export COCO JSON file.
 
 This is the training script.
 ```
@@ -123,7 +128,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 ```
 
 Run the inference script.
