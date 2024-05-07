@@ -11,7 +11,7 @@ Have questions? Send an email to support@rectlabel.com.
 
 Thank you.
 
-# Train a Faster R-CNN model on Detectron2
+# Train a Mask R-CNN model on Detectron2
 [Detectron2](https://github.com/facebookresearch/detectron2) is Facebook AI Research's next generation library that provides state-of-the-art detection and segmentation algorithms.
 
 [Install CUDA, cuDNN, and PyTorch](https://rectlabel.com/pytorch/).
@@ -26,17 +26,26 @@ Download training/inference scripts.
 ```
 wget https://huggingface.co/rectlabel/detectron2/resolve/main/detectron2_scripts.zip
 unzip detectron2_scripts.zip
-mv detectron2_scripts/my_train_box.py detectron2/tools
-mv detectron2_scripts/my_predictor_box.py detectron2/demo
+mv detectron2_scripts/my_train_polygon.py detectron2/tools
+mv detectron2_scripts/my_train_rle.py detectron2/tools
+mv detectron2_scripts/my_predictor_segmentation.py detectron2/demo
 mv detectron2_scripts/visualizer.py detectron2/detectron2/utils
 ```
 
-Download donuts dataset. To label your custom dataset, [Edit menu](https://rectlabel.com/edit) -> Create box, and [Export menu](https://rectlabel.com/export) -> Export COCO JSON file.
+Download donuts dataset. 
 ```
 wget https://huggingface.co/datasets/rectlabel/datasets/resolve/main/donuts.zip
 unzip donuts.zip
 mv donuts detectron2/demo
 ```
+
+To label your custom dataset, use [Edit menus](https://rectlabel.com/edit).
+- Create polygon
+- Create polygon using SAM
+- Create cubic bezier
+- Create pixels
+
+To export, use [Export menus](https://rectlabel.com/export) -> Export COCO JSON file.
 
 This is the training script.
 ```
@@ -55,8 +64,9 @@ class Trainer(DefaultTrainer):
 
 def main():
     images_path = "donuts/images"
-    annotations_path = "donuts/coco_labels_box.json"
-    config_name = "COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml"
+    annotations_path = "donuts/coco_labels_polygon.json"
+    # annotations_path = "donuts/coco_labels_rle.json"
+    config_name = "COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"
     register_coco_instances("dataset_train", {}, annotations_path, images_path)
     cfg = get_cfg()
     cfg.merge_from_file(model_zoo.get_config_file(config_name))
@@ -70,6 +80,8 @@ def main():
     cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 128
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
     # cfg.MODEL.DEVICE = "cpu"
+    cfg.INPUT.MASK_FORMAT = "polygon"
+    # cfg.INPUT.MASK_FORMAT = "bitmask"
     os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
     trainer = Trainer(cfg)
     trainer.resume_or_load(resume=True)
@@ -82,7 +94,8 @@ if __name__ == "__main__":
 Run the training script.
 ```
 cd detectron2/demo
-python ../tools/my_train_box.py
+python ../tools/my_train_polygon.py
+python ../tools/my_train_rle.py
 ```
 
 This is the inference script.
@@ -100,7 +113,7 @@ from detectron2.utils.visualizer import Visualizer
 
 def main():
     images_path = "donuts/images"
-    config_name = "COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml"
+    config_name = "COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"
     MetadataCatalog.get("dataset_train").set(thing_classes=["donut"])
     cfg = get_cfg()
     cfg.merge_from_file(model_zoo.get_config_file(config_name))
@@ -109,7 +122,7 @@ def main():
     cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 128
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
     cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5
-    # cfg.MODEL.DEVICE = "cpu"
+    cfg.MODEL.DEVICE = "cpu"
     predictor = DefaultPredictor(cfg)
     os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
     image_paths = glob.glob(os.path.join(images_path, "*.jpg"))
@@ -123,13 +136,12 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 ```
 
 Run the inference script.
 ```
 cd detectron2/demo
-python my_predictor_box.py
+python my_predictor_segmentation.py
 ```
 
 
