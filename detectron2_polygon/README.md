@@ -117,7 +117,7 @@ def main():
     cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 128
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
     cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5
-    cfg.MODEL.DEVICE = "cpu"
+    # cfg.MODEL.DEVICE = "cpu"
     predictor = DefaultPredictor(cfg)
     os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
     image_paths = glob.glob(os.path.join(images_path, "*.jpg"))
