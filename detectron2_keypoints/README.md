@@ -75,7 +75,7 @@ def main():
     cfg.SOLVER.MAX_ITER = 2000 
     cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 128
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
-    cfg.MODEL.DEVICE = "cpu"
+    # cfg.MODEL.DEVICE = "cpu"
     cfg.MODEL.ROI_KEYPOINT_HEAD.NUM_KEYPOINTS = 17
     setConfigKeypoint(cfg)
     os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
@@ -183,11 +183,7 @@ cd detectron2/demo
 python my_predictor_keypoints.py
 ```
 
-
-
-
-
-
+![clarke-sanders-JpCOGj0uIlI-unsplash](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/19c09f89-a548-4b17-996f-5c60a23fab7d)
 
 
 
