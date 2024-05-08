@@ -428,20 +428,6 @@ sneakers
 ignore
 ```
 
-Export a label map file for [Tensorflow Object Detection API](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md).
-
-```
-item {
-  id: 1
-  name: 'sneakers'
-}
-
-item {
-  id: 2
-  name: 'ignore'
-}
-```
-
 # Import object names file
 You can import an object names file or import object names from xml files.
 
