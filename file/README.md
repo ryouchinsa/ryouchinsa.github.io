@@ -11,6 +11,20 @@ Have questions? Send an email to support@rectlabel.com.
 
 Thank you.
 
+# File menus
+- [Open images folder and annotations folder](https://rectlabel.com/file#open-images-folder-and-annotations-folder)
+- [Open images folder](https://rectlabel.com/file#open-images-folder)
+- [Open a folder which includes a yaml file](https://rectlabel.com/file#open-a-folder-which-includes-a-yaml-file)
+- [Convert video to image frames](https://rectlabel.com/file#convert-video-to-image-frames)
+- [Remove EXIF orientation flags](https://rectlabel.com/file#remove-exif-orientation-flags)
+- [Resize images](https://rectlabel.com/file#resize-images)
+- [Next image and Prev image](https://rectlabel.com/file#next-image-and-prev-image)
+- [Jump to image number](https://rectlabel.com/file#jump-to-image-number)
+- [Move images](https://rectlabel.com/file#move-images)
+- [Copy images](https://rectlabel.com/file#copy-images)
+- [Save](https://rectlabel.com/file#save)
+- [Close folder](https://rectlabel.com/file#close-folder)
+
 # Open images folder and annotations folder
 - You can drag & drop each images folder and annotations folder to the open table.
 - "Label format" is to change the label format to read/write in the PASCAL VOC xml format or YOLO text format.
