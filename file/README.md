@@ -63,7 +63,7 @@ For the annotations folder, RectLabel uses "images/annotations" folder.
 ```
 
 # Open a folder which includes a yaml file
-You can open the YOLOv5/YOLOv8 folder exported from Roboflow.
+You can open the exported YOLOv5/YOLOv8 folder.
 
 ```
 └── exported_YOLOv5_YOLOv8_folder
