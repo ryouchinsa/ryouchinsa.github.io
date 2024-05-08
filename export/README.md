@@ -17,7 +17,7 @@ Thank you.
 - [Export images for classification](https://rectlabel.com/export#export-images-for-classification)
 - [Export COCO JSON file](https://rectlabel.com/export#export-coco-json-file)
 - [Import COCO JSON file](https://rectlabel.com/export#import-coco-json-file)
-- [Import COCO JSON per image files](https://rectlabel.com/export#import-coco-json-per-image-file)
+- [Import COCO JSON per image files](https://rectlabel.com/export#import-coco-json-per-image-files)
 - [Export Labelme JSON files](https://rectlabel.com/export#export-labelme-json-files)
 - [Import Labelme JSON files](https://rectlabel.com/export#import-labelme-json-files)
 - [Export YOLO txt files](https://rectlabel.com/export#export-yolo-txt-files)
