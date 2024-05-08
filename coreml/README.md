@@ -11,6 +11,12 @@ Have questions? Send an email to support@rectlabel.com.
 
 Thank you.
 
+# Core ML menus
+- [Load Core ML model](https://rectlabel.com/export#load-core-ml-model)
+- [Clear Core ML model](https://rectlabel.com/export#clear-core-ml-model)
+- [Auto labeling](https://rectlabel.com/export#auto-labeling)
+- [Auto text recognition for lines and words](https://rectlabel.com/export#auto-text-recognition-for-lines-and-words)
+
 # Load Core ML model
 - Apple provides [Core ML Models](https://developer.apple.com/machine-learning/models/).
 - To convert your ML model to the Core ML format, use [coremltools](https://github.com/apple/coremltools).
