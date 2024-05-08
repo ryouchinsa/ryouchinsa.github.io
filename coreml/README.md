@@ -38,11 +38,11 @@ Settings menus.
 - “Clear existing labels when auto label all images” is to clear existing labels when auto label all images.
 - “Save confidence values when YOLO format” is to save confidence values when YOLO format.
 
-![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/96c172b5-0e51-47a6-a467-f02611498445)
+![coreml](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/b2301928-d331-4c69-97a8-5cfd4dd3a826)
 
-![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/3b826f68-f7bf-4267-a4ba-a5a468244a79)
+![coreml_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/e1075ebc-ef42-4654-93aa-2b628b387461)
 
-![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/bc591ded-180c-4eee-b4c8-82a12ff4651a)
+![coreml_seg](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/512b1743-a7cd-4f67-a93a-10234c34ce84)
 
 # Auto text recognition for lines and words
 Using [Vision Framework](https://developer.apple.com/documentation/vision), automatic text recognition is performed.
