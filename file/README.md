@@ -13,7 +13,6 @@ Thank you.
 
 # File menus
 - [Open images folder and annotations folder](https://rectlabel.com/file#open-images-folder-and-annotations-folder)
-- [Open images folder](https://rectlabel.com/file#open-images-folder)
 - [Open a folder which includes a yaml file](https://rectlabel.com/file#open-a-folder-which-includes-a-yaml-file)
 - [Convert video to image frames](https://rectlabel.com/file#convert-video-to-image-frames)
 - [Remove EXIF orientation flags](https://rectlabel.com/file#remove-exif-orientation-flags)
