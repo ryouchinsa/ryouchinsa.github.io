@@ -11,6 +11,15 @@ Have questions? Send an email to support@rectlabel.com.
 
 Thank you.
 
+# Settings
+- [Projects](https://rectlabel.com/settings#projects)
+- [Objects](https://rectlabel.com/settings#objects)
+- [Attributes](https://rectlabel.com/settings#attributes)
+- [Hotkeys](https://rectlabel.com/settings#hotkeys)
+- [Label fast](https://rectlabel.com/settings#label-fast)
+- [Export/Import settings file](https://rectlabel.com/settings#exportimport-settings-file)
+- [Open app folder](https://rectlabel.com/settings#open-app-folder)
+
 # Projects
 A project contains an objects table and an attributes table.
 - To switch the project, check on the "Primary" check box.
