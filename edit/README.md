@@ -11,6 +11,28 @@ Have questions? Send an email to support@rectlabel.com.
 
 Thank you.
 
+# Edit menus
+- [Create box](https://rectlabel.com/export#create-box)
+- [Create polygon, cubic bezier, line, and point](https://rectlabel.com/export#create-polygon-cubic-bezier-line-and-point)
+- [Create polygon using SAM](https://rectlabel.com/export#create-polygon-using-sam)
+- [Create keypoints](https://rectlabel.com/export#create-keypoints)
+- [Create pixels](https://rectlabel.com/export#create-pixels)
+- [Create image label](https://rectlabel.com/export#create-image-label)
+- [Move](https://rectlabel.com/export#move)
+- [Rotate](https://rectlabel.com/export#rotate)
+- [Rotate the image right/left](https://rectlabel.com/export#rotate-the-image-rightleft)
+- [Delete](https://rectlabel.com/export#delete)
+- [Layer up/down](https://rectlabel.com/export#layer-updown)
+- [Toggle erase](https://rectlabel.com/export#toggle-erase)
+- [Change brightness and contrast](https://rectlabel.com/export#change-brightness-and-contrast)
+- [Change object color](https://rectlabel.com/export#change-object-color)
+- [Clear object color](https://rectlabel.com/export#clear-object-color)
+- [Search images](https://rectlabel.com/export#search-images)
+- [Clear search images](https://rectlabel.com/export#clear-search-images)
+- [Replace labels](https://rectlabel.com/export#replace-labels)
+- [Undo/Redo](https://rectlabel.com/export#undoredo)
+- [Cut/Copy/Paste](https://rectlabel.com/export#cutcopypaste)
+
 # Create box
 Create a box.
 - Click 2 points.
