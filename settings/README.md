@@ -11,7 +11,7 @@ Have questions? Send an email to support@rectlabel.com.
 
 Thank you.
 
-# Settings
+# Settings menus
 - [Projects](https://rectlabel.com/settings#projects)
 - [Objects](https://rectlabel.com/settings#objects)
 - [Attributes](https://rectlabel.com/settings#attributes)
