@@ -50,11 +50,7 @@ open -a RectLabel --args -images 000000000872.jpg,000000010363.jpg
 open -a RectLabel\ Pro --args -images 000000000872.jpg,000000010363.jpg
 ```
 
-PASCAL VOC xml format.
 <video src="https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/fa8dbf01-336b-4526-9f4c-6f23181567a1" controls="controls" muted="muted" class="width-fit" style="max-height:640px; min-height: 200px"></video>
-
-YOLO text format.
-<video src="https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/bae2c7cf-8671-4ae8-9ab5-8035d50bd962" controls="controls" muted="muted" class="width-fit" style="max-height:640px; min-height: 200px"></video>
 
 # Open images folder
 For the annotations folder, RectLabel uses "images/annotations" folder.
