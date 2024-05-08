@@ -11,6 +11,29 @@ Have questions? Send an email to support@rectlabel.com.
 
 Thank you.
 
+# Export menus
+- [Export Create ML JSON file](https://rectlabel.com/export#export-create-ml-json-file)
+- [Import Create ML JSON file](https://rectlabel.com/export#import-create-ml-json-file)
+- [Export images for classification](https://rectlabel.com/export#export-images-for-classification)
+- [Export COCO JSON file](https://rectlabel.com/export#export-coco-json-file)
+- [Import COCO JSON file](https://rectlabel.com/export#import-coco-json-file)
+- [Import COCO JSON per image files](https://rectlabel.com/export#import-coco-json-per-image-file)
+- [Export Labelme JSON files](https://rectlabel.com/export#export-labelme-json-files)
+- [Import Labelme JSON files](https://rectlabel.com/export#import-labelme-json-files)
+- [Export YOLO txt files](https://rectlabel.com/export#export-yolo-txt-files)
+- [Import YOLO txt files](https://rectlabel.com/export#import-yolo-txt-files)
+- [Export DOTA txt files](https://rectlabel.com/export#export-dota-txt-files)
+- [Import DOTA txt files](https://rectlabel.com/export#import-dota-txt-files)
+- [Export train/val/test folders](https://rectlabel.com/export#export-trainvaltest-folders)
+- [Export train/val/test.txt files](https://rectlabel.com/export#export-trainvaltesttxt-files)
+- [Export object names file](https://rectlabel.com/export#export-object-names-file)
+- [Import object names file](https://rectlabel.com/export#import-object-names-file)
+- [Export mask images](https://rectlabel.com/export#export-mask-images)
+- [Export screenshots](https://rectlabel.com/export#export-screenshots)
+- [Export augmented images](https://rectlabel.com/export#export-augmented-images)
+- [Export sliced images](https://rectlabel.com/export#export-sliced-images)
+- [Export objects and attributes stats](https://rectlabel.com/export#export-objects-and-attributes-stats)
+
 # Export Create ML JSON file
 Annotation files are exported as an [Create ML JSON file](https://developer.apple.com/videos/play/wwdc2019/424/).
 - Put training images and the JSON file into the same folder.
