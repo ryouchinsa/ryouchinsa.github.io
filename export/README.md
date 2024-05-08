@@ -361,7 +361,7 @@ class_index center_x center_y width height x1 y1 v1 x2 y2 v2 x3 y3 v3 ...
 - Before importing, be sure that you opened images folder and annotations folder.
 
 # Export DOTA txt files
-Annotation files are exported as [DOTA text files](https://captain-whu.github.io/DOTA/dataset.html). This format is for [YOLOv8 OBB](https://github.com/ultralytics/ultralytics) and [MMRotate](https://github.com/open-mmlab/mmrotate).
+Annotation files are exported as [DOTA text files](https://captain-whu.github.io/DOTA/dataset.html). This format is for [MMRotate](https://github.com/open-mmlab/mmrotate).
 
 Settings menu.
 - “Use truncated, occluded, and difficult tags” is to show truncated, occluded, and difficult checkboxes on the label dialog.
