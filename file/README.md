@@ -52,16 +52,6 @@ open -a RectLabel\ Pro --args -images 000000000872.jpg,000000010363.jpg
 
 <video src="https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/fa8dbf01-336b-4526-9f4c-6f23181567a1" controls="controls" muted="muted" class="width-fit" style="max-height:640px; min-height: 200px"></video>
 
-# Open images folder
-For the annotations folder, RectLabel uses "images/annotations" folder.
-
-```
-└── images
-    ├── annotations
-    ├── 0.jpg
-    └── 1.jpg
-```
-
 # Open a folder which includes a yaml file
 You can open the exported YOLOv5/YOLOv8 folder.
 
