@@ -38,10 +38,11 @@ unzip donuts.zip
 mv donuts detectron2/demo
 ```
 
-To label your custom dataset, use [Edit menus](https://rectlabel.com/edit).
-- Create box
+To label your custom dataset, use Edit menus.
+- [Create box](https://rectlabel.com/edit/#create-box).
 
-To export, use [Export menus](https://rectlabel.com/export) -> Export COCO JSON file.
+To export your custom dataset, use Export menus.
+- [Export COCO JSON file](https://rectlabel.com/export/#export-coco-json-file).
 
 This is the training script.
 ```
