@@ -109,7 +109,7 @@ You can show other pixels objects.
 # Show boxes on keypoints
 You can edit the bounding box for each keypoints object.
 
-
+<video src="https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/c91b4f14-eb4d-4e62-b2f8-679eee714123" controls="controls" muted="muted" class="width-fit" style="max-height:640px; min-height: 200px"></video>
 
 # Show labels on boxes
 Show labels on boxes and the confidence score when auto labeling.
