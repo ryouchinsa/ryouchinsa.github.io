@@ -37,7 +37,7 @@ Thank you.
 # Export Create ML JSON file
 Annotation files are exported as an [Create ML JSON file](https://developer.apple.com/videos/play/wwdc2019/424/).
 - Put training images and the JSON file into the same folder.
-- If you encouter errors, [Empty table from specified data source](https://stackoverflow.com/questions/65314564/empty-table-from-specified-data-source-error-in-create-ml).
+- If you encouter errors, read [Empty table from specified data source](https://stackoverflow.com/questions/65314564/empty-table-from-specified-data-source-error-in-create-ml).
 
 ```
 [{
@@ -208,7 +208,7 @@ In "categories", "keypoints" and "skeleton" are exported.
 },
 ```
 
-![keypoints_pixels_coco](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/cd35f0c1-4e3a-4977-9356-dca5b1a3ea7c)
+![keypoints_pixels_coco](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/a7c6098f-49eb-4c6d-9147-508ffc38cce0)
 
 # Import COCO JSON file
 - The COCO JSON file is imported to annotation files in the current folder.
@@ -354,7 +354,7 @@ class_index center_x center_y width height x1 y1 v1 x2 y2 v2 x3 y3 v3 ...
 0 0.545230 0.616880 0.298794 0.766239 0.522073 0.309332 2 0.540170 0.293193 2 0.499589 0.296503 2 ...
 ```
 
-![yolo_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/1e4c385d-b97d-4bea-9a9c-3028904e3ad6)
+![yolo_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/527cbd9b-3246-4288-ac70-7fd1540ff646)
 
 # Import YOLO txt files
 - The YOLO text files are imported to annotation files in the current folder.
@@ -371,7 +371,7 @@ x1 y1 x2 y2 x3 y3 x4 y4 category difficult
 1300.536987 1413.503784 1192.848755 1535.568848 530.876038 951.562073 638.564270 829.497009 truck 0
 ```
 
-![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/37c1fdd8-5a68-47ca-9df9-b192ceed171e)
+![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/ca22b2c8-e774-44cc-8554-4a41f5ac883f)
 
 # Import DOTA txt files
 - The DOTA text files are imported to annotation files in the current folder.
@@ -441,7 +441,7 @@ For the indexed color image.
 - The indexed color table is created from object colors on the objects table.
 - Overlaps of objects are based on the layer order on the labels table.
 
-![mask](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/5b0eecd8-a554-40d7-b7c2-1ae4daaf53b5)
+![mask](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/7b9a30a2-3bff-486f-873d-cf650a402662)
 
 # Export screenshots
 You can export images and annotations as jpg images.
@@ -450,7 +450,7 @@ View menus.
 - “Show labels on boxes” to show labels on boxes.
 - “Show coordinates on boxes” to show (x, y) coordinates on boxes.
 
-![screenshot](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/fe2ec8a8-2696-49a2-9262-3665a6e1ffc1)
+![screenshot](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d7c105d8-48ca-4fcf-99e1-3174519b5895)
 
 # Export augmented images
 You can augment images and annotations using "Flip", "Crop", "Contrast", and "Rotate".
@@ -465,14 +465,14 @@ You can augment images and annotations using "Flip", "Crop", "Contrast", and "Ro
 Settings menu.
 - “Rotate boxes as rotated boxes when augment” is to rotate boxes as rotated boxes when augment.
 
-![augment](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/b0bdea27-dc58-43b4-9f68-9af8d9c9dc53)
+![augment](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/459c879c-9cdd-457a-814f-ad3a5f00f5f6)
 
 # Export sliced images
 You can slice images and annotations horizontally and vertically.
 - For "Horizontal slices", each image is sliced horizontally by the number of horizontal slices.
 - For "Vertical slices", each image is sliced vertically by the number of vertical slices.
 
-![slice](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/edfc8dc5-06d7-4f0a-80cd-6a60b28be9a3)
+![slice](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/e7261224-4b75-49ca-a9c6-1fd2d360dfb7)
 
 # Export objects and attributes stats
 - The number of used objects is saved as objects_stats.txt file.
