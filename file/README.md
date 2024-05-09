@@ -74,8 +74,8 @@ You can open the exported YOLOv5/YOLOv8 folder.
 - For "Image size", both width and height would be less than or equal to the size.
 - For "Frames per second", to reduce the number of frames to be exported.
 - For "Frame suffix", you can select "frame1" or "frame001".
-
-![video_to_frames](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/09f9c4a9-be00-4a41-9716-37809e459b63)
+- 
+![video_to_frames](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/28abc9fb-22e5-4066-b208-832c1a8f0550)
 
 # Remove EXIF orientation flags
 - On RectLabel, according to the [Exif orientation flags](https://github.com/recurser/exif-orientation-examples), each image is rotated and shown in the front orientation.
