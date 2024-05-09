@@ -72,20 +72,16 @@ Click a position to zoom in/out.
 - To switch zoom in/out, hold the option key.
 - Pressing the command key, and mouse wheel down/up, you can zoom in/out.
 
-![zoom](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/b978cef4-d8e9-42d0-9f1c-71188131de1f)
-
 # Zoom fit
 Clear zoom.
 
 # Focus box
 You can quick zoom to the selected box.
 
-![focus](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/1e0d94de-9577-41fe-be48-c400dbbaf625)
-
 # Hide buttons
-Top-bar buttons are hidden and the image and labels table is shown largely.
+Top-bar buttons are hidden and the image and labels table are shown largely.
 
-![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/aa5a88bf-6d5b-4a58-9c81-2c49b7a98d7f)
+![hide_buttons](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d741dfea-ddda-4dd5-9c27-00a2ac7c57cd)
 
 # Hide cross hairs
 Hide cross hairs when creating box.
@@ -93,52 +89,38 @@ Hide cross hairs when creating box.
 # Hide other boxes
 Hide other boxes except the selected box.
 
-![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/a580fb19-23b4-4a0b-af2f-c6243d4ab258)
-
 # Hide keypoints names
 Hide keypoints names.
-
-![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/e7468a2a-e776-47ea-94e4-7fd89008b6ff)
 
 # Hide pixels
 Toggle pixels alpha.
 
-![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/01107e76-7bf7-4cdf-b2e0-f6f0e539ae74)
-
 # Hide superpixels
 Toggle superpixels alpha.
 
-![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/eeafd8c3-4cba-487f-b1b7-74f790ead27a)
-
 # Show small pixels
-You can show small pixels areas which are less than 0.01 of the image size.
+You can show small pixels areas.
 
-![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/f53e93f2-d634-4a47-a131-5ffea15f8fb1)
+![small_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/ff4f3c3d-58e5-4ab6-aef2-160f61b9cc08)
 
 # Show other pixels
 You can show other pixels objects.
 
-![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/e74e6aec-865d-46db-8d96-c6468d311ad3)
-
 # Show boxes on keypoints
 You can edit the bounding box for each keypoints object.
 
-![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/b2e21d9f-a2a3-4666-917b-4a126703b311)
+
 
 # Show labels on boxes
-Show labels on boxes.
+Show labels on boxes and the confidence score when auto labeling.
 
-![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/3640a47c-5a6a-4aed-806c-6b15b128aaa8)
+![coreml](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/cd6b33c5-d8ba-4145-a683-7732a0274162)
 
 # Show coordinates on boxes
 Show (x, y) coordinates on boxes.
 
-![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/1cfdb289-15d0-4b38-ad4c-5885dadd2e2b)
-
 # Show indexes on points
-Show each index for each point.
-
-![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/7fd4c2e3-1908-4e97-86a6-518b29e7226c)
+Show each point index.
 
 # Show indexes on labels table
 Show each row number on the labels table.
@@ -146,12 +128,12 @@ Show each row number on the labels table.
 # Show checkboxes on labels table
 Show a checkbox for each row on the labels table.
 
-![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/5e22bd9a-898a-4f55-b00e-51e036a8b500)
+![show_checkboxes](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/6ba96acc-2c81-4c8d-bb9e-38837eaeff5f)
 
 # Show depth image
 Toggle depth image alpha. When the rgb image name is image_name.jpg, put the depth image as image_name_depth.png in the same folder.
 
-![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/a5accaec-c98b-43dc-8f69-34c4cde9fd48)
+![depth](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/9e918858-2166-45c7-824e-77e35592dc5d)
 
 # Reload the image
 Reload the current image and annotation file.
@@ -159,7 +141,7 @@ Reload the current image and annotation file.
 # Enter gallery view
 Toggle entering gallery view. Thumbnails are updated when you open folders or change the label format.
 
-![a](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/625f612b-5fb4-40e1-b4fb-bfe2126983c9)
+![search](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/90046f78-5b32-4fa2-8919-09af40a33a58)
 
 # Enter full screen
 Toggle entering full screen.
