@@ -39,10 +39,10 @@ mv person detectron2/demo
 ```
 
 To label your custom dataset, use Edit menus.
-- [Create keypoints](https://rectlabel.com/edit/#create-keypoints).
+- [Create keypoints](https://rectlabel.com/edit/#create-keypoints)
 
 To export your custom dataset, use Export menus.
-- [Export COCO JSON file](https://rectlabel.com/export/#export-coco-json-file).
+- [Export COCO JSON file](https://rectlabel.com/export/#export-coco-json-file)
 
 This is the training script.
 ```
