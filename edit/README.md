@@ -155,7 +155,7 @@ View menus.
 - "Hide keypoints names" to hide keypoints names.
 - "Show boxes on keypoints" to show and edit the bounding box.
 
-
+<video src="https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/ec057788-1cd5-43d9-b5c4-b16f348ea619" controls="controls" muted="muted" class="width-fit" style="max-height:640px; min-height: 200px"></video>
 
 # Create pixels
 Create pixels using brushes.
