@@ -13,7 +13,6 @@ Thank you.
 
 # Core ML menus
 - [Load Core ML model](https://rectlabel.com/coreml#load-core-ml-model)
-- [Clear Core ML model](https://rectlabel.com/coreml#clear-core-ml-model)
 - [Auto labeling](https://rectlabel.com/coreml#auto-labeling)
 - [Auto text recognition for lines and words](https://rectlabel.com/coreml#auto-text-recognition-for-lines-and-words)
 
@@ -21,9 +20,6 @@ Thank you.
 - Apple provides [Core ML Models](https://developer.apple.com/machine-learning/models/).
 - To convert your ML model to the Core ML format, use [coremltools](https://github.com/apple/coremltools).
 - You can convert [YOLOv5](https://github.com/ultralytics/yolov5), [YOLOv8](https://github.com/ultralytics/ultralytics), and [MobileNetV2 + SSDLite](https://machinethink.net/blog/mobilenet-ssdlite-coreml/) models to Core ML models.
-
-# Clear Core ML model
-Clear the loaded Core ML model to close the Confidence/Overlap threshold panel.
 
 # Auto labeling
 Auto label images using the loaded Core ML model.
