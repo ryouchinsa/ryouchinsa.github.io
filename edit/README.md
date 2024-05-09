@@ -239,7 +239,7 @@ You can select multiple objects and delete them.
 # Layer up/down
 Change the layer order of the object.
 
-![layer_order](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/6d24af7e-86f8-4b63-bc0b-19f33ad5e721)
+![layer_order](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/4909bd70-f806-419f-a53a-d31fba9549fe)
 
 # Toggle erase
 Erase points/mask when Create polygon mode.
