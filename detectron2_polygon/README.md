@@ -39,11 +39,11 @@ mv donuts detectron2/demo
 ```
 
 To label your custom dataset, use Edit menus.
-- [Create polygon and cubic bezier](https://rectlabel.com/edit/#create-polygon-cubic-bezier-line-and-point).
-- [Create polygon using SAM](https://rectlabel.com/edit/#create-polygon-using-sam).
+- [Create polygon and cubic bezier](https://rectlabel.com/edit/#create-polygon-cubic-bezier-line-and-point)
+- [Create polygon using SAM](https://rectlabel.com/edit/#create-polygon-using-sam)
 
 To export your custom dataset, use Export menus.
-- [Export COCO JSON file](https://rectlabel.com/export/#export-coco-json-file).
+- [Export COCO JSON file](https://rectlabel.com/export/#export-coco-json-file)
 
 This is the training script.
 ```
