@@ -12,6 +12,7 @@ Have questions? Send an email to support@rectlabel.com.
 Thank you.
 
 # Papers cited RectLabel
+- [Robust Object Detection System Using Machine Learning](https://www.jetir.org/papers/JETIR2405138.pdf)
 - [MCGC: A Multi-scale Chain Growth Clustering Algorithm for Generating Infrared Small Target Mask under Single-point Supervision](https://ieeexplore.ieee.org/abstract/document/10506340)
 - [SqueakOut: Autoencoder-based segmentation of mouse ultrasonic vocalizations](https://www.biorxiv.org/content/10.1101/2024.04.19.590368v1.full.pdf)
 - [DeepSTARia: enabling autonomous, targeted observations of ocean life in the deep sea](https://www.frontiersin.org/articles/10.3389/fmars.2024.1357879/full)
