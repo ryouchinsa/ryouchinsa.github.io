@@ -32,7 +32,6 @@ Thank you.
 - Label polygons and pixels using Segment Anything models
 - Automatic labeling using Core ML models
 - Automatic text recognition for lines and words
-- Label polygons with holes
 - Label cubic bezier curves, line segments, and points
 - Label oriented bounding boxes in aerial images
 - Label keypoints with a skeleton
@@ -45,7 +44,8 @@ Thank you.
 
 ![sam_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/224e855c-f18e-437d-a843-0da2ee0d633a)
 ![sam_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/2a2086c4-762b-4f2a-a833-11248924086d)
-![coreml](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/17f99d4a-3c92-4fe6-900b-e9b9d9995ed8)
+![coreml](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/27260d19-f039-4ade-baef-1fd8e61c496b)
 ![ocr](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/aad7e3a6-3090-41d1-a192-72e0f3b4ccf4)
 ![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/c4c437a9-a702-40bf-aa39-b9d510b9927a)
 ![brush](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/27896dfd-2bf3-4627-9c57-e1186d3bf088)
+![search](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/ba30237f-c551-4b50-91e4-6d3edb13ee7f)
