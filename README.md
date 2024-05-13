@@ -43,8 +43,8 @@ Thank you.
 - Export indexed color mask image and grayscale mask images
 - Video to image frames, augment images, etc.
 
-![sam_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/a1139449-92b7-44d3-a3a9-50c33c25d254)
-![sam_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/7693da50-f858-4c43-a09b-ade8c4a12164)
+![sam_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/224e855c-f18e-437d-a843-0da2ee0d633a)
+![sam_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/2a2086c4-762b-4f2a-a833-11248924086d)
 ![coreml_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/084fe920-a4ae-44c4-97a1-94893599bf59)
 ![coreml_seg](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/3dda2be6-a9e3-4410-a0ca-384e20f3ba93)
 ![coreml](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/015020e5-8dbb-4816-87ef-2fc89e432f59)
