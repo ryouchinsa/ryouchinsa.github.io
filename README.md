@@ -43,13 +43,11 @@ Thank you.
 - Export indexed color mask image and grayscale mask images
 - Video to image frames, augment images, etc.
 
-![sam_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/0d15e93c-0835-4d9c-9212-a568c015d704)
-![sam_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/43db7cc9-a736-4bce-8a11-7c30c566981a)
+![sam_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/a1139449-92b7-44d3-a3a9-50c33c25d254)
+![sam_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/7693da50-f858-4c43-a09b-ade8c4a12164)
 ![coreml_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/084fe920-a4ae-44c4-97a1-94893599bf59)
 ![coreml_seg](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/3dda2be6-a9e3-4410-a0ca-384e20f3ba93)
 ![coreml](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/015020e5-8dbb-4816-87ef-2fc89e432f59)
 ![ocr](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/2ee92134-1733-4686-8453-b7d5949b2b20)
 ![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/4728acdd-63d4-4cc3-97db-a6257221ce43)
-![keypoints](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/8c12e9e2-26f3-4a33-9056-a3d5258f69eb)
-![keypoints_pixels_coco](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/f1f1ed5e-75a3-4238-af1f-fa3cc51348d5)
 ![brush](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/9a28eb81-8376-495f-b5f7-2a696270be77)
