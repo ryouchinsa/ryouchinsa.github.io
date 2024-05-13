@@ -1,3 +1,124 @@
+Skip to content
+Navigation Menu
+ryouchinsa
+/
+ryouchinsa.github.io
+
+Type / to search
+
+Code
+Issues
+10
+Pull requests
+Discussions
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Files
+Go to file
+t
+_includes
+_layouts
+about
+assets
+coreml
+detectron2
+detectron2_box
+detectron2_keypoints
+detectron2_polygon
+detectron2_rle
+edit
+export
+file
+help
+label_polygons_with_holes
+label_rle_masks
+papers
+privacy
+pytorch
+settings
+terms
+view
+CNAME
+README.md
+Editing README.md in ryouchinsa.github.io
+Breadcrumbsryouchinsa.github.io
+/
+README.md
+in
+master
+
+Edit
+
+Preview
+Indent mode
+
+Spaces
+Indent size
+
+2
+Line wrap mode
+
+Soft wrap
+Editing README.md file contents
+Selection deleted
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
 # [RectLabel](https://rectlabel.com)
 An offline image annotation tool for object detection and segmentation.
 
@@ -43,13 +164,16 @@ Thank you.
 - Export indexed color mask image and grayscale mask images
 - Video to image frames, augment images, etc.
 
-![sam_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/0d15e93c-0835-4d9c-9212-a568c015d704)
-![sam_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/43db7cc9-a736-4bce-8a11-7c30c566981a)
+![sam_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/a1139449-92b7-44d3-a3a9-50c33c25d254)
+![sam_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/7693da50-f858-4c43-a09b-ade8c4a12164)
 ![coreml_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/084fe920-a4ae-44c4-97a1-94893599bf59)
 ![coreml_seg](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/3dda2be6-a9e3-4410-a0ca-384e20f3ba93)
 ![coreml](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/015020e5-8dbb-4816-87ef-2fc89e432f59)
 ![ocr](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/2ee92134-1733-4686-8453-b7d5949b2b20)
 ![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/4728acdd-63d4-4cc3-97db-a6257221ce43)
-![keypoints](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/8c12e9e2-26f3-4a33-9056-a3d5258f69eb)
-![keypoints_pixels_coco](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/f1f1ed5e-75a3-4238-af1f-fa3cc51348d5)
 ![brush](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/9a28eb81-8376-495f-b5f7-2a696270be77)
+
+Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
+選択されていません
+Attach files by dragging & dropping, selecting or pasting them.
+Editing ryouchinsa.github.io/README.md at master · ryouchinsa/ryouchinsa.github.io 
