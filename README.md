@@ -48,4 +48,3 @@ Thank you.
 ![ocr](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/aad7e3a6-3090-41d1-a192-72e0f3b4ccf4)
 ![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/c4c437a9-a702-40bf-aa39-b9d510b9927a)
 ![brush](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/27896dfd-2bf3-4627-9c57-e1186d3bf088)
-![search](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/ba30237f-c551-4b50-91e4-6d3edb13ee7f)
