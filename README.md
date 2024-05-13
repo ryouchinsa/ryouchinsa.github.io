@@ -45,9 +45,7 @@ Thank you.
 
 ![sam_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/224e855c-f18e-437d-a843-0da2ee0d633a)
 ![sam_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/2a2086c4-762b-4f2a-a833-11248924086d)
-![coreml_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/084fe920-a4ae-44c4-97a1-94893599bf59)
-![coreml_seg](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/3dda2be6-a9e3-4410-a0ca-384e20f3ba93)
-![coreml](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/015020e5-8dbb-4816-87ef-2fc89e432f59)
-![ocr](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/2ee92134-1733-4686-8453-b7d5949b2b20)
-![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/4728acdd-63d4-4cc3-97db-a6257221ce43)
-![brush](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/9a28eb81-8376-495f-b5f7-2a696270be77)
+![coreml](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/17f99d4a-3c92-4fe6-900b-e9b9d9995ed8)
+![ocr](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/aad7e3a6-3090-41d1-a192-72e0f3b4ccf4)
+![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/c4c437a9-a702-40bf-aa39-b9d510b9927a)
+![brush](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/27896dfd-2bf3-4627-9c57-e1186d3bf088)
