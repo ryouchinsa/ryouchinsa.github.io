@@ -1,15 +1,9 @@
 # [RectLabel](https://rectlabel.com)
-An offline image annotation tool for object detection and segmentation.
-
-To download RectLabel apps.
-- [RectLabel](https://apps.apple.com/app/id1210181730)
-- [RectLabel Pro](https://apps.apple.com/app/id1490990105)
+How to use? Read our [Help page](https://rectlabel.com/help/).
 
 Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-support/issues).
 
 Have questions? Send an email to support@rectlabel.com.
-
-Thank you.
 
 # Core ML menus
 - [Load Core ML model](https://rectlabel.com/coreml#load-core-ml-model)
@@ -45,7 +39,8 @@ Using [Vision Framework](https://developer.apple.com/documentation/vision), auto
 - You can change the language.
 - You can change the type to lines or words.
 
-![ocr](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/3cbf40cd-ece4-451b-b2e8-12ea6e4724c7)
+![ocr](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/483bd361-ed04-4f21-bace-5601ad476c91)
+
 
 
 
