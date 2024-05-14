@@ -24,6 +24,7 @@ How to use? Read our [Help page](https://rectlabel.com/help/).
 ![sam_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/8ffe1c7e-830c-4a80-8b09-634f0d35c86a)
 ![sam_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/c110f813-c249-4de3-92af-73c721fbd4b9)
 ![coreml](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/30969acf-1fdc-4030-909b-46130d6e709d)
+![ocr](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/e1d6899f-9de3-4914-a65e-3886fddb3046)
 ![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/422819be-3fca-46b0-850c-6aa2f60df30c)
 ![search](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/9c4d59e6-5b73-4ae5-879d-6f312a9de39f)
 
