@@ -19,7 +19,7 @@ A project contains an objects table and an attributes table.
 - To switch the project, check on the "Primary" check box.
 - To import projects, use RectLabel menu -> Import settings file.
 
-![projects](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/e6269ba6-d64c-40ed-9624-76d4c5780254)
+![projects](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/b0a14482-a947-4816-bb0a-e16f265efc42)
 
 # Objects
 The objects table describes each object name and the object index.
@@ -27,7 +27,7 @@ The objects table describes each object name and the object index.
 - To import objects, use Export menu -> Import an object names from a file. You can drag & drop an object names file to the objects table.
 - Right clicking on the objects table header, "Sort alphabetically" menu appears.
 
-![objects](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/9d0967f1-a7c8-489c-82b8-e5c40d4f55ce)
+![objects](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d21486a7-e9a4-477a-93c6-7d841ea9af96)
 
 # Attributes
 The label "sneakers-converse-yellow" is a combination of the object name and attribute names.
@@ -38,12 +38,12 @@ The label "sneakers-converse-yellow" is a combination of the object name and att
 - You can assign 0-9 number keys and A-Z alphabet keys to attribute names.
 - Right clicking on the attributes table header, "Sort alphabetically" menu appears.
 
-![attributes](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/5bb208a3-42bd-401a-b6eb-73430eb7ef1d)
+![attributes](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/a4fb8154-3391-49c2-94d0-20513395a085)
 
 # Hotkeys
 Customize hotkeys to make your labeling work faster.
 
-![hotkeys](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/083a7edc-62ab-4a23-ae5c-8a14451b4e69)
+![hotkeys](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/e4933560-769d-490a-addc-80e9b3643c68)
 
 # Label fast
 Customize settings to make your labeling work faster.
@@ -71,7 +71,7 @@ Customize settings to make your labeling work faster.
 - "Save as floating-point values" is to save coordinates as floating-point values.
 - "Use English as an app language" is to change the app language to English.
 
-![label_fast](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/6fe1aee0-ccdd-4768-abe1-0c3afb1d1314)
+![label_fast](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d73f7c26-41f2-4b08-b389-5f58bc0ad487)
 
 # Export/Import settings file
 You can export the current settings file and import to another computer.
