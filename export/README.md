@@ -1,15 +1,9 @@
 # [RectLabel](https://rectlabel.com)
-An offline image annotation tool for object detection and segmentation.
-
-To download RectLabel apps.
-- [RectLabel](https://apps.apple.com/app/id1210181730)
-- [RectLabel Pro](https://apps.apple.com/app/id1490990105)
+How to use? Read our [Help page](https://rectlabel.com/help/).
 
 Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-support/issues).
 
 Have questions? Send an email to support@rectlabel.com.
-
-Thank you.
 
 # Export menus
 - [Export Create ML JSON file](https://rectlabel.com/export#export-create-ml-json-file)
@@ -354,7 +348,7 @@ class_index center_x center_y width height x1 y1 v1 x2 y2 v2 x3 y3 v3 ...
 0 0.545230 0.616880 0.298794 0.766239 0.522073 0.309332 2 0.540170 0.293193 2 0.499589 0.296503 2 ...
 ```
 
-![yolo_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/527cbd9b-3246-4288-ac70-7fd1540ff646)
+![yolo](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/57b600f3-3daa-4b9a-879e-35858ce7b6ad)
 
 # Import YOLO txt files
 - The YOLO text files are imported to annotation files in the current folder.
@@ -371,7 +365,7 @@ x1 y1 x2 y2 x3 y3 x4 y4 category difficult
 1300.536987 1413.503784 1192.848755 1535.568848 530.876038 951.562073 638.564270 829.497009 truck 0
 ```
 
-![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/ca22b2c8-e774-44cc-8554-4a41f5ac883f)
+![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/452d93d3-8c7d-40a1-a599-5e1ed2dd474f)
 
 # Import DOTA txt files
 - The DOTA text files are imported to annotation files in the current folder.
@@ -450,8 +444,6 @@ View menus.
 - “Show labels on boxes” to show labels on boxes.
 - “Show coordinates on boxes” to show (x, y) coordinates on boxes.
 
-![screenshot](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d7c105d8-48ca-4fcf-99e1-3174519b5895)
-
 # Export augmented images
 You can augment images and annotations using "Flip", "Crop", "Contrast", and "Rotate".
 - For "Flip", each image is flipped horizontally with 0.5 probability.
@@ -465,14 +457,14 @@ You can augment images and annotations using "Flip", "Crop", "Contrast", and "Ro
 Settings menu.
 - “Rotate boxes as rotated boxes when augment” is to rotate boxes as rotated boxes when augment.
 
-![augment](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/459c879c-9cdd-457a-814f-ad3a5f00f5f6)
+![augment](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/4b128657-363c-4b3f-9a6e-4f1bb15bd5ef)
 
 # Export sliced images
 You can slice images and annotations horizontally and vertically.
 - For "Horizontal slices", each image is sliced horizontally by the number of horizontal slices.
 - For "Vertical slices", each image is sliced vertically by the number of vertical slices.
 
-![slice](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/e7261224-4b75-49ca-a9c6-1fd2d360dfb7)
+![slice](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/7d12d7ef-c858-4e0e-9241-a2a90f5fcec9)
 
 # Export objects and attributes stats
 - The number of used objects is saved as objects_stats.txt file.
