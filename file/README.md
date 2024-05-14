@@ -1,15 +1,9 @@
 # [RectLabel](https://rectlabel.com)
-An offline image annotation tool for object detection and segmentation.
-
-To download RectLabel apps.
-- [RectLabel](https://apps.apple.com/app/id1210181730)
-- [RectLabel Pro](https://apps.apple.com/app/id1490990105)
+How to use? Read our [Help page](https://rectlabel.com/help/).
 
 Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-support/issues).
 
 Have questions? Send an email to support@rectlabel.com.
-
-Thank you.
 
 # File menus
 - [Open images folder and annotations folder](https://rectlabel.com/file#open-images-folder-and-annotations-folder)
@@ -19,8 +13,7 @@ Thank you.
 - [Resize images](https://rectlabel.com/file#resize-images)
 - [Next image and Prev image](https://rectlabel.com/file#next-image-and-prev-image)
 - [Jump to image number](https://rectlabel.com/file#jump-to-image-number)
-- [Move images](https://rectlabel.com/file#move-images)
-- [Copy images](https://rectlabel.com/file#copy-images)
+- [Move/Copy images](https://rectlabel.com/file#move-copy-images)
 - [Save](https://rectlabel.com/file#save)
 - [Close folder](https://rectlabel.com/file#close-folder)
 
@@ -74,8 +67,8 @@ You can open the exported YOLOv5/YOLOv8 folder.
 - For "Image size", both width and height would be less than or equal to the size.
 - For "Frames per second", to reduce the number of frames to be exported.
 - For "Frame suffix", you can select "frame1" or "frame001".
-- 
-![video_to_frames](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/28abc9fb-22e5-4066-b208-832c1a8f0550)
+
+![video](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/a7bc4ecd-8bb3-4b0d-85a0-347c0b32d6ae)
 
 # Remove EXIF orientation flags
 - On RectLabel, according to the [Exif orientation flags](https://github.com/recurser/exif-orientation-examples), each image is rotated and shown in the front orientation.
@@ -96,13 +89,9 @@ You can open the exported YOLOv5/YOLOv8 folder.
 # Jump to image number
 You can specify the image number to show.
 
-# Move images
-- You can move all images or random fraction of total to another folder.
-- Searching images, you can move searched images to another folder.
-
-# Copy images
-- You can copy all images or random fraction of total to another folder.
-- Searching images, you can copy searched images to another folder.
+# Move/Copy images
+- You can move/copy all images or random fraction of total to another folder.
+- Using Edit menu -> Search images, you can move/copy searched images to another folder.
 
 # Save
 The annotation file is saved as {image_file_name}.xml in the PASCAL VOC xml format or {image_file_name}.txt in the YOLO text format.
