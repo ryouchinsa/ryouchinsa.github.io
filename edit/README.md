@@ -1,15 +1,9 @@
 # [RectLabel](https://rectlabel.com)
-An offline image annotation tool for object detection and segmentation.
-
-To download RectLabel apps.
-- [RectLabel](https://apps.apple.com/app/id1210181730)
-- [RectLabel Pro](https://apps.apple.com/app/id1490990105)
+How to use? Read our [Help page](https://rectlabel.com/help/).
 
 Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-support/issues).
 
 Have questions? Send an email to support@rectlabel.com.
-
-Thank you.
 
 # Edit menus
 - [Create box](https://rectlabel.com/edit#create-box)
@@ -66,7 +60,7 @@ Settings menus.
 - "Show edit points between box corners" is to show edit points between box corners.
 - "Click 4 points when draw boxes" is to draw a box clicking xmin, xmax, ymin, and ymax of the object.
 
-![drag_to_select](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/bcc72148-d330-4d10-8190-89a571ffb134)
+![box](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/929753bc-76a6-4534-ac6f-b2aac8f4de71)
 
 # Create polygon, cubic bezier, line, and point
 Create a polygon.
@@ -93,7 +87,7 @@ Merge polygons and separate the polygon.
 - Select multiple polygons and right click on them, you can merge polygons.
 - Right click on the merged polygon, you can separate the merged polygon.
 
-![edit_points](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d0bfe027-a54b-4b4b-9d46-9ceda2e78b27)
+![edit_points](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d718987d-a616-4430-ae57-52a9baaf7a25)
 
 # Create polygon using SAM
 Select a model.
@@ -113,9 +107,9 @@ Create using SAM.
 - Press an enter key to finish drawing.
 - Press an escape key to cancel drawing.
 
-![sam_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/c12431bc-c06c-4a61-b9c5-97bd84a9cee8)
+![sam_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/ed81101e-d27a-4060-9e6e-71ed5eddbff0)
 
-![sam_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/1af17234-5946-4acc-9cbe-7ee195bb5ad8)
+![sam_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/a6b52328-67c6-4461-a39a-30d2e5e7be1c)
 
 # Create keypoints
 Create keypoints.
@@ -186,7 +180,7 @@ View menus.
 - "Show small pixels" to show small pixels areas.
 - "Show other pixels" to show other pixels objects.
 
-![brush](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/f0cbbb48-bd6f-4323-8dfe-5ea6844477a1)
+![brush](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/2195d55f-ded2-48fd-a953-4b7b21834fa4)
 
 Create pixels using superpixels.
 - Click each superpixel or drag multiple superpixels.
@@ -195,7 +189,7 @@ Create pixels using superpixels.
 - On the pixels panel, right/left arrow keys change the superpixel size by 1px.
 - If superpixels are not shown, reselect the label on the labels table.
 
-![superpixel](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/e1cdce3d-3985-4ed3-8a5c-7657f29a929f)
+![superpixel](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/1ab1aa17-dee1-4c7a-ad70-b1b137399415)
 
 # Create image label
 Create an image label without drawing the box.
@@ -228,7 +222,7 @@ Rotate an object.
 Settings menu.
 - “Show the first point of the box” is to show the first point of the box.
 
-![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/2aa869e8-f3d9-45ed-90a1-4424dfc909b6)
+![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/73300c44-76e4-413e-9cff-66e7747c2700)
 
 # Rotate the image right/left
 You can rotate the image and annotation to the right/left by 90 degrees.
@@ -246,16 +240,14 @@ Erase points/mask when Create polygon mode.
 - "Erase points" erases polygon points inside the drawn dashed area.
 - "Erase mask" erases the drawn dashed area from the polygon.
 
-![erase_points](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/c55e04bb-fd7f-4e9b-9f84-7c98997dbb07)
+![erase_points](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/2f39c8fe-305d-4c43-866c-7c15609f274a)
 
 Erase pixels when Create pixels mode.
 
-![erase_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/320e5b31-63ed-4224-be08-4c6cb841d798)
+![erase_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/5ac2f132-af4f-47a7-b071-e565bbd8d167)
 
 # Change brightness and contrast
 Change the image brightness and contrast for dark images.
-
-![contrast](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/6d7b98a6-b22a-47bb-8315-f45a809d3910)
 
 # Change object color
 Change the object color using the color picker.
@@ -268,7 +260,7 @@ You can search object, attribute, and image names in a gallery view.
 - To search labeled images, use "notempty" search text.
 - To search unlabeled images, use "" search text.
 
-![search](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/725d6a93-5f29-4b3d-9adf-b9f052954d46)
+![search](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/142d4664-5369-4b68-bc9a-b28a67e6e622)
 
 # Clear search images
 Clear searching and show all images.
