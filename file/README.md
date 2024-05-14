@@ -13,7 +13,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Resize images](https://rectlabel.com/file#resize-images)
 - [Next image and Prev image](https://rectlabel.com/file#next-image-and-prev-image)
 - [Jump to image number](https://rectlabel.com/file#jump-to-image-number)
-- [Move/Copy images](https://rectlabel.com/file#move-copy-images)
+- [Move/Copy images](https://rectlabel.com/file#movecopy-images)
 - [Save](https://rectlabel.com/file#save)
 - [Close folder](https://rectlabel.com/file#close-folder)
 
