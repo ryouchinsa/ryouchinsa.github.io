@@ -467,9 +467,7 @@ You can slice images and annotations horizontally and vertically.
 ![slice](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/7d12d7ef-c858-4e0e-9241-a2a90f5fcec9)
 
 # Export objects and attributes stats
-- The number of used objects is saved as objects_stats.txt file.
-- The number of used attributes is saved as attributes_stats.txt file.
-
+- The number of used objects and attributes are exported.
 
 
 
