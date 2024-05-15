@@ -36,7 +36,7 @@ Have questions? Send an email to support@rectlabel.com.
 
 ![sam_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/8ffe1c7e-830c-4a80-8b09-634f0d35c86a)
 ![sam_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/c110f813-c249-4de3-92af-73c721fbd4b9)
-![coreml](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/30969acf-1fdc-4030-909b-46130d6e709d)
+![coreml_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d6e280ab-d55f-41e4-8eb4-2e098001020e)
 ![ocr](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/9305ba27-834d-4f84-85e2-74100809a10a)
 ![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/422819be-3fca-46b0-850c-6aa2f60df30c)
 ![search](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/9c4d59e6-5b73-4ae5-879d-6f312a9de39f)
