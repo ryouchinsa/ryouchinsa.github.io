@@ -138,7 +138,8 @@ Right click on the point.
 - "Delete edge" to delete the edge connected with the point.
 
 Right click on the object.
-- "Clear bounding box" to clear the current bounding box.
+- "Set bounding box from the next polygon" to set the bounding box from the next polygon or pixels object.
+- "Clear all keypoints" to set 0 visible value for all keypoints.
 - "Flip horizontally" to flip the "left" included keypoint position and the "right" included keypoint position.
 - "Make visible" to make the point visible.
 
