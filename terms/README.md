@@ -18,5 +18,9 @@ If you installed RectLabel on your new computer, authorize or deauthorize your c
 There is a free trial version, and although the trial is untimed, a license must be purchased for continued use.
 [Manage your subscriptions](https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/manageSubscriptions)
 
+RectLabel Pro is for a long time use and different from the standard RectLabel for 2 points.
+- The license can be bought by one-time payment. And the license corresponds to volume purchases.
+- There are no network connections because there are no in-app purchases. To check the in-app purchases state, usually developers connect to their own server.
+
 You can use RectLabel apps to develop your commercial object detection and segmentation systems.
 
