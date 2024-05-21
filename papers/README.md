@@ -6,6 +6,7 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [Integration of Deep Computer Vision Foundation Models for Document Analysis](https://eprints.ost.ch/id/eprint/1167/)
 - [Robust Object Detection System Using Machine Learning](https://www.jetir.org/papers/JETIR2405138.pdf)
 - [MCGC: A Multi-scale Chain Growth Clustering Algorithm for Generating Infrared Small Target Mask under Single-point Supervision](https://ieeexplore.ieee.org/abstract/document/10506340)
 - [SqueakOut: Autoencoder-based segmentation of mouse ultrasonic vocalizations](https://www.biorxiv.org/content/10.1101/2024.04.19.590368v1.full.pdf)
