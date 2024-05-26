@@ -261,7 +261,7 @@ You can search object, attribute, and image names in a gallery view.
 - To search labeled images, use "notempty" search text.
 - To search unlabeled images, use "" search text.
 
-![search](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/142d4664-5369-4b68-bc9a-b28a67e6e622)
+![search2](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/82d87ee4-9956-4a9e-bd95-be47276a0632)
 
 # Clear search images
 Clear searching and show all images.
