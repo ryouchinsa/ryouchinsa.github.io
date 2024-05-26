@@ -135,7 +135,7 @@ Reload the current image and annotation file.
 # Enter gallery view
 Toggle entering gallery view. Thumbnails are updated when you open folders or change the label format.
 
-![gallery](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/150a046b-0102-422d-8226-caeeea51bd4b)
+![gallery2](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/9e1d7b9b-f642-4905-9222-9f9932abab27)
 
 # Enter full screen
 Toggle entering full screen.
