@@ -174,7 +174,7 @@ from tools.my_train_keypoints import setConfigKeypoint, TrainType
 
 def main():
     train_type = TrainType.BOX
-    images_path = "person/images"
+    images_path = "person/test"
     MetadataCatalog.get("dataset_train").set(thing_classes=["person"])
     cfg = get_cfg()
     cfg.merge_from_file(model_zoo.get_config_file("COCO-Keypoints/keypoint_rcnn_R_50_FPN_3x.yaml"))
