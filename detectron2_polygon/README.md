@@ -46,7 +46,7 @@ To export your custom dataset, use Export menus.
 - [Export COCO JSON file](https://rectlabel.com/export/#export-coco-json-file)
 - [Export augmented images](https://rectlabel.com/export/#export-augmented-images)
 
-![augment_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/5b40afd6-608c-43f9-8f95-cde980c73636)
+![augment_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d8a4040b-8c5d-48f0-9e15-68dd7ee3cdcb)
 
 This is the training script.
 ```
@@ -121,7 +121,7 @@ from detectron2.engine import DefaultPredictor
 from detectron2.utils.visualizer import Visualizer
 
 def main():
-    images_path = "person/images"
+    images_path = "person/test"
     MetadataCatalog.get("dataset_train").set(thing_classes=["person"])
     cfg = get_cfg()
     cfg.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"))
