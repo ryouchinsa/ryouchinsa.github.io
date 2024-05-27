@@ -147,7 +147,7 @@ cd detectron2/demo
 python my_predictor_segmentation.py
 ```
 
-
+![tyler-nix-Jg7UTkxTruQ-unsplash](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/5d1cba44-8007-43ec-810a-cb52138ff191)
 
 
 
