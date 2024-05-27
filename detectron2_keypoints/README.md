@@ -207,7 +207,7 @@ cd detectron2/demo
 python my_predictor_keypoints.py
 ```
 
-
+![force-majeure-du8AbwM5z2g-unsplash](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/52c4f0b6-8c4c-40c2-86ce-f50c6b1725c9)
 
 
 
