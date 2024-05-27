@@ -26,16 +26,16 @@ Download training/inference scripts.
 ```
 wget https://huggingface.co/rectlabel/detectron2/resolve/main/detectron2_scripts.zip
 unzip detectron2_scripts.zip
-mv detectron2_scripts/my_train_rle.py detectron2/tools
-mv detectron2_scripts/my_predictor_segmentation.py detectron2/demo
+mv detectron2_scripts/my_train_*.py detectron2/tools
+mv detectron2_scripts/my_predictor_*.py detectron2/demo
 mv detectron2_scripts/visualizer.py detectron2/detectron2/utils
 ```
 
-Download donuts dataset. 
+Download person dataset.
 ```
-wget https://huggingface.co/datasets/rectlabel/datasets/resolve/main/donuts.zip
-unzip donuts.zip
-mv donuts detectron2/demo
+wget https://huggingface.co/datasets/rectlabel/datasets/resolve/main/person.zip
+unzip person.zip
+mv person detectron2/demo
 ```
 
 To label your custom dataset, use Edit menus.
@@ -44,10 +44,14 @@ To label your custom dataset, use Edit menus.
 
 To export your custom dataset, use Export menus.
 - [Export COCO JSON file](https://rectlabel.com/export/#export-coco-json-file)
+- [Export augmented images](https://rectlabel.com/export/#export-augmented-images)
+
+![augment_rle](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/53fb96c2-1962-413b-a0bc-83def9f8b775)
 
 This is the training script.
 ```
 import os
+from enum import Enum
 
 from detectron2 import model_zoo
 from detectron2.config import get_cfg
@@ -60,24 +64,34 @@ class Trainer(DefaultTrainer):
     def build_evaluator(cls, cfg, dataset_name, output_folder=None):
         return COCOEvaluator(dataset_name, output_folder)
 
+class TrainType(Enum):
+    POLYGON = 1
+    RLE = 2
+
 def main():
-    images_path = "donuts/images"
-    annotations_path = "donuts/coco_labels_rle.json"
-    config_name = "COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"
+    train_type = TrainType.RLE
+    images_path = "person/images"
+    if train_type == TrainType.POLYGON:
+        annotations_path = "person/coco_polygon.json"
+    else:
+        annotations_path = "person/coco_rle.json"
     register_coco_instances("dataset_train", {}, annotations_path, images_path)
     cfg = get_cfg()
-    cfg.merge_from_file(model_zoo.get_config_file(config_name))
+    cfg.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"))
     cfg.DATASETS.TRAIN = ("dataset_train",)
     cfg.DATASETS.TEST = ()
-    cfg.DATALOADER.NUM_WORKERS = 2
-    cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url(config_name)
-    cfg.SOLVER.IMS_PER_BATCH = 2
-    cfg.SOLVER.BASE_LR = 0.001
-    cfg.SOLVER.MAX_ITER = 2000 
+    cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml")
     cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 128
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
     # cfg.MODEL.DEVICE = "cpu"
-    cfg.INPUT.MASK_FORMAT = "bitmask"
+    cfg.SOLVER.BASE_LR = 0.001
+    cfg.SOLVER.MAX_ITER = 5000
+    cfg.SOLVER.IMS_PER_BATCH = 2
+    cfg.DATALOADER.NUM_WORKERS = 2
+    if train_type == TrainType.POLYGON:
+        cfg.INPUT.MASK_FORMAT = "polygon"
+    elif train_type == TrainType.RLE:
+        cfg.INPUT.MASK_FORMAT = "bitmask"
     os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
     trainer = Trainer(cfg)
     trainer.resume_or_load(resume=True)
@@ -107,17 +121,16 @@ from detectron2.engine import DefaultPredictor
 from detectron2.utils.visualizer import Visualizer
 
 def main():
-    images_path = "donuts/images"
-    config_name = "COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"
-    MetadataCatalog.get("dataset_train").set(thing_classes=["donut"])
+    images_path = "person/test"
+    MetadataCatalog.get("dataset_train").set(thing_classes=["person"])
     cfg = get_cfg()
-    cfg.merge_from_file(model_zoo.get_config_file(config_name))
+    cfg.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"))
     cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "model_final.pth")
-    cfg.SOLVER.IMS_PER_BATCH = 1
     cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 128
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
     cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5
     # cfg.MODEL.DEVICE = "cpu"
+    cfg.SOLVER.IMS_PER_BATCH = 1
     predictor = DefaultPredictor(cfg)
     os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
     image_paths = glob.glob(os.path.join(images_path, "*.jpg"))
@@ -131,6 +144,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 ```
 
 Run the inference script.
@@ -139,7 +153,7 @@ cd detectron2/demo
 python my_predictor_segmentation.py
 ```
 
-![andy-hay-GBfNe3ZZjhI-unsplash](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/922f1c66-97cc-4fad-8bc2-5b9f917e5c9e)
+
 
 
 
