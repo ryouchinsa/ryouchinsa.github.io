@@ -139,10 +139,7 @@ cd detectron2/demo
 python my_predictor_box.py
 ```
 
-
-
-
-
+![clarke-sanders-ybPJ47PMT_M-unsplash](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/91225e7d-4af4-463b-82a0-f3c92e62af48)
 
 
 
