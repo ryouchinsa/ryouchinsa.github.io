@@ -6,6 +6,7 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [DRIVING RETAIL EFFICIENCY WITH COMPUTER VISION: DETECTING EMPTY SHELVES AND ACCURATE PRODUCT PLACEMENT THROUGH PLANOGRAM INTEGRATION](https://www.researchgate.net/publication/380934827_DRIVING_RETAIL_EFFICIENCY_WITH_COMPUTER_VISION_DETECTING_EMPTY_SHELVES_AND_ACCURATE_PRODUCT_PLACEMENT_THROUGH_PLANOGRAM_INTEGRATION)
 - [Integration of Deep Computer Vision Foundation Models for Document Analysis](https://eprints.ost.ch/id/eprint/1167/)
 - [Robust Object Detection System Using Machine Learning](https://www.jetir.org/papers/JETIR2405138.pdf)
 - [MCGC: A Multi-scale Chain Growth Clustering Algorithm for Generating Infrared Small Target Mask under Single-point Supervision](https://ieeexplore.ieee.org/abstract/document/10506340)
