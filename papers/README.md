@@ -6,6 +6,7 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [Research on Deep Learning-Based Vehicle and Pedestrian Object Detection Algorithms](https://isprs-archives.copernicus.org/articles/XLVIII-4-W10-2024/213/2024/isprs-archives-XLVIII-4-W10-2024-213-2024.html)
 - [DRIVING RETAIL EFFICIENCY WITH COMPUTER VISION: DETECTING EMPTY SHELVES AND ACCURATE PRODUCT PLACEMENT THROUGH PLANOGRAM INTEGRATION](https://www.researchgate.net/publication/380934827_DRIVING_RETAIL_EFFICIENCY_WITH_COMPUTER_VISION_DETECTING_EMPTY_SHELVES_AND_ACCURATE_PRODUCT_PLACEMENT_THROUGH_PLANOGRAM_INTEGRATION)
 - [Integration of Deep Computer Vision Foundation Models for Document Analysis](https://eprints.ost.ch/id/eprint/1167/)
 - [Robust Object Detection System Using Machine Learning](https://www.jetir.org/papers/JETIR2405138.pdf)
