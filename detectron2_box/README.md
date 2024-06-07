@@ -69,7 +69,7 @@ def main():
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
     # cfg.MODEL.DEVICE = "cpu"
     cfg.SOLVER.BASE_LR = 0.001
-    cfg.SOLVER.MAX_ITER = 5000 
+    cfg.SOLVER.MAX_ITER = 10000 
     cfg.SOLVER.IMS_PER_BATCH = 2
     cfg.DATALOADER.NUM_WORKERS = 2
     os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
@@ -92,6 +92,7 @@ This is the inference script.
 import cv2
 import glob
 import os
+from enum import Enum
 
 from detectron2 import model_zoo
 from detectron2.config import get_cfg
@@ -99,10 +100,16 @@ from detectron2.data.datasets import register_coco_instances
 from detectron2.data import MetadataCatalog
 from detectron2.engine import DefaultPredictor
 from detectron2.utils.visualizer import Visualizer
+from detectron2.evaluation import COCOEvaluator, inference_on_dataset
+from detectron2.data import build_detection_test_loader
+
+class SaveType(Enum):
+    IMAGE = 1
+    COCO_JSON = 2
 
 def main():
     images_path = "person/test"
-    MetadataCatalog.get("dataset_train").set(thing_classes=["person"])
+    MetadataCatalog.get("dataset_test").set(thing_classes=["person"])
     cfg = get_cfg()
     cfg.merge_from_file(model_zoo.get_config_file("COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml"))
     cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "model_final.pth")
@@ -113,18 +120,25 @@ def main():
     cfg.SOLVER.IMS_PER_BATCH = 1
     predictor = DefaultPredictor(cfg)
     os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
-    image_paths = glob.glob(os.path.join(images_path, "*.jpg"))
-    for image_path in image_paths:
-        image = cv2.imread(image_path)
-        outputs = predictor(image)
-        v = Visualizer(image[:, :, ::-1], MetadataCatalog.get("dataset_train"), scale=1.2)
-        out = v.draw_instance_predictions(outputs["instances"].to("cpu"))
-        output_path = os.path.join(cfg.OUTPUT_DIR, os.path.basename(image_path))
-        cv2.imwrite(output_path, out.get_image()[:, :, ::-1])
-
+    save_type = SaveType.IMAGE
+    if save_type == SaveType.IMAGE:
+        image_paths = glob.glob(os.path.join(images_path, "*.jpg"))
+        for image_path in image_paths:
+            image = cv2.imread(image_path)
+            outputs = predictor(image)
+            v = Visualizer(image[:, :, ::-1], MetadataCatalog.get("dataset_test"), scale=1.2)
+            out = v.draw_instance_predictions(outputs["instances"].to("cpu"))
+            output_path = os.path.join(cfg.OUTPUT_DIR, os.path.basename(image_path))
+            cv2.imwrite(output_path, out.get_image()[:, :, ::-1])
+    else:
+        annotations_path = "person/coco_test.json"
+        register_coco_instances("dataset_test", {}, annotations_path, images_path)
+        evaluator = COCOEvaluator("dataset_test", cfg, False, output_dir=cfg.OUTPUT_DIR)
+        val_loader = build_detection_test_loader(cfg, "dataset_test")
+        inference_on_dataset(predictor.model, val_loader, evaluator)
+        
 if __name__ == "__main__":
     main()
-
 ```
 
 Run the inference script.
@@ -135,8 +149,10 @@ python my_predictor_box.py
 
 ![clarke-sanders-ybPJ47PMT_M-unsplash](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/695113bf-8408-47c3-80be-745d78260da3)
 
+If you set `save_type = SaveType.COCO_JSON`, you can save the inference result as coco_instances_results.json in the output folder.
+To import the inference result to RectLabel, use Export menus -> Import COCO JSON file.
 
-
+![detectron2_cooc_box](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/7742a803-7f81-413c-abe1-de6f25e2dfb2)
 
 
 
