@@ -141,7 +141,7 @@ def main():
             out = v.draw_instance_predictions(outputs["instances"].to("cpu"))
             output_path = os.path.join(cfg.OUTPUT_DIR, os.path.basename(image_path))
             cv2.imwrite(output_path, out.get_image()[:, :, ::-1])
-    else:
+    elif save_type == SaveType.COCO_JSON:
         annotations_path = "person/coco_test.json"
         register_coco_instances("dataset_test", {}, annotations_path, images_path)
         evaluator = COCOEvaluator("dataset_test", cfg, False, output_dir=cfg.OUTPUT_DIR)
@@ -158,12 +158,12 @@ cd detectron2/demo
 python my_predictor_segmentation.py
 ```
 
-![force-majeure-du8AbwM5z2g-unsplash](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/ce37c2e4-85a7-4cba-8e3b-c9fca502015d)
+![force-majeure-du8AbwM5z2g-unsplash](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d0db8e4c-bd41-4fd5-873a-1ede2c52d267)
 
 If you set `save_type = SaveType.COCO_JSON`, you can save the inference result as coco_instances_results.json in the output folder.
 To import the inference result to RectLabel, use Export menus -> Import COCO JSON file.
 
-![detectron2_cooc_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/0bc810bf-ad10-48d3-9d1e-a9712f810eb7)
+![inference_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/17092c39-62b7-42c6-ae9b-d1a7d170a4e7)
 
 
 
