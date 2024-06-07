@@ -186,7 +186,7 @@ def main():
     setConfigKeypoint(cfg, "dataset_test")
     predictor = DefaultPredictor(cfg)
     os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
-    save_type = SaveType.IMAGE
+    save_type = SaveType.COCO_JSON
     if save_type == SaveType.IMAGE:
         image_paths = glob.glob(os.path.join(images_path, "*.jpg"))
         for image_path in image_paths:
@@ -196,7 +196,7 @@ def main():
             out = v.draw_instance_predictions(outputs["instances"].to("cpu"))
             output_path = os.path.join(cfg.OUTPUT_DIR, os.path.basename(image_path))
             cv2.imwrite(output_path, out.get_image()[:, :, ::-1])
-    else:
+    elif save_type == SaveType.COCO_JSON:
         annotations_path = "person/coco_test.json"
         register_coco_instances("dataset_test", {}, annotations_path, images_path)
         evaluator = COCOEvaluator("dataset_test", cfg, False, output_dir=cfg.OUTPUT_DIR)
@@ -213,14 +213,12 @@ cd detectron2/demo
 python my_predictor_keypoints.py
 ```
 
-![adrian-linares-GKvvUu7P3uU-unsplash](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/33c9e3e1-7909-4b30-9ac6-2b30f0293574)
+![adrian-linares-GKvvUu7P3uU-unsplash](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/8cce1092-69be-41e8-a35b-b1a766db60ce)
 
 If you set `save_type = SaveType.COCO_JSON`, you can save the inference result as coco_instances_results.json in the output folder.
 To import the inference result to RectLabel, use Export menus -> Import COCO JSON file.
 
-![detectron2_cooc_keypoints](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/173f2ee6-c6da-45c4-9f2c-4b589c6969e3)
-
-
+![inference_keypoints](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/4a6821b7-3079-41d2-9ceb-271f0137a24b)
 
 
 
