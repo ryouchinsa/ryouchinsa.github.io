@@ -58,16 +58,17 @@ class Trainer(DefaultTrainer):
     def build_evaluator(cls, cfg, dataset_name, output_folder=None):
         return COCOEvaluator(dataset_name, output_folder)
 
-class TrainType(Enum):
-    POLYGON = 1
-    RLE = 2
+class MaskType(Enum):
+    BOX = 1
+    POLYGON = 2
+    RLE = 3
 
 def main():
-    train_type = TrainType.RLE
+    mask_type = MaskType.RLE
     images_path = "person/images"
-    if train_type == TrainType.POLYGON:
+    if mask_type == MaskType.POLYGON:
         annotations_path = "person/coco_polygon.json"
-    else:
+    elif mask_type == MaskType.RLE:
         annotations_path = "person/coco_rle.json"
     register_coco_instances("dataset_train", {}, annotations_path, images_path)
     cfg = get_cfg()
@@ -79,12 +80,12 @@ def main():
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
     # cfg.MODEL.DEVICE = "cpu"
     cfg.SOLVER.BASE_LR = 0.001
-    cfg.SOLVER.MAX_ITER = 5000
+    cfg.SOLVER.MAX_ITER = 10000
     cfg.SOLVER.IMS_PER_BATCH = 2
     cfg.DATALOADER.NUM_WORKERS = 2
-    if train_type == TrainType.POLYGON:
+    if mask_type == MaskType.POLYGON:
         cfg.INPUT.MASK_FORMAT = "polygon"
-    elif train_type == TrainType.RLE:
+    elif mask_type == MaskType.RLE:
         cfg.INPUT.MASK_FORMAT = "bitmask"
     os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
     trainer = Trainer(cfg)
@@ -113,10 +114,13 @@ from detectron2.data.datasets import register_coco_instances
 from detectron2.data import MetadataCatalog
 from detectron2.engine import DefaultPredictor
 from detectron2.utils.visualizer import Visualizer
+from detectron2.evaluation import COCOEvaluator, inference_on_dataset
+from detectron2.data import build_detection_test_loader
+from my_predictor_box import SaveType
 
 def main():
     images_path = "person/test"
-    MetadataCatalog.get("dataset_train").set(thing_classes=["person"])
+    MetadataCatalog.get("dataset_test").set(thing_classes=["person"])
     cfg = get_cfg()
     cfg.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"))
     cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "model_final.pth")
@@ -127,18 +131,25 @@ def main():
     cfg.SOLVER.IMS_PER_BATCH = 1
     predictor = DefaultPredictor(cfg)
     os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
-    image_paths = glob.glob(os.path.join(images_path, "*.jpg"))
-    for image_path in image_paths:
-        image = cv2.imread(image_path)
-        outputs = predictor(image)
-        v = Visualizer(image[:, :, ::-1], MetadataCatalog.get("dataset_train"), scale=1.2)
-        out = v.draw_instance_predictions(outputs["instances"].to("cpu"))
-        output_path = os.path.join(cfg.OUTPUT_DIR, os.path.basename(image_path))
-        cv2.imwrite(output_path, out.get_image()[:, :, ::-1])
+    save_type = SaveType.IMAGE
+    if save_type == SaveType.IMAGE:
+        image_paths = glob.glob(os.path.join(images_path, "*.jpg"))
+        for image_path in image_paths:
+            image = cv2.imread(image_path)
+            outputs = predictor(image)
+            v = Visualizer(image[:, :, ::-1], MetadataCatalog.get("dataset_test"), scale=1.2)
+            out = v.draw_instance_predictions(outputs["instances"].to("cpu"))
+            output_path = os.path.join(cfg.OUTPUT_DIR, os.path.basename(image_path))
+            cv2.imwrite(output_path, out.get_image()[:, :, ::-1])
+    else:
+        annotations_path = "person/coco_test.json"
+        register_coco_instances("dataset_test", {}, annotations_path, images_path)
+        evaluator = COCOEvaluator("dataset_test", cfg, False, output_dir=cfg.OUTPUT_DIR)
+        val_loader = build_detection_test_loader(cfg, "dataset_test")
+        inference_on_dataset(predictor.model, val_loader, evaluator)
 
 if __name__ == "__main__":
     main()
-
 ```
 
 Run the inference script.
@@ -147,11 +158,12 @@ cd detectron2/demo
 python my_predictor_segmentation.py
 ```
 
-![tyler-nix-Jg7UTkxTruQ-unsplash](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/e91866a1-ab08-4c62-aab6-0bfd99c05094)
+![tyler-nix-Jg7UTkxTruQ-unsplash](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/1c763d21-27c7-4ba4-a811-6cd1a75e5ca2)
 
+If you set `save_type = SaveType.COCO_JSON`, you can save the inference result as coco_instances_results.json in the output folder.
+To import the inference result to RectLabel, use Export menus -> Import COCO JSON file.
 
-
-
+![detectron2_cooc_rle](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/fd4c0c91-ea3f-4aa9-aef1-7e666ba4e2ac)
 
 
 
