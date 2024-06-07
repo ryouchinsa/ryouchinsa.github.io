@@ -44,7 +44,6 @@ To export your custom dataset, use Export menus.
 This is the training script.
 ```
 import os
-from enum import Enum
 
 from detectron2 import model_zoo
 from detectron2.config import get_cfg
@@ -52,21 +51,17 @@ from detectron2.data.datasets import register_coco_instances
 from detectron2.data import MetadataCatalog
 from detectron2.engine import DefaultTrainer
 from detectron2.evaluation import COCOEvaluator
+from tools.my_train_segmentation import MaskType
 
 class Trainer(DefaultTrainer):
     @classmethod
     def build_evaluator(cls, cfg, dataset_name, output_folder=None):
         return COCOEvaluator(dataset_name, output_folder)
 
-class TrainType(Enum):
-    BOX = 1
-    POLYGON = 2
-    RLE = 3
-
 def main():
-    train_type = TrainType.BOX
+    mask_type = MaskType.BOX
     images_path = "person/images"
-    if train_type == TrainType.POLYGON:
+    if mask_type == MaskType.POLYGON:
         annotations_path = "person/coco_polygon.json"
     else:
         annotations_path = "person/coco_rle.json"
@@ -81,26 +76,26 @@ def main():
     cfg.MODEL.ROI_KEYPOINT_HEAD.NUM_KEYPOINTS = 17
     # cfg.MODEL.DEVICE = "cpu"
     cfg.SOLVER.BASE_LR = 0.001
-    cfg.SOLVER.MAX_ITER = 5000 
+    cfg.SOLVER.MAX_ITER = 10000 
     cfg.SOLVER.IMS_PER_BATCH = 2
     cfg.DATALOADER.NUM_WORKERS = 2
-    if train_type != TrainType.BOX:
+    if mask_type != MaskType.BOX:
         opts = [
           'MODEL.MASK_ON', True,
           'MODEL.ROI_KEYPOINT_HEAD.LOSS_WEIGHT', 1.0
         ]
         cfg.merge_from_list(opts)
-        if train_type == TrainType.POLYGON:
+        if mask_type == MaskType.POLYGON:
             cfg.INPUT.MASK_FORMAT = "polygon"
-        elif train_type == TrainType.RLE:
+        elif mask_type == MaskType.RLE:
             cfg.INPUT.MASK_FORMAT = "bitmask"
-    setConfigKeypoint(cfg)
+    setConfigKeypoint(cfg, "dataset_train")
     os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
     trainer = Trainer(cfg)
     trainer.resume_or_load(resume=True)
     trainer.train()
 
-def setConfigKeypoint(cfg):
+def setConfigKeypoint(cfg, dataset):
     keypoint_names = [
         "nose",
         "leftEye", "rightEye",
@@ -138,9 +133,9 @@ def setConfigKeypoint(cfg):
         ("leftKnee", "leftAnkle", (191, 255, 128)),
         ("rightKnee", "rightAnkle", (255, 195, 77)),
     ]
-    MetadataCatalog.get("dataset_train").keypoint_names = keypoint_names
-    MetadataCatalog.get("dataset_train").keypoint_flip_map = keypoint_flip_map
-    MetadataCatalog.get("dataset_train").keypoint_connection_rules = keypoint_connection_rules
+    MetadataCatalog.get(dataset).keypoint_names = keypoint_names
+    MetadataCatalog.get(dataset).keypoint_flip_map = keypoint_flip_map
+    MetadataCatalog.get(dataset).keypoint_connection_rules = keypoint_connection_rules
 
 if __name__ == "__main__":
     main()
@@ -164,12 +159,16 @@ from detectron2.data.datasets import register_coco_instances
 from detectron2.data import MetadataCatalog
 from detectron2.engine import DefaultPredictor
 from detectron2.utils.visualizer import Visualizer
-from tools.my_train_keypoints import setConfigKeypoint, TrainType
+from detectron2.evaluation import COCOEvaluator, inference_on_dataset
+from detectron2.data import build_detection_test_loader
+from tools.my_train_keypoints import setConfigKeypoint
+from tools.my_train_segmentation import MaskType
+from my_predictor_box import SaveType
 
 def main():
-    train_type = TrainType.BOX
+    mask_type = MaskType.BOX
     images_path = "person/test"
-    MetadataCatalog.get("dataset_train").set(thing_classes=["person"])
+    MetadataCatalog.get("dataset_test").set(thing_classes=["person"])
     cfg = get_cfg()
     cfg.merge_from_file(model_zoo.get_config_file("COCO-Keypoints/keypoint_rcnn_R_50_FPN_3x.yaml"))
     cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "model_final.pth")
@@ -178,27 +177,34 @@ def main():
     cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5
     # cfg.MODEL.DEVICE = "cpu"
     cfg.SOLVER.IMS_PER_BATCH = 1
-    if train_type != TrainType.BOX:
+    if mask_type != MaskType.BOX:
         opts = [
           'MODEL.MASK_ON', True,
           'MODEL.ROI_KEYPOINT_HEAD.LOSS_WEIGHT', 1.0
         ]
         cfg.merge_from_list(opts)
-    setConfigKeypoint(cfg)
+    setConfigKeypoint(cfg, "dataset_test")
     predictor = DefaultPredictor(cfg)
     os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
-    image_paths = glob.glob(os.path.join(images_path, "*.jpg"))
-    for image_path in image_paths:
-        image = cv2.imread(image_path)
-        outputs = predictor(image)
-        v = Visualizer(image[:, :, ::-1], MetadataCatalog.get("dataset_train"), scale=1.2)
-        out = v.draw_instance_predictions(outputs["instances"].to("cpu"))
-        output_path = os.path.join(cfg.OUTPUT_DIR, os.path.basename(image_path))
-        cv2.imwrite(output_path, out.get_image()[:, :, ::-1])
+    save_type = SaveType.IMAGE
+    if save_type == SaveType.IMAGE:
+        image_paths = glob.glob(os.path.join(images_path, "*.jpg"))
+        for image_path in image_paths:
+            image = cv2.imread(image_path)
+            outputs = predictor(image)
+            v = Visualizer(image[:, :, ::-1], MetadataCatalog.get("dataset_test"), scale=1.2)
+            out = v.draw_instance_predictions(outputs["instances"].to("cpu"))
+            output_path = os.path.join(cfg.OUTPUT_DIR, os.path.basename(image_path))
+            cv2.imwrite(output_path, out.get_image()[:, :, ::-1])
+    else:
+        annotations_path = "person/coco_test.json"
+        register_coco_instances("dataset_test", {}, annotations_path, images_path)
+        evaluator = COCOEvaluator("dataset_test", cfg, False, output_dir=cfg.OUTPUT_DIR)
+        val_loader = build_detection_test_loader(cfg, "dataset_test")
+        inference_on_dataset(predictor.model, val_loader, evaluator)
 
 if __name__ == "__main__":
     main()
-
 ```
 
 Run the inference script.
@@ -209,6 +215,10 @@ python my_predictor_keypoints.py
 
 ![adrian-linares-GKvvUu7P3uU-unsplash](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/33c9e3e1-7909-4b30-9ac6-2b30f0293574)
 
+If you set `save_type = SaveType.COCO_JSON`, you can save the inference result as coco_instances_results.json in the output folder.
+To import the inference result to RectLabel, use Export menus -> Import COCO JSON file.
+
+![detectron2_cooc_keypoints](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/173f2ee6-c6da-45c4-9f2c-4b589c6969e3)
 
 
 
