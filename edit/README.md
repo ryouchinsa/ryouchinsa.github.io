@@ -12,6 +12,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Create keypoints](https://rectlabel.com/edit#create-keypoints)
 - [Create pixels](https://rectlabel.com/edit#create-pixels)
 - [Create image label](https://rectlabel.com/edit#create-image-label)
+- [Create memo](https://rectlabel.com/edit#create-memo)
 - [Move](https://rectlabel.com/edit#move)
 - [Rotate](https://rectlabel.com/edit#rotate)
 - [Rotate the image right/left](https://rectlabel.com/edit#rotate-the-image-rightleft)
@@ -198,6 +199,9 @@ Create an image label without drawing the box.
 Settings menu.
 - “Add an image label when press an object hotkey” is to add an image label using hotkeys.
 
+# Create memo
+Create memo for the image and can be used for searching. This feature works for the PASCAL VOC xml format.
+
 # Move
 Select an object.
 - Click an object to select.
@@ -257,11 +261,11 @@ Change the object color using the color picker.
 Clear the object color to the default color.
 
 # Search images
-You can search object, attribute, and image names in a gallery view.
+You can search object, attribute, image names, and memo in a gallery view.
 - To search labeled images, use "notempty" search text.
 - To search unlabeled images, use "" search text.
 
-![search3](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/753f9bb3-101b-41e9-ad33-8ae1d7eb9c27)
+![search4](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/550ea105-c2cf-4085-9851-696a069192cb)
 
 # Clear search images
 Clear searching and show all images.
