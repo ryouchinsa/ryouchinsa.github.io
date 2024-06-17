@@ -29,7 +29,7 @@ Have questions? Send an email to support@rectlabel.com.
 - Label keypoints with a skeleton
 - Label pixels with brushes and superpixels
 - Settings for objects, attributes, hotkeys, and labeling fast
-- Search object, attribute, and image names in a gallery view
+- Search object, attribute, image names, and memo in a gallery view
 - Export to COCO, Labelme, CreateML, YOLO, and DOTA formats
 - Export indexed color mask image and grayscale mask images
 - Video to image frames, augment images, etc.
@@ -37,9 +37,9 @@ Have questions? Send an email to support@rectlabel.com.
 ![sam_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/8ffe1c7e-830c-4a80-8b09-634f0d35c86a)
 ![sam_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/c110f813-c249-4de3-92af-73c721fbd4b9)
 ![coreml_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/d6e280ab-d55f-41e4-8eb4-2e098001020e)
-![ocr](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/9305ba27-834d-4f84-85e2-74100809a10a)
+![ocr](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/e1d6899f-9de3-4914-a65e-3886fddb3046)
 ![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/422819be-3fca-46b0-850c-6aa2f60df30c)
-![search3](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/1c524af1-cf9b-4a58-a76c-9464de854a12)
+![search4](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/449023f5-6c9e-48ef-a446-2d6240b228d9)
 
 
 
