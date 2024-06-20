@@ -10,6 +10,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Edit menus](https://rectlabel.com/edit)
 - [Core ML menus](https://rectlabel.com/coreml)
 - [View menus](https://rectlabel.com/view)
+- [Pricing](https://rectlabel.com/pricing)
 - [Privacy Policy](https://rectlabel.com/privacy)
 - [Terms of Use](https://rectlabel.com/terms)
 - [About team](https://rectlabel.com/about)
