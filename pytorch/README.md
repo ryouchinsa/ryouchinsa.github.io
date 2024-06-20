@@ -5,7 +5,10 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 
 Have questions? Send an email to support@rectlabel.com.
 
-# Install CUDA, cuDNN, and PyTorch on Ubuntu 22.04
+# Install CUDA, cuDNN, and PyTorch on Ubuntu 22.04 in 30 minutes
+
+Using the Amazon EC2 g4dn.xlarge instance which costs $0.526/hour, all installations will finish in 30 minutes.
+
 Install CUDA and cuDNN.
 ```
 [wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb
