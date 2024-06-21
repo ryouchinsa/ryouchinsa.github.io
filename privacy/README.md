@@ -6,8 +6,8 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Privacy Policy
-We do not collect any images, annotations, and settings data.
+We do not collect any images and annotations data.
 
-RectLabel connects to Apple's server and our own server to check your in-app purchases state.
+The standard RectLabel connects to Apple's server for in-app purchases.
 
 RectLabel Pro does not connect to any servers.
