@@ -32,7 +32,7 @@ Have questions? Send an email to support@rectlabel.com.
 Annotation files are exported as an [Create ML JSON file](https://developer.apple.com/videos/play/wwdc2019/424/).
 
 - Specify the split ratio "80/10/10" so that images are split into train, validation, and test sets.
-- For "Image size", both width and height would be less than or equal to the size. If "Image size" is empty, images are not resized.
+- For "Image size", images are resized, if "Image size" is empty, images are not resized.
 - If you encouter errors, read [Empty table from specified data source](https://stackoverflow.com/questions/65314564/empty-table-from-specified-data-source-error-in-create-ml).
 
 ![createml](https://github.com/user-attachments/assets/83a1351e-95a3-400c-bb22-e674c10f3301)
@@ -71,7 +71,13 @@ Annotation files are exported as an [Create ML JSON file](https://developer.appl
 
 # Export images for classification
 All images are exported into object-named subfolders.
+- Specify the split ratio "80/10/10" so that images are split into train, validation, and test sets.
+- For "Image size", images are resized, if "Image size" is empty, images are not resized.
+- You can change the image type to whole image or cropped image.
 - [Creating an Image Classifier Model on Create ML](https://developer.apple.com/documentation/createml/creating-an-image-classifier-model).
+
+![classification](https://github.com/user-attachments/assets/c8e0e3e8-cde5-4499-92c2-e0242ac06adc)
+
 
 ```
 └── saved_folder
