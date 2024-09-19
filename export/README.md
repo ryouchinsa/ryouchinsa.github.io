@@ -90,7 +90,7 @@ Annotation files are exported as an [COCO JSON file](http://cocodataset.org/#for
 - For "Image size", images are resized, if "Image size" is empty, images are not resized.
 - For "Export only used names", if checked on, all annotation files are scanned and the new objects table is created, based on the objects table, each object index is written in the COCO JSON file.
 
-![coco_export](https://github.com/user-attachments/assets/85291099-c08e-499a-a904-6323a4f178eb)
+![coco_export](https://github.com/user-attachments/assets/df5c22db-d72a-433b-ae9b-8240f5b1accd)
 
 For a box object, "segmentation" is exported as empty.
 
