@@ -19,6 +19,9 @@ Have questions? Send an email to support@rectlabel.com.
 - [Delete](https://rectlabel.com/edit#delete)
 - [Layer up/down](https://rectlabel.com/edit#layer-updown)
 - [Toggle erase](https://rectlabel.com/edit#toggle-erase)
+- [Copy as erase mask](https://rectlabel.com/edit#copy-as-erase-mask)
+- [Cut using erase mask](https://rectlabel.com/edit#cut-using-erase-mask)
+- [Start SAM preprocessing](https://rectlabel.com/edit#start-sam-preprocessing)
 - [Change brightness and contrast](https://rectlabel.com/edit#change-brightness-and-contrast)
 - [Change object color](https://rectlabel.com/edit#change-object-color)
 - [Clear object color](https://rectlabel.com/edit#clear-object-color)
@@ -250,6 +253,15 @@ Erase points/mask when Create polygon mode.
 Erase pixels when Create pixels mode.
 
 ![erase_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/5ac2f132-af4f-47a7-b071-e565bbd8d167)
+
+# Copy as erase mask
+Copy the polygon as an erase mask.
+
+# Cut using erase mask
+Cut the polygon using the erase mask.
+
+# Start SAM preprocessing
+Start downloading the SAM model and preprocessing the image.
 
 # Change brightness and contrast
 Change the image brightness and contrast for dark images.
