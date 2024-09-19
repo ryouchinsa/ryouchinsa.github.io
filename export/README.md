@@ -35,7 +35,7 @@ Annotation files are exported as an [Create ML JSON file](https://developer.appl
 - For "Image size", images are resized, if "Image size" is empty, images are not resized.
 - If you encouter errors, read [Empty table from specified data source](https://stackoverflow.com/questions/65314564/empty-table-from-specified-data-source-error-in-create-ml).
 
-![createml](https://github.com/user-attachments/assets/83a1351e-95a3-400c-bb22-e674c10f3301)
+![createml](https://github.com/user-attachments/assets/4976010d-f835-4125-af5c-0a3d7c225fbd)
 
 ```
 [{
@@ -76,8 +76,7 @@ All images are exported into object-named subfolders.
 - You can change the image type to whole image or cropped image.
 - [Creating an Image Classifier Model on Create ML](https://developer.apple.com/documentation/createml/creating-an-image-classifier-model).
 
-![classification](https://github.com/user-attachments/assets/c8e0e3e8-cde5-4499-92c2-e0242ac06adc)
-
+![classification](https://github.com/user-attachments/assets/d68fd4ef-2fae-4de4-b32f-563e523fcd7e)
 
 ```
 └── saved_folder
