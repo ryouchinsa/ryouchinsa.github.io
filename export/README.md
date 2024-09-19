@@ -87,8 +87,11 @@ All images are exported into object-named subfolders.
 
 # Export COCO JSON file
 Annotation files are exported as an [COCO JSON file](http://cocodataset.org/#format-data). This format is for [Detectron2](https://github.com/facebookresearch/detectron2).
-- Specify the split ratio "80/10/10" so that all images are split into train, validation, and test sets.
-- When the shuffle checkbox is ON, images are randomly shuffled everytime you export. 
+- Specify the split ratio "80/10/10" so that images are split into train, validation, and test sets.
+- For "Image size", images are resized, if "Image size" is empty, images are not resized.
+- For "Export only used names", if checked on, all annotation files are scanned and the new objects table is created, based on the objects table, each object index is written in the COCO JSON file.
+
+![coco_export](https://github.com/user-attachments/assets/85291099-c08e-499a-a904-6323a4f178eb)
 
 For a box object, "segmentation" is exported as empty.
 
