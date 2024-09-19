@@ -19,7 +19,6 @@ Have questions? Send an email to support@rectlabel.com.
 - [Export DOTA txt files](https://rectlabel.com/export#export-dota-txt-files)
 - [Import DOTA txt files](https://rectlabel.com/export#import-dota-txt-files)
 - [Export train/val/test folders](https://rectlabel.com/export#export-trainvaltest-folders)
-- [Export train/val/test.txt files](https://rectlabel.com/export#export-trainvaltesttxt-files)
 - [Export object names file](https://rectlabel.com/export#export-object-names-file)
 - [Import object names file](https://rectlabel.com/export#import-object-names-file)
 - [Export mask images](https://rectlabel.com/export#export-mask-images)
@@ -329,6 +328,7 @@ Annotation files are exported as YOLO text files. A YOLO text file is saved per 
 
 - Specify the split ratio "80/10/10" so that images are split into train, validation, and test sets.
 - For "Image size", images are resized, if "Image size" is empty, images are not resized.
+- For "Names file", there are "yaml file as dictionary", "yaml file as array", and "names file".
 - For "Export only used names", if checked on, all annotation files are scanned and the new objects table is created, based on the objects table, each object index is written in each YOLO text file. If you are using attributes, check on "Export only used names".
 
 ![yolo_export](https://github.com/user-attachments/assets/da7b521d-fff8-4b03-9c19-a2276d41b6e6)
@@ -371,6 +371,11 @@ class_index center_x center_y width height x1 y1 v1 x2 y2 v2 x3 y3 v3 ...
 # Export DOTA txt files
 Annotation files are exported as [DOTA text files](https://captain-whu.github.io/DOTA/dataset.html). This format is for [MMRotate](https://github.com/open-mmlab/mmrotate).
 
+- Specify the split ratio "80/10/10" so that images are split into train, validation, and test sets.
+- For "Image size", images are resized, if "Image size" is empty, images are not resized.
+
+![dota_export](https://github.com/user-attachments/assets/429c91f3-9a45-415f-954b-cc1c43f04e54)
+
 Settings menu.
 - “Use truncated, occluded, and difficult tags” is to show truncated, occluded, and difficult checkboxes on the label dialog.
 
@@ -379,31 +384,17 @@ x1 y1 x2 y2 x3 y3 x4 y4 category difficult
 1300.536987 1413.503784 1192.848755 1535.568848 530.876038 951.562073 638.564270 829.497009 truck 0
 ```
 
-![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/452d93d3-8c7d-40a1-a599-5e1ed2dd474f)
-
 # Import DOTA txt files
 - The DOTA text files are imported to annotation files in the current folder.
 - Before importing, be sure that you opened images folder and annotations folder.
 
 # Export train/val/test folders
 - Specify the split ratio "80/10/10" so that images are split into train, validation, and test sets.
-- When the shuffle checkbox is ON, images are randomly shuffled everytime you export. 
 - You can export train/val/test folders and the yaml file at once in the YOLO format.
-
-# Export train/val/test.txt files
-- Specify the split ratio "80/10/10" so that images are split into train, validation, and test sets.
-- When the shuffle checkbox is ON, images are randomly shuffled everytime you export. 
-- Using "Full path" option, you can save full paths. Or you can add prefix to file names.
-- In the specified folder, train.txt, val.txt, and test.txt are saved.
-
-```
-/Users/ryo/Desktop/test_annotations/sneakers/images/sneakers-1.jpg
-/Users/ryo/Desktop/test_annotations/sneakers/images/sneakers-2.jpg
-...
-```
 
 # Export object names file
 Export a yaml file as dictionary for [YOLOv5](https://github.com/ultralytics/yolov5) and [YOLOv8](https://github.com/ultralytics/ultralytics).
+- For "Export only used names", if checked on, all annotation files are scanned and the new objects table is created.
 - The "flip_idx" array is to flip the "left" included keypoint position and the "right" included keypoint position.
 
 ```
