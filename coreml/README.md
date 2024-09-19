@@ -9,6 +9,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Load Core ML model](https://rectlabel.com/coreml#load-core-ml-model)
 - [Auto labeling](https://rectlabel.com/coreml#auto-labeling)
 - [Auto text recognition for lines and words](https://rectlabel.com/coreml#auto-text-recognition-for-lines-and-words)
+- [Search incorrectly predicted images](https://rectlabel.com/coreml#search-incorrectly-predicted-images)
 
 # Load Core ML model
 - Apple provides [Core ML Models](https://developer.apple.com/machine-learning/models/).
@@ -40,6 +41,11 @@ Using [Vision Framework](https://developer.apple.com/documentation/vision), auto
 - You can change the type to lines or words.
 
 ![ocr](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/483bd361-ed04-4f21-bace-5601ad476c91)
+
+# Search incorrectly predicted images
+Show training images which predicted labels and boxes are incorrect compared with the current annotations. Such as "Not detected", "Not classified", and "Falsely detected".
+
+![search_incorrectly](https://github.com/user-attachments/assets/7289e936-501a-4a90-a94c-586da4d9bb60)
 
 
 
