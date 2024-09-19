@@ -214,8 +214,6 @@ In "categories", "keypoints" and "skeleton" are exported.
 },
 ```
 
-![keypoints_pixels_coco](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/a7c6098f-49eb-4c6d-9147-508ffc38cce0)
-
 # Import COCO JSON file
 - The COCO JSON file is imported to annotation files in the current folder.
 - Before importing, be sure that you opened images folder and annotations folder.
@@ -329,6 +327,12 @@ Annotation files are exported as [Labelme JSON files](https://github.com/wkentar
 # Export YOLO txt files
 Annotation files are exported as YOLO text files. A YOLO text file is saved per an image.
 
+- Specify the split ratio "80/10/10" so that images are split into train, validation, and test sets.
+- For "Image size", images are resized, if "Image size" is empty, images are not resized.
+- For "Export only used names", if checked on, all annotation files are scanned and the new objects table is created, based on the objects table, each object index is written in each YOLO text file. If you are using attributes, check on "Export only used names".
+
+![yolo_export](https://github.com/user-attachments/assets/da7b521d-fff8-4b03-9c19-a2276d41b6e6)
+
 ```
 ├── datasets
 │   └── sneakers
@@ -359,8 +363,6 @@ For a keypoints object, the bounding box and the points coordinates are saved. T
 class_index center_x center_y width height x1 y1 v1 x2 y2 v2 x3 y3 v3 ...
 0 0.545230 0.616880 0.298794 0.766239 0.522073 0.309332 2 0.540170 0.293193 2 0.499589 0.296503 2 ...
 ```
-
-![yolo](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/57b600f3-3daa-4b9a-879e-35858ce7b6ad)
 
 # Import YOLO txt files
 - The YOLO text files are imported to annotation files in the current folder.
