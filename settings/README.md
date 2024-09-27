@@ -12,6 +12,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Hotkeys](https://rectlabel.com/settings#hotkeys)
 - [Label fast](https://rectlabel.com/settings#label-fast)
 - [Export/Import settings file](https://rectlabel.com/settings#exportimport-settings-file)
+- [Locate settings file](https://rectlabel.com/settings#locate-settings-file)
 - [Open app folder](https://rectlabel.com/settings#open-app-folder)
 
 # Projects
@@ -75,6 +76,9 @@ Customize settings to make your labeling work faster.
 
 # Export/Import settings file
 You can export the current settings file and import to another computer.
+
+# Locate settings file
+You can change the location of the settings file. If you change the location to iCloud drive, you can share the settings file among multiple devices.
 
 # Open app folder
 You can open an app folder and delete the cache files.
