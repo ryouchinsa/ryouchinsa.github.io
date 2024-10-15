@@ -13,7 +13,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Resize images](https://rectlabel.com/file#resize-images)
 - [Next image and Prev image](https://rectlabel.com/file#next-image-and-prev-image)
 - [Jump to image number](https://rectlabel.com/file#jump-to-image-number)
-- [Move/Copy images](https://rectlabel.com/file#movecopy-images)
+- [Copy/Move/Delete images](https://rectlabel.com/file#copymovedelete-images)
 - [Save](https://rectlabel.com/file#save)
 - [Close folder](https://rectlabel.com/file#close-folder)
 
@@ -89,9 +89,10 @@ You can open the exported YOLOv5/YOLOv8 folder.
 # Jump to image number
 You can specify the image number to show.
 
-# Move/Copy images
+# Copy/Move/Delete images
 - You can move/copy all images or random fraction of total to another folder.
 - Using Edit menu -> Search images, you can move/copy searched images to another folder.
+- Deleted images and annotations are moved to the app folder.
 
 # Save
 The annotation file is saved as {image_file_name}.xml in the PASCAL VOC xml format or {image_file_name}.txt in the YOLO text format.
