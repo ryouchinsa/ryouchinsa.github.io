@@ -9,6 +9,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Load Core ML model](https://rectlabel.com/coreml#load-core-ml-model)
 - [Auto labeling](https://rectlabel.com/coreml#auto-labeling)
 - [Auto text recognition for lines and words](https://rectlabel.com/coreml#auto-text-recognition-for-lines-and-words)
+- [Toggle auto process](https://rectlabel.com/coreml#toggle-auto-process)
 - [Search incorrectly predicted images](https://rectlabel.com/coreml#search-incorrectly-predicted-images)
 
 # Load Core ML model
@@ -29,23 +30,27 @@ Settings menus.
 - “Clear existing labels when auto label all images” is to clear existing labels when auto label all images.
 - “Save confidence values when YOLO format” is to save confidence values when YOLO format.
 
-![coreml](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/9cd87cde-5488-4fe4-b360-30af2dac07ad)
+![coreml](https://github.com/user-attachments/assets/049386e6-a816-4ca4-b5d7-18de63b51a8f)
 
-![coreml_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/acf73fd2-4cdc-498c-ae41-9cf81cb28b9a)
+![coreml_polygon](https://github.com/user-attachments/assets/e5556c25-1d01-4f4b-977d-b9a830c92b64)
 
-![coreml_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/aef91eea-1d94-4785-8b2c-dafcd1eed39c)
+![coreml_pixels](https://github.com/user-attachments/assets/b72fbe4b-810b-48e6-8026-dc13f5c64c36)
 
 # Auto text recognition for lines and words
 Using [Vision Framework](https://developer.apple.com/documentation/vision), automatic text recognition is performed.
 - You can change the language.
 - You can change the type to lines or words.
 
-![ocr](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/483bd361-ed04-4f21-bace-5601ad476c91)
+![ocr](https://github.com/user-attachments/assets/3bee6ece-acdb-4743-a226-68618f2ad299)
+
+# Toggle auto process
+You can auto label when change the image if you check on the "Auto process" checkbox on the Core ML dialog.
 
 # Search incorrectly predicted images
 Show training images which predicted labels and boxes are incorrect compared with the current annotations. Such as "Not detected", "Not classified", and "Falsely detected".
 
-![search_incorrectly](https://github.com/user-attachments/assets/7289e936-501a-4a90-a94c-586da4d9bb60)
+![search_incorrectly](https://github.com/user-attachments/assets/75567a43-bfec-4041-9bc3-25e8977c1ddc)
+
 
 
 
