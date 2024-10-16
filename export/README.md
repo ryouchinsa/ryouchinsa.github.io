@@ -18,6 +18,8 @@ Have questions? Send an email to support@rectlabel.com.
 - [Import YOLO txt files](https://rectlabel.com/export#import-yolo-txt-files)
 - [Export DOTA txt files](https://rectlabel.com/export#export-dota-txt-files)
 - [Import DOTA txt files](https://rectlabel.com/export#import-dota-txt-files)
+- [Export CSV file](https://rectlabel.com/export#export-csv-file)
+- [Import CSV file](https://rectlabel.com/export#import-csv-file)
 - [Export train/val/test folders](https://rectlabel.com/export#export-trainvaltest-folders)
 - [Export object names file](https://rectlabel.com/export#export-object-names-file)
 - [Import object names file](https://rectlabel.com/export#import-object-names-file)
@@ -28,7 +30,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Export objects and attributes stats](https://rectlabel.com/export#export-objects-and-attributes-stats)
 
 # Export Create ML JSON file
-Annotation files are exported as an [Create ML JSON file](https://developer.apple.com/videos/play/wwdc2019/424/).
+Annotation files are exported as a [Create ML JSON file](https://developer.apple.com/videos/play/wwdc2019/424/).
 
 - Specify the split ratio "80/10/10" so that images are split into train, validation, and test sets.
 - For "Image size", images are resized, if "Image size" is empty, images are not resized.
@@ -85,7 +87,7 @@ All images are exported into object-named subfolders.
 ```
 
 # Export COCO JSON file
-Annotation files are exported as an [COCO JSON file](http://cocodataset.org/#format-data). This format is for [Detectron2](https://github.com/facebookresearch/detectron2).
+Annotation files are exported as a [COCO JSON file](http://cocodataset.org/#format-data). This format is for [Detectron2](https://github.com/facebookresearch/detectron2).
 - Specify the split ratio "80/10/10" so that images are split into train, validation, and test sets.
 - For "Image size", images are resized, if "Image size" is empty, images are not resized.
 - For "Export only used names", if checked on, all annotation files are scanned and the new objects table is created, based on the objects table, each object index is written in the COCO JSON file.
@@ -386,6 +388,19 @@ x1 y1 x2 y2 x3 y3 x4 y4 category difficult
 
 # Import DOTA txt files
 - The DOTA text files are imported to annotation files in the current folder.
+- Before importing, be sure that you opened images folder and annotations folder.
+
+# Export CSV file
+Annotation files are exported as a CSV file.
+- For the type of rectangle, (x, y) means the center of the box where (0, 0) is the top-left corner.
+
+```
+path,annotations
+/Users/ryo/rcam/test_annotations/test/_test_min/images1500/daniel-garcia-472792.jpg,[{"label":"sneakers-converse-yellow","type":"rectangle","coordinates":{"x":565,"y":488,"width":300,"height":377}},{"label":"sneakers-converse-yellow","type":"rectangle","coordinates":{"x":907,"y":503,"width":235,"height":265}}]
+```
+
+# Import CSV file
+- The CSV file is imported to annotation files in the current folder.
 - Before importing, be sure that you opened images folder and annotations folder.
 
 # Export train/val/test folders
