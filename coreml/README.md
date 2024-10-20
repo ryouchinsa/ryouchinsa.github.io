@@ -15,7 +15,7 @@ Have questions? Send an email to support@rectlabel.com.
 # Load Core ML model
 - Apple provides [Core ML Models](https://developer.apple.com/machine-learning/models/).
 - To convert your ML model to the Core ML format, use [coremltools](https://github.com/apple/coremltools).
-- You can convert [YOLOv5](https://github.com/ultralytics/yolov5), [YOLOv8](https://github.com/ultralytics/ultralytics), and [MobileNetV2 + SSDLite](https://machinethink.net/blog/mobilenet-ssdlite-coreml/) models to Core ML models.
+- You can convert [YOLOv5](https://github.com/ultralytics/yolov5), [YOLOv8/YOLO11](https://github.com/ultralytics/ultralytics), and [MobileNetV2 + SSDLite](https://machinethink.net/blog/mobilenet-ssdlite-coreml/) models to Core ML models.
 
 # Auto labeling
 Auto label images using the loaded Core ML model.
