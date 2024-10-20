@@ -352,14 +352,14 @@ class_index center_x center_y width height
 0 0.464615 0.594724 0.680000 0.769784
 ```
 
-For a rotated box/polygon/cubic bezier/line/point/pixels object, the points coordinates are saved. This format is for [YOLOv5](https://github.com/ultralytics/yolov5) and [YOLOv8](https://github.com/ultralytics/ultralytics) Instance Segmentation.
+For a rotated box/polygon/cubic bezier/line/point/pixels object, the points coordinates are saved. This format is for [YOLOv5](https://github.com/ultralytics/yolov5) and [YOLOv8/YOLO11](https://github.com/ultralytics/ultralytics) Instance Segmentation.
 
 ```
 class_index x1 y1 x2 y2 x3 y3 ...
 0 0.180027 0.287930 0.181324 0.280698 0.183726 0.270573 ...
 ```
 
-For a keypoints object, the bounding box and the points coordinates are saved. This format is for [YOLOv8](https://github.com/ultralytics/ultralytics).
+For a keypoints object, the bounding box and the points coordinates are saved. This format is for [YOLOv8/YOLO11](https://github.com/ultralytics/ultralytics).
 
 ```
 class_index center_x center_y width height x1 y1 v1 x2 y2 v2 x3 y3 v3 ...
@@ -408,7 +408,7 @@ path,annotations
 - You can export train/val/test folders and the yaml file at once in the YOLO format.
 
 # Export object names file
-Export a yaml file as dictionary for [YOLOv5](https://github.com/ultralytics/yolov5) and [YOLOv8](https://github.com/ultralytics/ultralytics).
+Export a yaml file as dictionary for [YOLOv5](https://github.com/ultralytics/yolov5) and [YOLOv8/YOLO11](https://github.com/ultralytics/ultralytics).
 - For "Export only used names", if checked on, all annotation files are scanned and the new objects table is created.
 - The "flip_idx" array is to flip the "left" included keypoint position and the "right" included keypoint position.
 
