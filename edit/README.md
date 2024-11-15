@@ -111,9 +111,8 @@ Create using SAM.
 - Press an enter key to finish drawing.
 - Press an escape key to cancel drawing.
 
-![sam_polygon](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/ed81101e-d27a-4060-9e6e-71ed5eddbff0)
-
-![sam_pixels](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/a6b52328-67c6-4461-a39a-30d2e5e7be1c)
+![sam2_polygon](https://github.com/user-attachments/assets/4ed5af76-e2e9-4a49-b13b-f43aa3b25688)
+![sam2_pixels](https://github.com/user-attachments/assets/05c9ece6-1906-4196-9676-6b96053ee61f)
 
 # Create keypoints
 Create keypoints.
