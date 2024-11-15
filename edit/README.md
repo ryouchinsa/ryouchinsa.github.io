@@ -95,10 +95,9 @@ Merge polygons and separate the polygon.
 
 # Create polygon using SAM
 Select a model.
+- [Segment Anything Model 2](https://github.com/facebookresearch/sam2)
+- [Segment Anything Model](https://github.com/facebookresearch/segment-anything)
 - [MobileSAM](https://github.com/ChaoningZhang/MobileSAM)
-- [EfficientSAM](https://github.com/yformer/EfficientSAM)
-- [Segment Anything models](https://github.com/facebookresearch/segment-anything)
-- [HQ-SAM](https://github.com/SysCV/sam-hq)
 
 Select a create type.
 - box
