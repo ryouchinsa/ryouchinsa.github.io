@@ -8,7 +8,7 @@ To download RectLabel apps.
 How to use? Read our [Help page](https://rectlabel.com/help/).
 
 # Key features
-- Label polygons and pixels using Segment Anything models
+- Label polygons and pixels using Segment Anything Model 2
 - Automatic labeling using Core ML models
 - Automatic text recognition for lines and words
 - Label cubic bezier curves, line segments, and points
