@@ -22,7 +22,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Train keypoints using a Keypoint R-CNN model on Detectron2](https://rectlabel.com/detectron2_keypoints)
 
 # Key features
-- Label polygons and pixels using Segment Anything models
+- Label polygons and pixels using Segment Anything Model 2
 - Automatic labeling using Core ML models
 - Automatic text recognition for lines and words
 - Label cubic bezier curves, line segments, and points
