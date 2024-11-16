@@ -35,7 +35,7 @@ Have questions? Send an email to support@rectlabel.com.
 - Export indexed color mask image and grayscale mask images
 - Video to image frames, augment images, etc.
 
-![sam2_polygon](https://github.com/user-attachments/assets/4ed5af76-e2e9-4a49-b13b-f43aa3b25688)
+![sam2_polygon](https://github.com/user-attachments/assets/052f467f-b94d-4137-9c40-ca8cf80b3a51)
 ![sam2_pixels](https://github.com/user-attachments/assets/05c9ece6-1906-4196-9676-6b96053ee61f)
 ![coreml_polygon](https://github.com/user-attachments/assets/7e972e2a-cf54-43d5-ba30-43f9365b459f)
 ![ocr](https://github.com/user-attachments/assets/1bb4cdda-40df-4d76-bad2-827c64f1b0fe)
