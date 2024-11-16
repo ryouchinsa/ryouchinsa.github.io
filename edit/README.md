@@ -110,7 +110,7 @@ Create using SAM.
 - Press an enter key to finish drawing.
 - Press an escape key to cancel drawing.
 
-![sam2_polygon](https://github.com/user-attachments/assets/4ed5af76-e2e9-4a49-b13b-f43aa3b25688)
+![sam2_polygon](https://github.com/user-attachments/assets/052f467f-b94d-4137-9c40-ca8cf80b3a51)
 ![sam2_pixels](https://github.com/user-attachments/assets/05c9ece6-1906-4196-9676-6b96053ee61f)
 
 # Create keypoints
