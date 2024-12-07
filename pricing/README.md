@@ -11,4 +11,8 @@ Have questions? Send an email to support@rectlabel.com.
 
 [RectLabel Pro](https://apps.apple.com/app/id1490990105) offers a one-time payment plan, $19.99/one-time.
 
+RectLabel Pro is for a long time use and different from the standard RectLabel for 2 points.
+- The license can be bought by one-time payment. And the license corresponds to volume purchases.
+- There are no network connections because there are no in-app purchases.
+
 Both apps can use all features.
