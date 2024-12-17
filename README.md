@@ -21,7 +21,7 @@ How to use? Read our [Help page](https://rectlabel.com/help/).
 - Export indexed color mask image and grayscale mask images
 - Video to image frames, augment images, etc.
 
-![sam2_polygon](https://github.com/user-attachments/assets/052f467f-b94d-4137-9c40-ca8cf80b3a51)
+![sam2_polygon](https://github.com/user-attachments/assets/ed202ece-946a-4130-9a76-d922ef8cd98f)
 ![sam2_pixels](https://github.com/user-attachments/assets/05c9ece6-1906-4196-9676-6b96053ee61f)
 ![coreml_polygon](https://github.com/user-attachments/assets/7e972e2a-cf54-43d5-ba30-43f9365b459f)
 ![ocr](https://github.com/user-attachments/assets/1bb4cdda-40df-4d76-bad2-827c64f1b0fe)
