@@ -107,13 +107,14 @@ Select a create type.
 Create using SAM.
 - Press start button to start downloading the model and preprocessing the image.
 - Click positive and negative points. Pressing the option key, you can switch the positive/negative mode.
+- Dragging the smooth slider, the number of polygon points changes.
 - Press an enter key to finish drawing.
 - Press an escape key to cancel drawing.
 
 Right click on the object.
 - "Convert to polygon/pixels using SAM" to convert selected boxes to polygons/pixels after preprocessing the image using SAM.
 
-![sam2_polygon](https://github.com/user-attachments/assets/052f467f-b94d-4137-9c40-ca8cf80b3a51)
+![sam2_polygon](https://github.com/user-attachments/assets/ed202ece-946a-4130-9a76-d922ef8cd98f)
 ![sam2_pixels](https://github.com/user-attachments/assets/05c9ece6-1906-4196-9676-6b96053ee61f)
 
 # Create keypoints
