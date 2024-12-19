@@ -113,12 +113,12 @@ Create using SAM.
 
 Right click on the object.
 - "Convert to polygon/pixels using SAM" to convert selected boxes to polygons/pixels after preprocessing the image using SAM.
-- 
-![sam2_polygon](https://github.com/user-attachments/assets/95081014-6bb8-475f-b8e7-16634a587569)
+
+![sam2_polygon](https://github.com/user-attachments/assets/cceff18f-1692-461b-b6e3-87379c580aea)
 ![sam2_pixels](https://github.com/user-attachments/assets/05c9ece6-1906-4196-9676-6b96053ee61f)
-![smooth01](https://github.com/user-attachments/assets/27bbc05f-78a7-4042-8960-c2f38cad7d33)
-![smooth05](https://github.com/user-attachments/assets/08c57b88-d691-4bec-9732-c43386f968d3)
-![smooth10](https://github.com/user-attachments/assets/a6c7e5ae-ad6a-4339-8bdd-19a355499b38)
+![smooth01](https://github.com/user-attachments/assets/2131b912-a290-4b4d-bc38-bb3042b873f6)
+![smooth05](https://github.com/user-attachments/assets/f9361476-b656-42aa-9202-8db9851bff4a)
+![smooth10](https://github.com/user-attachments/assets/ab4e8f64-52de-43b9-b0fc-3512331f3a86)
 
 # Create keypoints
 Create keypoints.
