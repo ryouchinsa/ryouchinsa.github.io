@@ -6,6 +6,7 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [Nutzung künstlicher Intelligenz zur Aufspürung von Geisternetzen in Küstengewässern](https://oceanrep.geomar.de/id/eprint/60962/1/DOI_10.23784_HN127-04.pdf)
 - [Innovative Approaches to Semantic Segmentation in Construction Sites: Combining New Dataset with Semi-Supervised and Zero-Shot Learning](https://mediatum.ub.tum.de/1754128)
 - [Comparing Different YOLO Versions for Boat Detection and Classification in Real Datasets](https://ieeexplore.ieee.org/abstract/document/10682267)
 - [CycleInSight: An enhanced YOLO approach for vulnerable cyclist detection in urban environments](https://www.researchgate.net/publication/382776677_CycleInSight_An_enhanced_YOLO_approach_for_vulnerable_cyclist_detection_in_urban_environments)
