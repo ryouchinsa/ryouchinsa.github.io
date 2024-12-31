@@ -6,6 +6,7 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [The impact of zoo visitors on the behaviour of black lemurs (Eulemur macaco)and ring-tailed lemurs (Lemur catta) assessed with artificial intelligence](https://journals.univ-tlemcen.dz/GABJ/index.php/GABJ/article/view/392/277)
 - [Behavioral Coding of Captive African Elephants (Loxodonta africana): Utilizing DeepLabCut and Create ML for Nocturnal Activity Tracking](https://www.mdpi.com/2076-2615/14/19/2820)
 - [Application of Machine Learning for Automating Behavioral Tracking of Captive Bornean Orangutans (Pongo Pygmaeus)](https://www.mdpi.com/2076-2615/14/12/1729)
 - [A Study of YOLO (You Only Look Once) to YOLOv8](https://books.google.co.jp/books?&id=ebAOEQAAQBAJ&oi=fnd&pg=PA257&dq=rectlabel&ots=2iSZ7TtLWi&sig=8fiCU1b1WpU-qE0UlKPQs1ASYHE)
