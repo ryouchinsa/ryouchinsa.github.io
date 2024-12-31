@@ -6,6 +6,7 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [InaTechShips: A Validation Study of a Novel Ship Dataset Through Deep Learning-Based Classification and Detection Models for Maritime Applications.](https://www.researchgate.net/profile/Eduardo-Teixeira-13/publication/384160323_InaTechShips_A_Validation_Study_of_a_Novel_Ship_Dataset_Through_Deep_Learning-Based_Classification_and_Detection_Models_for_Maritime_Applications/links/66ed2fde750edb3bea5ec919/InaTechShips-A-Validation-Study-of-a-Novel-Ship-Dataset-Through-Deep-Learning-Based-Classification-and-Detection-Models-for-Maritime-Applications.pdf)
 - [Machine Learning Algorithms for Automated Artifact Classification in Large Digital Datasets](https://easychair.org/publications/preprint/8553/open)
 - [Research on Airport Target Recognition Based on YOLOv5 Algorithm](https://dl.acm.org/doi/abs/10.1145/3677182.3677222)
 - [Nutzung künstlicher Intelligenz zur Aufspürung von Geisternetzen in Küstengewässern](https://oceanrep.geomar.de/id/eprint/60962/1/DOI_10.23784_HN127-04.pdf)
