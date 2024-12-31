@@ -6,6 +6,7 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [Power grid facility detection and static model reconstruction based on multi-view stereo vision reconstruction](https://iopscience.iop.org/article/10.1088/1742-6596/2914/1/012024/meta)
 - [PixLabelCV - Labeling images for semantic segmentation fast, pixel-precise and offline](https://naos-be.zcu.cz/server/api/core/bitstreams/bd643264-c0df-468a-8370-fde47adb2c7d/content)
 - [The impact of zoo visitors on the behaviour of black lemurs (Eulemur macaco)and ring-tailed lemurs (Lemur catta) assessed with artificial intelligence](https://journals.univ-tlemcen.dz/GABJ/index.php/GABJ/article/view/392/277)
 - [Behavioral Coding of Captive African Elephants (Loxodonta africana): Utilizing DeepLabCut and Create ML for Nocturnal Activity Tracking](https://www.mdpi.com/2076-2615/14/19/2820)
