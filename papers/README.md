@@ -6,6 +6,7 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [CycleInSight: An enhanced YOLO approach for vulnerable cyclist detection in urban environments](https://www.researchgate.net/publication/382776677_CycleInSight_An_enhanced_YOLO_approach_for_vulnerable_cyclist_detection_in_urban_environments)
 - [Automated Segmentation of Bryozoan Colonies and Prediction of Growth in Kelp Farms](https://oda.oslomet.no/oda-xmlui/bitstream/handle/11250/3162985/no.oslomet:inspera:232805187:125471823.pdf)
 - [Pothole Patrol: Harnessing Machine Learning for Automated Detection and Filling](https://bpasjournals.com/library-science/index.php/journal/article/view/2048/1954)
 - [Research on Joint Extraction Method of Elevator Safety Risk Control Knowledge Based on Multi-Perspective Learning](https://ieeexplore.ieee.org/abstract/document/10717874)
