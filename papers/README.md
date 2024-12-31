@@ -6,6 +6,7 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [Research on Airport Target Recognition Based on YOLOv5 Algorithm](https://dl.acm.org/doi/abs/10.1145/3677182.3677222)
 - [Nutzung künstlicher Intelligenz zur Aufspürung von Geisternetzen in Küstengewässern](https://oceanrep.geomar.de/id/eprint/60962/1/DOI_10.23784_HN127-04.pdf)
 - [Innovative Approaches to Semantic Segmentation in Construction Sites: Combining New Dataset with Semi-Supervised and Zero-Shot Learning](https://mediatum.ub.tum.de/1754128)
 - [Comparing Different YOLO Versions for Boat Detection and Classification in Real Datasets](https://ieeexplore.ieee.org/abstract/document/10682267)
