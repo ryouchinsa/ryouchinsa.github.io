@@ -6,6 +6,8 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [Sensing and Data Acquisition Techniques](https://link.springer.com/chapter/10.1007/978-3-031-59963-7_4)
+- [Smart Healthcare: Exploring the Internet of Medical Things with Ambient Intelligence](https://www.mdpi.com/2079-9292/13/12/2309)
 - [Crops Disease Detection, from Leaves to Field: What We Can Expect from Artificial Intelligence](https://www.mdpi.com/2073-4395/14/11/2719)
 - [Artificial intelligence/machine learning-assisted near-infrared/optical biosensing for plant phenotyping](https://www.sciencedirect.com/science/article/abs/pii/B9780443220012000081)
 - [Design of an Autonomous Litter Detection and Collection System for Icelandic Beaches](https://skemman.is/bitstream/1946/47664/1/MSC-Alain-Frey-2024.pdf)
