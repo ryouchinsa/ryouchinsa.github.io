@@ -11,6 +11,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Crops Disease Detection, from Leaves to Field: What We Can Expect from Artificial Intelligence](https://www.mdpi.com/2073-4395/14/11/2719)
 - [Artificial intelligence/machine learning-assisted near-infrared/optical biosensing for plant phenotyping](https://www.sciencedirect.com/science/article/abs/pii/B9780443220012000081)
 - [Design of an Autonomous Litter Detection and Collection System for Icelandic Beaches](https://skemman.is/bitstream/1946/47664/1/MSC-Alain-Frey-2024.pdf)
+- [Testing the association of affective flexibility with autistic traits and emotion regulation using an adapted Flexible Item Selection Task](https://osf.io/fd5kv/download)
 - [An investigation on Deep Active Learning](https://www.teses.usp.br/teses/disponiveis/45/45134/tde-17072024-223436/publico/tese_versao_final.pdf)
 - [InaTechShips: A Validation Study of a Novel Ship Dataset Through Deep Learning-Based Classification and Detection Models for Maritime Applications.](https://www.researchgate.net/profile/Eduardo-Teixeira-13/publication/384160323_InaTechShips_A_Validation_Study_of_a_Novel_Ship_Dataset_Through_Deep_Learning-Based_Classification_and_Detection_Models_for_Maritime_Applications/links/66ed2fde750edb3bea5ec919/InaTechShips-A-Validation-Study-of-a-Novel-Ship-Dataset-Through-Deep-Learning-Based-Classification-and-Detection-Models-for-Maritime-Applications.pdf)
 - [Machine Learning Algorithms for Automated Artifact Classification in Large Digital Datasets](https://easychair.org/publications/preprint/8553/open)
