@@ -6,6 +6,7 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [Research on Joint Extraction Method of Elevator Safety Risk Control Knowledge Based on Multi-Perspective Learning](https://ieeexplore.ieee.org/abstract/document/10717874)
 - [Automated Detection and Segmentation of Breast Lesions in Contrast-Enhanced Mammograms](https://ieeexplore.ieee.org/abstract/document/10783555)
 - [Power grid facility detection and static model reconstruction based on multi-view stereo vision reconstruction](https://iopscience.iop.org/article/10.1088/1742-6596/2914/1/012024/meta)
 - [PixLabelCV - Labeling images for semantic segmentation fast, pixel-precise and offline](https://naos-be.zcu.cz/server/api/core/bitstreams/bd643264-c0df-468a-8370-fde47adb2c7d/content)
