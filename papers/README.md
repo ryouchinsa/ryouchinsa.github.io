@@ -6,9 +6,10 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [Behavioral Coding of Captive African Elephants (Loxodonta africana): Utilizing DeepLabCut and Create ML for Nocturnal Activity Tracking](https://www.mdpi.com/2076-2615/14/19/2820)
+- [Application of Machine Learning for Automating Behavioral Tracking of Captive Bornean Orangutans (Pongo Pygmaeus)](https://www.mdpi.com/2076-2615/14/12/1729)
 - [A Study of YOLO (You Only Look Once) to YOLOv8](https://books.google.co.jp/books?&id=ebAOEQAAQBAJ&oi=fnd&pg=PA257&dq=rectlabel&ots=2iSZ7TtLWi&sig=8fiCU1b1WpU-qE0UlKPQs1ASYHE)
 - [HEAVY MACHINE PARTS MEASUREMENT THROUGH DEEP LEARNING](https://mdh.diva-portal.org/smash/get/diva2:1866305/FULLTEXT01.pdf)
-- [Application of Machine Learning for Automating Behavioral Tracking of Captive Bornean Orangutans (Pongo Pygmaeus)](https://www.mdpi.com/2076-2615/14/12/1729)
 - [Research on Deep Learning-Based Vehicle and Pedestrian Object Detection Algorithms](https://isprs-archives.copernicus.org/articles/XLVIII-4-W10-2024/213/2024/isprs-archives-XLVIII-4-W10-2024-213-2024.html)
 - [DRIVING RETAIL EFFICIENCY WITH COMPUTER VISION: DETECTING EMPTY SHELVES AND ACCURATE PRODUCT PLACEMENT THROUGH PLANOGRAM INTEGRATION](https://www.researchgate.net/publication/380934827_DRIVING_RETAIL_EFFICIENCY_WITH_COMPUTER_VISION_DETECTING_EMPTY_SHELVES_AND_ACCURATE_PRODUCT_PLACEMENT_THROUGH_PLANOGRAM_INTEGRATION)
 - [Integration of Deep Computer Vision Foundation Models for Document Analysis](https://eprints.ost.ch/id/eprint/1167/)
