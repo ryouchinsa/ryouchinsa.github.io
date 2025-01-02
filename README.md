@@ -17,7 +17,7 @@ How to use? Read our [Help page](https://rectlabel.com/help/).
 - Label pixels with brushes and superpixels
 - Settings for objects, attributes, hotkeys, and labeling fast
 - Search object, attribute, image names, and memo in a gallery view
-- Export to COCO, Labelme, CreateML, YOLO, and DOTA formats
+- Export to YOLO, COCO, CreateML, and DOTA formats
 - Export indexed color mask image and grayscale mask images
 - Video to image frames, augment images, etc.
 
