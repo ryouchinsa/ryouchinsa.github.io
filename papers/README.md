@@ -6,6 +6,7 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [A systematic survey on human pose estimation: upstream and downstream tasks, approaches, lightweight models, and prospects](https://link.springer.com/article/10.1007/s10462-024-11060-2)
 - [Sensing and Data Acquisition Techniques](https://link.springer.com/chapter/10.1007/978-3-031-59963-7_4)
 - [Smart Healthcare: Exploring the Internet of Medical Things with Ambient Intelligence](https://www.mdpi.com/2079-9292/13/12/2309)
 - [Crops Disease Detection, from Leaves to Field: What We Can Expect from Artificial Intelligence](https://www.mdpi.com/2073-4395/14/11/2719)
