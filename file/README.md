@@ -21,7 +21,7 @@ Have questions? Send an email to support@rectlabel.com.
 - You can drag & drop each images folder and annotations folder to the open table.
 - "Label format" is to change the label format to read/write in the PASCAL VOC xml format or YOLO text format.
 - "Sort images" is to sort images by Alphabetic, Numeric, and Last modified.
-- "Read images folder recursively" is to read all images from the root folder. You can search sub folder names in searching image name feature.
+- "Read images folder recursively" is to open an images folder which includes sub-folders recursively, the same sub-folders are structured in the annotations folder.
 - After opening images, we recommend to use File menu -> Remove EXIF orientation flags.
 - Image file names which include "_pixels" or "_depth" are skipped.
 - To copy the current image file name, click on the image file name shown at the top-left corner.
@@ -42,7 +42,7 @@ open -a RectLabel --args -images 000000000872.jpg,000000010363.jpg
 open -a RectLabel\ Pro --args -images 000000000872.jpg,000000010363.jpg
 ```
 
-<video src="https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/fa8dbf01-336b-4526-9f4c-6f23181567a1" controls="controls" muted="muted" class="width-fit" style="max-height:640px; min-height: 200px"></video>
+<video src="https://github.com/user-attachments/assets/96b128b1-2605-4cd3-b0d4-3ed06030649a" controls="controls" muted="muted" class="width-fit" style="max-height:640px; min-height: 200px"></video>
 
 # Open a folder which includes a yaml file
 You can open the exported YOLOv5/YOLOv8/YOLO11 folder.
