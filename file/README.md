@@ -35,6 +35,21 @@ Have questions? Send an email to support@rectlabel.com.
     └── 1.xml or 1.txt
 ```
 
+Drag & drop the root folder to the open table, child images and annotations/labels folders are automatically set.
+
+```
+└── root_folder
+    ├── train
+    │   ├── images
+    │   └── labels
+    ├── valid
+    │   ├── images
+    │   └── labels
+    └── test
+        ├── images
+        └── labels
+```
+
 Once opened images and annotations folders, from the second launch, you can use command line arguments to RectLabel which image files should be opened.
 
 ```
