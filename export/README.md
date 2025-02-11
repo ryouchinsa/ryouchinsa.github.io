@@ -32,9 +32,10 @@ Annotation files are exported as a [Create ML JSON file](https://developer.apple
 
 - Specify the split ratio "80/10/10" so that images are split into train, validation, and test sets.
 - For "Image size", images are resized, if "Image size" is empty, images are not resized.
+- For "Model type", you have "Object Detection" and "Multi-Label Classification" options.
 - If you encouter errors, read [Empty table from specified data source](https://stackoverflow.com/questions/65314564/empty-table-from-specified-data-source-error-in-create-ml).
 
-![createml](https://github.com/user-attachments/assets/4976010d-f835-4125-af5c-0a3d7c225fbd)
+![createml](https://github.com/user-attachments/assets/b24951f0-4911-4106-95f3-4a82a00901fd)
 
 ```
 [{
