@@ -6,6 +6,7 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [A Deep Learning Framework for Real-time Oil Spill Detection and Classification](https://ceur-ws.org/Vol-3923/Paper_1.pdf)
 - [Computer vision-based measurement of stormwater discharge: proof-of-concept](https://eartharxiv.org/repository/view/8450/)
 - [Development of a Deep-Learning Algorithm for Detecting Suspicious Breast Lesions on Chest CT](https://www.medrxiv.org/content/10.1101/2025.01.24.25321095v1.full.pdf)
 - [A multicenter study of neurofibromatosis type 1 utilizing deep learning for whole body tumor identification](https://www.nature.com/articles/s41746-025-01454-z)
