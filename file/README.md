@@ -55,6 +55,20 @@ Once opened images and annotations folders, from the second launch, you can use 
 ```
 open -a RectLabel --args -images 000000000872.jpg,000000010363.jpg
 open -a RectLabel\ Pro --args -images 000000000872.jpg,000000010363.jpg
+
+single folder
+open -a RectLabel --args -images 000000000872.jpg
+open -a RectLabel --args -images /Users/ryo/rcam/test_annotations/test/_test_min/images1500/000000000872.jpg
+
+multiple folders
+open -a RectLabel --args -images alice-pasqual-cOKmuKWSsiM-unsplash.jpg 
+open -a RectLabel --args -images chocolate/images/alice-pasqual-cOKmuKWSsiM-unsplash.jpg 
+open -a RectLabel --args -images /Users/ryo/rcam/test_annotations/test/_nested/donut-A/chocolate/images/alice-pasqual-cOKmuKWSsiM-unsplash.jpg
+
+nested folders
+open -a RectLabel --args -images alice-pasqual-cOKmuKWSsiM-unsplash.jpg 
+open -a RectLabel --args -images donut/chocolate/alice-pasqual-cOKmuKWSsiM-unsplash.jpg
+open -a RectLabel --args -images /Users/ryo/rcam/test_annotations/test/_nested/nested1500/donut/chocolate/alice-pasqual-cOKmuKWSsiM-unsplash.jpg 
 ```
 
 <video src="https://github.com/user-attachments/assets/96b128b1-2605-4cd3-b0d4-3ed06030649a" controls="controls" muted="muted" class="width-fit" style="max-height:640px; min-height: 200px"></video>
