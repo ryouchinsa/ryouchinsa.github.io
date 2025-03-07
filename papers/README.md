@@ -6,6 +6,7 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [Front-to-Side Hard and Soft Biometrics for Augmented Zero-Shot Side Face Recognition](https://www.mdpi.com/1424-8220/25/6/1638)
 - [A system for annotating biomedical images based on internet technology in oncohematology](http://injoit.org/index.php/j1/article/view/2062)
 - [A Deep Learning Framework for Real-time Oil Spill Detection and Classification](https://ceur-ws.org/Vol-3923/Paper_1.pdf)
 - [Computer vision-based measurement of stormwater discharge: proof-of-concept](https://eartharxiv.org/repository/view/8450/)
