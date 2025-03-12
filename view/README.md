@@ -25,6 +25,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Show indexes on points](https://rectlabel.com/view#show-indexes-on-points)
 - [Show indexes on labels table](https://rectlabel.com/view#show-indexes-on-labels-table)
 - [Show checkboxes on labels table](https://rectlabel.com/view#show-checkboxes-on-labels-table)
+- [Show image full path](https://rectlabel.com/view#show-image-full-path)
 - [Show depth image](https://rectlabel.com/view#show-depth-image)
 - [Reload the image](https://rectlabel.com/view#reload-the-image)
 - [Enter gallery view](https://rectlabel.com/view#enter-gallery-view)
@@ -123,6 +124,9 @@ Show each row number on the labels table.
 Show a checkbox for each row on the labels table.
 
 ![hide_row](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/946f23b0-a9ef-4175-b294-b8430076fa8e)
+
+# Show image full path
+Toggle image name and the full path.
 
 # Show depth image
 Toggle depth image alpha. When the rgb image name is image_name.jpg, put the depth image as image_name_depth.png in the same folder.
