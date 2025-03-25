@@ -294,6 +294,16 @@ class_index center_x center_y width height x1 y1 v1 x2 y2 v2 x3 y3 v3 ...
 0 0.545230 0.616880 0.298794 0.766239 0.522073 0.309332 2 0.540170 0.293193 2 0.499589 0.296503 2 ...
 ```
 
+To save a track id for each box, add an attribute named as "track id" of "Text input" type.
+For the details, see the [CVAT document](https://docs.cvat.ai/docs/manual/advanced/formats/format-yolo-ultralytics/).
+
+```
+class_index center_x center_y width height track_id
+0 0.464615 0.594724 0.680000 0.769784 1
+```
+
+<video src="https://github.com/user-attachments/assets/d752055e-6ec8-4879-a170-e468e59182ec" controls="controls" muted="muted" class="width-fit" style="max-height:640px; min-height: 200px"></video>
+
 # Import YOLO txt files
 - The YOLO text files are imported to annotation files in the current folder.
 - Before importing, be sure that you opened images folder and annotations folder.
