@@ -294,7 +294,7 @@ class_index center_x center_y width height x1 y1 v1 x2 y2 v2 x3 y3 v3 ...
 0 0.545230 0.616880 0.298794 0.766239 0.522073 0.309332 2 0.540170 0.293193 2 0.499589 0.296503 2 ...
 ```
 
-To save a track id for each box, use an attribute of "Text input" type and combine with the object name such as "sneakers-0", the attribute name should be set as "track id" on the setting.
+To save a track id for each box, use an attribute of "Text input" type and combine with the object name such as "sneakers-1", the attribute name should be set as "track id" on the setting.
 For the YOLO Detection Track format, see the [CVAT document](https://docs.cvat.ai/docs/manual/advanced/formats/format-yolo-ultralytics/).
 
 ```
