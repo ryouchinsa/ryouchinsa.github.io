@@ -112,6 +112,7 @@ Create using SAM.
 - Press an escape key to cancel drawing.
 
 Right click on the object.
+- "Convert to box using SAM" to tighten selected boxes after preprocessing the image using SAM.
 - "Convert to polygon/pixels using SAM" to convert selected boxes to polygons/pixels after preprocessing the image using SAM.
 
 ![sam2_polygon](https://github.com/user-attachments/assets/cceff18f-1692-461b-b6e3-87379c580aea)
