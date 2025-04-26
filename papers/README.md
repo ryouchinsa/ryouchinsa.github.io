@@ -6,6 +6,7 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [Artificial intelligence methods for monitoring a gray seal colony](https://hal.science/hal-05020300/)
 - [Artificial intelligence driven diagnostic model for detecting paranasal sinus opacification in computed tomography images: Development and evaluation](https://www.sciencedirect.com/science/article/abs/pii/S0377123725000425)
 - [Front-to-Side Hard and Soft Biometrics for Augmented Zero-Shot Side Face Recognition](https://www.mdpi.com/1424-8220/25/6/1638)
 - [A system for annotating biomedical images based on internet technology in oncohematology](http://injoit.org/index.php/j1/article/view/2062)
