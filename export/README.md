@@ -260,6 +260,7 @@ Annotation files are exported as YOLO text files. A YOLO text file is saved per 
 - For "Image size", images are resized, if "Image size" is empty, images are not resized.
 - For "Names file", there are "yaml file as dictionary", "yaml file as array", and "names file".
 - For "Export only used names", if checked on, all annotation files are scanned and the new objects table is created, based on the objects table, each object index is written in each YOLO text file. If you are using attributes, check on "Export only used names".
+- When your YOLO text files are using the CRLF line break, RectLabel saves each YOLO text file using the CRLF line break, not LF line break.
 
 ![yolo_export](https://github.com/user-attachments/assets/da7b521d-fff8-4b03-9c19-a2276d41b6e6)
 
@@ -294,8 +295,7 @@ class_index center_x center_y width height x1 y1 v1 x2 y2 v2 x3 y3 v3 ...
 0 0.545230 0.616880 0.298794 0.766239 0.522073 0.309332 2 0.540170 0.293193 2 0.499589 0.296503 2 ...
 ```
 
-To save a track id for each box, use an attribute of "Text input" type and combine with the object name such as "sneakers-1", the attribute name should be set as "track id" on the setting.
-For the YOLO Detection Track format, see the [CVAT document](https://docs.cvat.ai/docs/manual/advanced/formats/format-yolo-ultralytics/).
+To save a track id for each box in the YOLO Detection Track format, use an attribute of "Text input" type and combine with the object name such as "sneakers-1", the attribute name should be set as "track id" on the setting.
 
 ```
 class_index center_x center_y width height track_id
