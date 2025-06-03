@@ -60,12 +60,10 @@ https://pytorch.org/get-started/locally/
 # Ubuntu CPU
 wget https://download.pytorch.org/libtorch/cpu/libtorch-cxx11-abi-shared-with-deps-2.7.0%2Bcpu.zip
 unzip libtorch-cxx11-abi-shared-with-deps-2.7.0+cpu.zip
-rm libtorch-cxx11-abi-shared-with-deps-2.7.0+cpu.zip
 
 # Ubuntu GPU
 wget https://download.pytorch.org/libtorch/cu128/libtorch-cxx11-abi-shared-with-deps-2.7.0%2Bcu128.zip
 unzip libtorch-cxx11-abi-shared-with-deps-2.7.0+cu128.zip
-rm libtorch-cxx11-abi-shared-with-deps-2.7.0+cu128.zip
 ```
 
 
