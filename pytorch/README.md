@@ -51,6 +51,8 @@ torch.cuda.is_available()
 pip install opencv-python
 import cv2 as cv
 print(cv.__version__)
+
+pip install onnx onnxruntime matplotlib numba
 ```
 
 Download LibTorch for C++.
