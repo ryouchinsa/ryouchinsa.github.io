@@ -48,11 +48,7 @@ conda install pytorch torchvision torchaudio pytorch-cuda -c pytorch -c nvidia
 import torch
 torch.cuda.is_available()
 
-pip install opencv-python
-import cv2 as cv
-print(cv.__version__)
-
-pip install onnx onnxruntime matplotlib numba
+pip install opencv-python onnx onnxruntime onnxruntime-gpu matplotlib numba
 ```
 
 Download LibTorch for C++.
