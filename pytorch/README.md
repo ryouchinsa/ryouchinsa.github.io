@@ -48,17 +48,13 @@ conda install pytorch torchvision torchaudio pytorch-cuda -c pytorch -c nvidia
 import torch
 torch.cuda.is_available()
 
-pip install opencv-python onnx onnxruntime onnxruntime-gpu matplotlib numba
+pip install opencv-python onnx optimum[onnxruntime-gpu] matplotlib numba
 ```
 
 Download LibTorch for C++.
 ```
 https://docs.pytorch.org/cppdocs/installing.html
 https://pytorch.org/get-started/locally/
-
-# Ubuntu CPU
-wget https://download.pytorch.org/libtorch/cpu/libtorch-cxx11-abi-shared-with-deps-2.7.0%2Bcpu.zip
-unzip libtorch-cxx11-abi-shared-with-deps-2.7.0+cpu.zip
 
 # Ubuntu GPU
 wget https://download.pytorch.org/libtorch/cu128/libtorch-cxx11-abi-shared-with-deps-2.7.0%2Bcu128.zip
