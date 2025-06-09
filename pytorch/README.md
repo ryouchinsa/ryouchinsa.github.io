@@ -53,7 +53,6 @@ pip install opencv-python onnx optimum[onnxruntime-gpu] matplotlib numba
 
 Download LibTorch.
 ```
-https://docs.pytorch.org/cppdocs/installing.html
 https://pytorch.org/get-started/locally/
 
 wget https://download.pytorch.org/libtorch/cu128/libtorch-cxx11-abi-shared-with-deps-2.7.0%2Bcu128.zip
@@ -62,6 +61,8 @@ unzip libtorch-cxx11-abi-shared-with-deps-2.7.0+cu128.zip
 
 Download ONNX Runtime.
 ```
+https://github.com/microsoft/onnxruntime/releases/
+
 wget https://github.com/microsoft/onnxruntime/releases/download/v1.20.0/onnxruntime-linux-x64-gpu-1.20.0.tgz
 tar -xzvpf onnxruntime-linux-x64-gpu-1.20.0.tgz
 ```
