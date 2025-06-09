@@ -15,7 +15,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Terms of Use](https://rectlabel.com/terms)
 - [About team](https://rectlabel.com/about)
 - [Papers cited RectLabel](https://rectlabel.com/papers)
-- [Install CUDA, cuDNN, PyTorch, LibTorch for C++, and ONNX Runtime on Ubuntu 24.04 in 30 minutes](https://rectlabel.com/pytorch)
+- [Install CUDA, cuDNN, PyTorch, LibTorch, and ONNX Runtime on Ubuntu 24.04 in 30 minutes](https://rectlabel.com/pytorch)
 - [Train bounding boxes using a Faster R-CNN model on Detectron2](https://rectlabel.com/detectron2_box)
 - [Train polygons using a Mask R-CNN model on Detectron2](https://rectlabel.com/detectron2_polygon)
 - [Train RLE masks using a Mask R-CNN model on Detectron2](https://rectlabel.com/detectron2_rle)
