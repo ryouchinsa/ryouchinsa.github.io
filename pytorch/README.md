@@ -5,7 +5,7 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 
 Have questions? Send an email to support@rectlabel.com.
 
-# Install CUDA, cuDNN, PyTorch, LibTorch for C++, and ONNX Runtime on Ubuntu 24.04 in 30 minutes
+# Install CUDA, cuDNN, PyTorch, LibTorch, and ONNX Runtime on Ubuntu 24.04 in 30 minutes
 
 Using the Amazon EC2 g4dn.xlarge instance which costs $0.526/hour, all installations will finish in 30 minutes.
 
@@ -51,7 +51,7 @@ torch.cuda.is_available()
 pip install opencv-python onnx optimum[onnxruntime-gpu] matplotlib numba
 ```
 
-Download LibTorch for C++.
+Download LibTorch.
 ```
 https://docs.pytorch.org/cppdocs/installing.html
 https://pytorch.org/get-started/locally/
