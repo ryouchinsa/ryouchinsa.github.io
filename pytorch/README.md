@@ -48,7 +48,7 @@ conda install pytorch torchvision torchaudio pytorch-cuda -c pytorch -c nvidia
 import torch
 torch.cuda.is_available()
 
-pip install opencv-python onnx optimum[onnxruntime-gpu] matplotlib numba
+pip install opencv-python onnx optimum[onnxruntime-gpu] onnxsim matplotlib numba
 ```
 
 Download LibTorch.
