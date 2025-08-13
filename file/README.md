@@ -21,9 +21,9 @@ Have questions? Send an email to support@rectlabel.com.
 - You can drag & drop each images folder and annotations folder to the open table.
 - "Label format" is to change the label format to read/write in the PASCAL VOC xml format or YOLO text format.
 - "Sort images" is to sort images by Alphabetic, Numeric, and Last modified.
-- "Read images folder recursively" is to open an images folder which includes sub-folders recursively, the same sub-folders are structured in the annotations folder.
+- "Read images folder recursively" is to open an images folder which includes sub-folders.
 - After opening images, we recommend to use File menu -> Remove EXIF orientation flags.
-- Image file names which include "_pixels" or "_depth" are skipped.
+- Image file names which include "_pixels", "_depth", and "_masks" are skipped.
 - To copy the current image file name, click on the image file name shown at the top-left corner.
 
 ```
@@ -50,6 +50,8 @@ Drag & drop the root folder to the open table, child images and annotations/labe
         └── labels
 ```
 
+<video src="https://github.com/user-attachments/assets/96b128b1-2605-4cd3-b0d4-3ed06030649a" controls="controls" muted="muted" class="width-fit" style="max-height:640px; min-height: 200px"></video>
+
 Once opened images and annotations folders, from the second launch, you can use command line arguments to RectLabel which image files should be opened.
 
 ```
@@ -57,7 +59,8 @@ open -a RectLabel --args -images 000000000872.jpg,000000010363.jpg
 open -a RectLabel\ Pro --args -images 000000000872.jpg,000000010363.jpg
 ```
 
-<video src="https://github.com/user-attachments/assets/96b128b1-2605-4cd3-b0d4-3ed06030649a" controls="controls" muted="muted" class="width-fit" style="max-height:640px; min-height: 200px"></video>
+# Open images folder
+The annotations folder should be images/annotations.
 
 # Open a folder which includes a yaml file
 You can open the exported YOLOv5/YOLOv8/YOLO11 folder.
@@ -88,7 +91,6 @@ You can open the exported YOLOv5/YOLOv8/YOLO11 folder.
 # Remove EXIF orientation flags
 - On RectLabel, according to the [Exif orientation flags](https://github.com/recurser/exif-orientation-examples), each image is rotated and shown in the front orientation.
 - You can remove the EXIF orientation flags from images and convert images to the front orientation.
-- If necessary, you can rotate the image using Edit menu -> Rotate the image right/left.
 
 # Resize images
 - You can resize images and annotations.
