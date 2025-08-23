@@ -7,7 +7,3 @@ Have questions? Send an email to support@rectlabel.com.
 
 # Privacy Policy
 We do not collect any images and annotations data.
-
-The standard RectLabel connects to Apple's server for in-app purchases.
-
-RectLabel Pro does not connect to any servers.
