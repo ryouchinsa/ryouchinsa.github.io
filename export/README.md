@@ -11,7 +11,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Export images for classification](https://rectlabel.com/export#export-images-for-classification)
 - [Export COCO JSON file](https://rectlabel.com/export#export-coco-json-file)
 - [Import COCO JSON file](https://rectlabel.com/export#import-coco-json-file)
-- [Import COCO JSON per image files](https://rectlabel.com/export#import-coco-json-per-image-files)
+- [Import COCO RLE JSON files](https://rectlabel.com/export#import-coco-rle-json-files)
 - [Export YOLO txt files](https://rectlabel.com/export#export-yolo-txt-files)
 - [Import YOLO txt files](https://rectlabel.com/export#import-yolo-txt-files)
 - [Export DOTA txt files](https://rectlabel.com/export#export-dota-txt-files)
@@ -22,6 +22,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Export object names file](https://rectlabel.com/export#export-object-names-file)
 - [Import object names file](https://rectlabel.com/export#import-object-names-file)
 - [Export mask images](https://rectlabel.com/export#export-mask-images)
+- [Import Cellpose 16bit PNG files](https://rectlabel.com/export#import-cellpose-16bit-png-files)
 - [Export screenshots](https://rectlabel.com/export#export-screenshots)
 - [Export augmented images](https://rectlabel.com/export#export-augmented-images)
 - [Export sliced images](https://rectlabel.com/export#export-sliced-images)
@@ -218,7 +219,7 @@ In "categories", "keypoints" and "skeleton" are exported.
 - The COCO JSON file is imported to annotation files in the current folder.
 - Before importing, be sure that you opened images folder and annotations folder.
 
-# Import COCO JSON per image files
+# Import COCO RLE JSON files
 You can import the COCO RLE JSON files of the [SA-1B dataset](https://github.com/facebookresearch/segment-anything).
 - This COCO format does not include the "category_id" so that each label name is set to the recently used label name.
 - Before importing, be sure that you opened images folder and annotations folder.
@@ -362,17 +363,6 @@ names:
   0: person
 ```
 
-Export a yaml file as array for [YOLOv5](https://github.com/ultralytics/yolov5).
-
-```
-path: ../datasets/sneakers
-train: images
-val: images
-
-nc: 2
-names: ['sneakers', 'ignore']
-```
-
 Export an object names text file.
 
 ```
@@ -385,6 +375,7 @@ You can import an object names file or import object names from xml files.
 
 # Export mask images
 You can specify which mask image to export.
+- Export a Cellpose 16bit PNG file: each pixel value is 0 for the background, 1 for the first row, 2 for the second row on the labels table, etc.
 - Export an image includes all objects: An indexed color image which includes all objects is saved as {image_file_name}_all_objects.png.
 - Export an image per object class: A grayscale image per object class is saved as {image_file_name}_class_{class_name}.png.
 - Export an image per object: A grayscale image per object is saved as {image_file_name}_object{object_idx}.png.
@@ -394,6 +385,9 @@ For the indexed color image.
 - Overlaps of objects are based on the layer order on the labels table.
 
 ![mask](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/7b9a30a2-3bff-486f-873d-cf650a402662)
+
+# Import Cellpose 16bit PNG files
+You can import [Cellpose dataset](https://www.cellpose.org/).
 
 # Export screenshots
 You can export images and annotations as jpg images.
