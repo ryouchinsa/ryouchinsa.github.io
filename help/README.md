@@ -16,10 +16,6 @@ Have questions? Send an email to support@rectlabel.com.
 - [About team](https://rectlabel.com/about)
 - [Papers cited RectLabel](https://rectlabel.com/papers)
 - [Install CUDA, cuDNN, TensorRT, PyTorch, LibTorch, and ONNX Runtime on Ubuntu 24.04 in 30 minutes](https://rectlabel.com/pytorch)
-- [Train bounding boxes using a Faster R-CNN model on Detectron2](https://rectlabel.com/detectron2_box)
-- [Train polygons using a Mask R-CNN model on Detectron2](https://rectlabel.com/detectron2_polygon)
-- [Train RLE masks using a Mask R-CNN model on Detectron2](https://rectlabel.com/detectron2_rle)
-- [Train keypoints using a Keypoint R-CNN model on Detectron2](https://rectlabel.com/detectron2_keypoints)
 
 # Key features
 - Label polygons and pixels using Segment Anything Model 2
