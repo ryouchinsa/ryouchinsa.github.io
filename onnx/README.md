@@ -9,14 +9,19 @@ Have questions? Send an email to support@rectlabel.com.
 - [Load Cellpose ONNX Model](https://rectlabel.com/onnx#load-cellpose-onnx-model)
 
 # Load Cellpose ONNX Model
-- Read [Cellpose CPP Wrapper for macOS and Ubuntu GPU](https://github.com/ryouchinsa/cellpose-cpp).
-
-![cellpose_polygon](https://github.com/user-attachments/assets/b4227573-6ab4-41b1-8f42-4dc44b3dd915)
+Read [Cellpose CPP Wrapper for macOS and Ubuntu GPU](https://github.com/ryouchinsa/cellpose-cpp).
 
 View menu.
 - "Show depth image" to show the Cellpose.
 
-![cellpose_depth](https://github.com/user-attachments/assets/84cc1f4e-bd10-4534-a94b-9e6f0d852aca)
+<video src="https://github.com/user-attachments/assets/22048c89-2412-43e3-9c0d-d0e12134ded5" controls="controls" muted="muted" class="width-fit" style="max-height:640px; min-height: 200px"></video>
+
+
+
+
+
+
+
 
 
 
