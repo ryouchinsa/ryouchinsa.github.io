@@ -11,7 +11,6 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 
 Have questions? Send an email to support@rectlabel.com.
 
-
 # Help
 - [Settings menus](https://rectlabel.com/settings)
 - [File menus](https://rectlabel.com/file)
