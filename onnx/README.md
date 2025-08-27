@@ -11,6 +11,21 @@ Have questions? Send an email to support@rectlabel.com.
 # Load Cellpose ONNX Model
 Read [Cellpose CPP Wrapper for macOS and Ubuntu GPU](https://github.com/ryouchinsa/cellpose-cpp).
 
+Select a model.
+- [cyto3.onnx](https://huggingface.co/rectlabel/cellpose/resolve/main/cyto3.onnx.zip)
+- [cpsam.onnx](https://huggingface.co/rectlabel/cellpose/resolve/main/cpsam.onnx.zip)
+
+Select a create type.
+- polygon
+- pixels
+
+Create using Cellpose.
+- The first channel is for the cytoplasm and the second channel is for the nuclear.
+- Increase the diameter to detect larger cells, decrease the diameter to detect smaller cells.
+- Increase the flow threshold to increase the number of detections.
+- Increase the min size not to detect cells which are less than the min size.
+- Press start button to start downloading the model and processing the image.
+
 View menu.
 - "Show depth image" to show the Cellpose.
 
