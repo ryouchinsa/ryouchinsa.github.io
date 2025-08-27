@@ -7,6 +7,10 @@ To download RectLabel apps.
 
 How to use? Read our [Help page](https://rectlabel.com/help/).
 
+Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-support/issues).
+
+Have questions? Send an email to support@rectlabel.com.
+
 # Key features
 - Label polygons and pixels using Segment Anything Model 2
 - Label polygons and pixels using Cellpose ONNX models
