@@ -5,7 +5,7 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 
 Have questions? Send an email to support@rectlabel.com.
 
-# Install CUDA, cuDNN, TensorRT, PyTorch, LibTorch, and ONNX Runtime on Ubuntu 24.04 in 30 minutes
+# Install CUDA, cuDNN, PyTorch, and ONNX Runtime on Ubuntu 24.04 in 30 minutes
 
 Using the Amazon EC2 g4dn.xlarge instance which costs $0.526/hour, all installations will finish in 30 minutes.
 
@@ -35,16 +35,6 @@ sudo apt install libcudnn9-cuda-12
 sudo apt install libcudnn9-dev-cuda-12
 ```
 
-Install TensorRT.
-```
-wget https://developer.nvidia.com/downloads/compute/machine-learning/tensorrt/10.9.0/local_repo/nv-tensorrt-local-repo-ubuntu2404-10.9.0-cuda-12.8_1.0-1_amd64.deb
-sudo dpkg -i nv-tensorrt-local-repo-ubuntu2404-10.9.0-cuda-12.8_1.0-1_amd64.deb
-sudo cp /var/nv-tensorrt-local-repo-ubuntu2404-10.9.0-cuda-12.8/*-keyring.gpg /usr/share/keyrings/
-sudo apt-get update
-sudo apt-get install tensorrt -y
-dpkg-query -W tensorrt
-```
-
 Install PyTorch.
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -59,14 +49,6 @@ import torch
 torch.cuda.is_available()
 
 pip install opencv-python onnx optimum[onnxruntime-gpu] onnxsim matplotlib numba
-```
-
-Download LibTorch.
-```
-https://pytorch.org/get-started/locally/
-
-wget https://download.pytorch.org/libtorch/cu128/libtorch-cxx11-abi-shared-with-deps-2.7.0%2Bcu128.zip
-unzip libtorch-cxx11-abi-shared-with-deps-2.7.0+cu128.zip
 ```
 
 Download ONNX Runtime.
