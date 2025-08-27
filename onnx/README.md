@@ -27,7 +27,14 @@ Create using Cellpose.
 - Press start button to start downloading the model and processing the image.
 
 View menu.
-- "Show depth image" to show the Cellpose.
+- "Focus box" to quick zoom to the selected polygon/pixels.
+- "Hide other boxes" to hide other polygons.
+- "Hide pixels" to toggle pixels alpha.
+- "Show small pixels" to show small pixels areas.
+- "Show other pixels" to show other pixels objects.
+- "Show indexes on labels table" to show each row number on the labels table.
+- "Show checkboxes on labels table" to show a checkbox to show/hide for each row on the labels table.
+- "Show depth image" to show the predicted Cellpose.
 
 <video src="https://github.com/user-attachments/assets/22048c89-2412-43e3-9c0d-d0e12134ded5" controls="controls" muted="muted" class="width-fit" style="max-height:640px; min-height: 200px"></video>
 
