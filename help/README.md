@@ -16,7 +16,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Terms of Use](https://rectlabel.com/terms)
 - [About team](https://rectlabel.com/about)
 - [Papers cited RectLabel](https://rectlabel.com/papers)
-- [Install CUDA, cuDNN, TensorRT, PyTorch, LibTorch, and ONNX Runtime on Ubuntu 24.04 in 30 minutes](https://rectlabel.com/pytorch)
+- [Install CUDA, cuDNN, PyTorch, and ONNX Runtime on Ubuntu 24.04 in 30 minutes](https://rectlabel.com/pytorch)
 
 # Key features
 - Label polygons and pixels using Segment Anything Model 2
