@@ -9,8 +9,6 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 
 Have questions? Send an email to support@rectlabel.com.
 
-Thank you.
-
 # Label polygons with holes using Segment Anything models
 Open your images and annotations folders. If you do not have, [download donuts dataset](https://huggingface.co/datasets/rectlabel/datasets/resolve/main/donuts.zip).
 
