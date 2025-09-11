@@ -379,9 +379,9 @@ You can import an object names file or import object names from xml files.
 
 # Export mask images
 You can specify which mask image to export.
-- Export a Cellpose 16bit PNG file: Each pixel value is 0 for the background, 1 for the first row, 2 for the second row on the labels table, etc.
-- Export an image includes all objects: An indexed color image which includes all objects is saved as {image_file_name}_all_objects.png.
-- Export an image per object class: A grayscale image per object class is saved as {image_file_name}_class_{class_name}.png.
+- Export a Cellpose 16bit PNG file: Each pixel value is 0 for the background, 1 for the first row, 2 for the second row on the labels table, etc. Saved as {image_file_name}_masks.png.
+- Export an image includes all objects: An indexed color image which includes all objects is saved as {image_file_name}.png.
+- Export an image per object class: A grayscale image per object class is saved as {image_file_name}\_class_{class_name}.png.
 - Export an image per object: A grayscale image per object is saved as {image_file_name}_object{object_idx}.png.
 
 For the indexed color image.
