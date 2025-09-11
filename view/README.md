@@ -15,6 +15,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Zoom in, Zoom out](https://rectlabel.com/view#zoom-in-zoom-out)
 - [Zoom fit](https://rectlabel.com/view#zoom-fit)
 - [Focus box](https://rectlabel.com/view#focus-box)
+- [Hide image name](https://rectlabel.com/view#hide-image-name)
 - [Hide buttons](https://rectlabel.com/view#hide-buttons)
 - [Hide cross hairs](https://rectlabel.com/view#hide-cross-hairs)
 - [Hide other boxes](https://rectlabel.com/view#hide-other-boxes)
@@ -76,6 +77,9 @@ Clear zoom.
 
 # Focus box
 You can quick zoom to the selected box.
+
+# Hide image name
+The image name on the top-left corner is hidden.
 
 # Hide buttons
 Top-bar buttons are hidden and the image and labels table are shown largely.
