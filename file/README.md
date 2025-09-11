@@ -14,6 +14,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Open a folder which includes a yaml file](https://rectlabel.com/file#open-a-folder-which-includes-a-yaml-file)
 - [Convert video to image frames](https://rectlabel.com/file#convert-video-to-image-frames)
 - [Remove EXIF orientation flags](https://rectlabel.com/file#remove-exif-orientation-flags)
+- [Rename image](https://rectlabel.com/file#rename-image)
 - [Resize images](https://rectlabel.com/file#resize-images)
 - [Next image and Prev image](https://rectlabel.com/file#next-image-and-prev-image)
 - [Jump to image number](https://rectlabel.com/file#jump-to-image-number)
@@ -95,6 +96,9 @@ You can open the exported YOLOv5/YOLOv8/YOLO11 folder.
 # Remove EXIF orientation flags
 - On RectLabel, according to the [Exif orientation flags](https://github.com/recurser/exif-orientation-examples), each image is rotated and shown in the front orientation.
 - You can remove the EXIF orientation flags from images and convert images to the front orientation.
+
+# Rename image
+- You can rename the image name.
 
 # Resize images
 - You can resize images and annotations.
