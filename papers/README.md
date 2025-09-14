@@ -10,12 +10,15 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [DeepSea MOT: A benchmark dataset for multi-object tracking on deep-sea video](https://arxiv.org/abs/2509.03499)
+- [Integrating AI into ecology for fully automated monitoring of endangered seabird breeding colonies](https://www.sciencedirect.com/science/article/pii/S1574954125003899)
+- [Applying machine learning to safe vascular anastomosis](https://pmc.ncbi.nlm.nih.gov/articles/PMC12269626/)
+- [Aspergillus detection based on deep learning model using YOLOv8 with a small custom dataset](https://journals.ekb.eg/article_413262_958c5022d87bc6feb4e5ff6c23dd9c20.pdf)
+- [Advancing Object Discovery: Unveiling the Power of YOLO in Computer Vision](https://books.google.co.jp/books?hl=ja&lr=lang_ja|lang_en&id=RipDEQAAQBAJ&oi=fnd&pg=PA266&dq=rectlabel&ots=eO39pxQ1S4&sig=GVab6i9QZVE6_Lyb5emAy5AICQg#v=onepage&q=rectlabel&f=false)
 - [Clinical Annotation and Medical Image Anonymization for AI Model Training in Lung Cancer Detection](https://link.springer.com/chapter/10.1007/978-3-031-93848-1_21)
 - [Artificial intelligence multilingual image-to-speech for accessibility and text recognition](http://ojs.iajournals.cn/index.php/aia/article/view/124)
 - [Enhancing Oral Health Diagnostics With Hyperspectral Imaging and Computer Vision: Clinical Dataset Study](https://pmc.ncbi.nlm.nih.gov/articles/PMC12425605/)
-- [Applying machine learning to safe vascular anastomosis](https://pmc.ncbi.nlm.nih.gov/articles/PMC12269626/)
 - [A Framework for Constructing Large-Scale Dynamic Datasets for Water Conservancy Image Recognition Using Multi-Role Collaboration and Intelligent Annotation](https://www.mdpi.com/2076-3417/15/14/8002)
-- [DeepSea MOT: A benchmark dataset for multi-object tracking on deep-sea video](https://arxiv.org/abs/2509.03499)
 - [Identifying radiologically significant incidental breast lesions on chest CT: The added value of artificial intelligence](https://www.sciencedirect.com/science/article/pii/S0363018825001148)
 - [Artificial intelligence methods for monitoring a gray seal colony](https://hal.science/hal-05020300/)
 - [Artificial intelligence driven diagnostic model for detecting paranasal sinus opacification in computed tomography images: Development and evaluation](https://www.sciencedirect.com/science/article/abs/pii/S0377123725000425)
