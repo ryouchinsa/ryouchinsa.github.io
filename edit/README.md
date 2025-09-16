@@ -283,7 +283,7 @@ Change the object color using the color picker.
 Clear the object color to the default color.
 
 # Search images
-You can search object, attribute, image names, and memo in a gallery view.
+You can search object names, attribute names, image names, and memo in a gallery view.
 - To search labeled images, use "notempty" search text.
 - To search unlabeled images, use "" search text.
 
