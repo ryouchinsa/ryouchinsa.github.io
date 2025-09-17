@@ -283,9 +283,11 @@ Change the object color using the color picker.
 Clear the object color to the default color.
 
 # Search images
-You can search object names, attribute names, image names, and memo in a gallery view.
+You can search object names, attribute names, image names, and memo in a gallery view. 
 - To search labeled images, use "notempty" search text.
 - To search unlabeled images, use "" search text.
+- To search the exact match with the search text, you can use phrase-based searching. Enclose the search text with double quotations.
+- [Query operators in Search Kit](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/SearchKitConcepts/searchKit_concepts/searchKit_concepts.html)
 
 ![search4](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/550ea105-c2cf-4085-9851-696a069192cb)
 
