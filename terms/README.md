@@ -19,7 +19,11 @@ Each device used serially or collectively by multiple users requires a separate 
 If you installed RectLabel on your new computer, authorize or deauthorize your computer for iTunes Store purchases.
 [Authorize or deauthorize your computer for Apple ID purchases](https://support.apple.com/en-us/HT201251)
 
-You can use RectLabel to develop your commercial object detection and segmentation systems.
+Redeem an [Apple Business Manager](https://business.apple.com/) license code or [gift code](https://support.apple.com/en-us/118401) for each account. If you are redeeming a code for the app license, you can create Apple IDs [without associating a credit card](https://support.apple.com/en-us/108647?device-type=mac).
+
+For larger deployments, we highly recommend assigning app licenses directly to a device rather than an Apple ID, which eliminates the need for individual IDs. App licenses are purchased through the [Apple Business Manager](https://business.apple.com/) as 'Managed' licenses (not redemption codes).
 
 The standard RectLabel has a free trial period, and although the trial is untimed, a license must be purchased for continued use.
 [Manage your subscriptions](https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/manageSubscriptions)
+
+You can use RectLabel to develop your commercial object detection and segmentation systems.
