@@ -10,6 +10,8 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [Fine-Tuning DeepForest for Forest Tree Detection in High-Resolution UAV Imagery](https://isprs-archives.copernicus.org/articles/XLVIII-4-W15-2025/39/2025/isprs-archives-XLVIII-4-W15-2025-39-2025.html)
+- [LivePyxel: Accelerating image annotations with a Python-integrated webcam live streaming](https://arxiv.org/abs/2509.13504)
 - [DeepSea MOT: A benchmark dataset for multi-object tracking on deep-sea video](https://arxiv.org/abs/2509.03499)
 - [Integrating AI into ecology for fully automated monitoring of endangered seabird breeding colonies](https://www.sciencedirect.com/science/article/pii/S1574954125003899)
 - [Applying machine learning to safe vascular anastomosis](https://pmc.ncbi.nlm.nih.gov/articles/PMC12269626/)
