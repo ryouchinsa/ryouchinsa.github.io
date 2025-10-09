@@ -41,8 +41,7 @@ Have questions? Send an email to support@rectlabel.com.
 
 ![sam2_polygon](https://github.com/user-attachments/assets/1ff23220-a92f-42e0-afba-eb909f454832)
 ![sam2_pixels](https://github.com/user-attachments/assets/22f9ae41-c698-4685-bf0d-5358a2056aa8)
-![cellpose_polygon](https://github.com/user-attachments/assets/8b6016dc-bd74-40d2-bd3e-819a22844b59)
-![cellpose_depth](https://github.com/user-attachments/assets/358eff5f-22ee-4886-8533-84087c6d407d)
+![cellpose_polygon](https://github.com/user-attachments/assets/2e50d051-3b6d-4799-ab5e-3e4f224fc117)
 ![coreml_polygon](https://github.com/user-attachments/assets/7e972e2a-cf54-43d5-ba30-43f9365b459f)
 ![ocr](https://github.com/user-attachments/assets/1bb4cdda-40df-4d76-bad2-827c64f1b0fe)
 ![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/422819be-3fca-46b0-850c-6aa2f60df30c)
