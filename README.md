@@ -44,9 +44,8 @@ Have questions? Send an email to support@rectlabel.com.
 ![cellpose_polygon](https://github.com/user-attachments/assets/2e50d051-3b6d-4799-ab5e-3e4f224fc117)
 ![coreml_polygon](https://github.com/user-attachments/assets/69f71ba4-0db8-4840-9dcc-0f0b360ef12e)
 ![ocr](https://github.com/user-attachments/assets/92916a99-26f2-42f7-9eee-40a763c7adab)
-![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/422819be-3fca-46b0-850c-6aa2f60df30c)
-![search4](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/449023f5-6c9e-48ef-a446-2d6240b228d9)
-
+![draw_obb](https://github.com/user-attachments/assets/73811e6c-e5eb-4aec-b37f-0d6250bf3c76)
+![search5](https://github.com/user-attachments/assets/52279522-e97b-450c-9315-64b08ef4c569)
 
 
 
