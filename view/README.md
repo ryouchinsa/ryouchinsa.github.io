@@ -107,8 +107,6 @@ You can show small pixels areas.
 # Show other pixels
 You can show other pixels objects.
 
-<video src="https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/aa6737c8-5d9e-4f3f-a5c9-71a56cbeab7c" controls="controls" muted="muted" class="width-fit" style="max-height:640px; min-height: 200px"></video>
-
 # Show labels on boxes
 Show labels on boxes and the confidence score when auto labeling.
 
