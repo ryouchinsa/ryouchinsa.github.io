@@ -24,7 +24,6 @@ Have questions? Send an email to support@rectlabel.com.
 - [Hide superpixels](https://rectlabel.com/view#hide-superpixels)
 - [Show small pixels](https://rectlabel.com/view#show-small-pixels)
 - [Show other pixels](https://rectlabel.com/view#show-other-pixels)
-- [Show boxes on keypoints](https://rectlabel.com/view#show-boxes-on-keypoints)
 - [Show labels on boxes](https://rectlabel.com/view#show-labels-on-boxes)
 - [Show coordinates on boxes](https://rectlabel.com/view#show-coordinates-on-boxes)
 - [Show indexes on points](https://rectlabel.com/view#show-indexes-on-points)
@@ -107,9 +106,6 @@ You can show small pixels areas.
 
 # Show other pixels
 You can show other pixels objects.
-
-# Show boxes on keypoints
-You can edit the bounding box for each keypoints object.
 
 <video src="https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/aa6737c8-5d9e-4f3f-a5c9-71a56cbeab7c" controls="controls" muted="muted" class="width-fit" style="max-height:640px; min-height: 200px"></video>
 
