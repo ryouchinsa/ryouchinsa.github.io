@@ -10,9 +10,9 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # ONNX menus
-- [Load Cellpose ONNX Model](https://rectlabel.com/onnx#load-cellpose-onnx-model)
+- [Create polygon using Cellpose](https://rectlabel.com/onnx#create-polygon-using-cellpose)
 
-# Load Cellpose ONNX Model
+# Create polygon using Cellpose
 Read [Cellpose CPP Wrapper for macOS and Ubuntu GPU](https://github.com/ryouchinsa/cellpose-cpp).
 
 Select a model.
