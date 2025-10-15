@@ -16,10 +16,10 @@ Have questions? Send an email to support@rectlabel.com.
 - [Zoom fit](https://rectlabel.com/view#zoom-fit)
 - [Focus box](https://rectlabel.com/view#focus-box)
 - [Hide image name](https://rectlabel.com/view#hide-image-name)
-- [Hide buttons](https://rectlabel.com/view#hide-buttons)
 - [Hide cross hairs](https://rectlabel.com/view#hide-cross-hairs)
 - [Hide other boxes](https://rectlabel.com/view#hide-other-boxes)
 - [Hide keypoints names](https://rectlabel.com/view#hide-keypoints-names)
+- [Hide keypoints boxes](https://rectlabel.com/view#hide-keypoints-boxes)
 - [Hide pixels](https://rectlabel.com/view#hide-pixels)
 - [Hide superpixels](https://rectlabel.com/view#hide-superpixels)
 - [Show small pixels](https://rectlabel.com/view#show-small-pixels)
@@ -35,6 +35,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Reload the image](https://rectlabel.com/view#reload-the-image)
 - [Enter gallery view](https://rectlabel.com/view#enter-gallery-view)
 - [Enter full screen](https://rectlabel.com/view#enter-full-screen)
+- [Set window size](https://rectlabel.com/view#set-window-size)
 
 # Trackpad gestures
 System Preferences > Trackpad > More Gestures tab.
@@ -81,11 +82,6 @@ You can quick zoom to the selected box.
 # Hide image name
 The image name on the top-left corner is hidden.
 
-# Hide buttons
-Top-bar buttons are hidden and the image and labels table are shown largely.
-
-![hide_buttons](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/bdebb0c5-5135-42e0-8767-de695dd3df7f)
-
 # Hide cross hairs
 Hide cross hairs when creating box.
 
@@ -94,6 +90,9 @@ Hide other boxes except the selected box.
 
 # Hide keypoints names
 Hide keypoints names.
+
+# Hide keypoints boxes
+Hide keypoints boxes.
 
 # Hide pixels
 Toggle pixels alpha.
@@ -152,6 +151,8 @@ Toggle entering gallery view. Thumbnails are updated when you open folders or ch
 # Enter full screen
 Toggle entering full screen.
 
+# Set window size
+Change the current window size.
 
 
 
