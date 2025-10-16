@@ -127,7 +127,9 @@ Right click on the object.
 
 # Create keypoints
 Create keypoints.
-- Click to add points.
+- Click a point, the point is added as visible.
+- Click pressing the option key, the point is added as labeled but not visible.
+- Click pressing the option key + command key, the point is added as not labeled.
 - Press an enter key to finish drawing.
 - Press an escape key to cancel drawing.
 
@@ -135,10 +137,6 @@ Each keypoint has a visibility flag v defined as below. [Read more](http://cocod
 - v=0: not labeled
 - v=1: labeled but not visible
 - v=2: labeled and visible
-
-Change visibility when click each keypoint.
-- Click pressing the option + command keys, the point is added as not labeled.
-- Click pressing the option key, the point is added as labeled but not visible.
 
 Create the skeleton.
 - To add an edge, drag from one to another point pressing the option key.
@@ -157,12 +155,9 @@ Right click on the object.
 - "Flip horizontally" to flip the "left" included keypoint position and the "right" included keypoint position.
 - "Make visible" to make the point visible.
 
-Keypoints names and edges are saved in the settings file.
-For the first keypoints object, you have to press an enter key to finish drawing, change keypoints names, and add edges.
-
 View menus.
 - "Hide keypoints names" to hide keypoints names.
-- "Show boxes on keypoints" to show and edit the bounding box.
+- "Hide keypoints boxes" to hide the bounding box.
 
 <video src="https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/ec057788-1cd5-43d9-b5c4-b16f348ea619" controls="controls" muted="muted" class="width-fit" style="max-height:640px; min-height: 200px"></video>
 
