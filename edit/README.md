@@ -11,8 +11,10 @@ Have questions? Send an email to support@rectlabel.com.
 
 # Edit menus
 - [Create box](https://rectlabel.com/edit#create-box)
+- [Create box using Tracking](https://rectlabel.com/edit#create-box-using-tracking)
 - [Create polygon, cubic bezier, line, and point](https://rectlabel.com/edit#create-polygon-cubic-bezier-line-and-point)
 - [Create polygon using SAM](https://rectlabel.com/edit#create-polygon-using-sam)
+- [Create polygon using Cellpose](https://rectlabel.com/edit#create-polygon-using-cellpose)
 - [Create keypoints](https://rectlabel.com/edit#create-keypoints)
 - [Create pixels](https://rectlabel.com/edit#create-pixels)
 - [Create image label](https://rectlabel.com/edit#create-image-label)
@@ -70,6 +72,15 @@ Settings menus.
 
 ![box2](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/354ca023-22df-451d-ade9-00b69e01315b)
 
+# Create box using Tracking
+Using the labels on the previous image, the tracking model predicts bounding boxes on the current image.
+
+To refine the predicted boxes.
+- Change the edit mode to Create polygon using SAM and start preprocessing.
+- Select all bounding boxes, right click on them, and select "Convert to box using SAM" to tighten selected boxes.
+
+<video src="https://github.com/user-attachments/assets/0a11c62f-1c9a-4cb7-a268-0e08b78be73c" controls="controls" muted="muted" class="width-fit" style="max-height:640px; min-height: 200px"></video>
+
 # Create polygon, cubic bezier, line, and point
 Create a polygon.
 - Click to add points.
@@ -124,6 +135,26 @@ Right click on the object.
 ![smooth01](https://github.com/user-attachments/assets/2131b912-a290-4b4d-bc38-bb3042b873f6)
 ![smooth05](https://github.com/user-attachments/assets/f9361476-b656-42aa-9202-8db9851bff4a)
 ![smooth10](https://github.com/user-attachments/assets/ab4e8f64-52de-43b9-b0fc-3512331f3a86)
+
+# Create polygon using Cellpose
+Read [Cellpose CPP Wrapper for macOS and Ubuntu GPU](https://github.com/ryouchinsa/cellpose-cpp).
+
+Select a model.
+- [cyto3.onnx](https://huggingface.co/rectlabel/cellpose/resolve/main/cyto3.onnx.zip)
+- [cpsam.onnx](https://huggingface.co/rectlabel/cellpose/resolve/main/cpsam.onnx.zip)
+
+Select a create type.
+- polygon
+- pixels
+
+Create using Cellpose.
+- The first channel is for the cytoplasm and the second channel is for the nuclear.
+- Increase the diameter to detect larger cells, decrease the diameter to detect smaller cells.
+- Increase the flow threshold to increase the number of detections.
+- Increase the min size not to detect cells which are less than the min size.
+- Press start button to start downloading the model and processing the image.
+
+<video src="https://github.com/user-attachments/assets/22048c89-2412-43e3-9c0d-d0e12134ded5" controls="controls" muted="muted" class="width-fit" style="max-height:640px; min-height: 200px"></video>
 
 # Create keypoints
 Create keypoints.
