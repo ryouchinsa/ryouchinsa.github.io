@@ -15,7 +15,6 @@ Have questions? Send an email to support@rectlabel.com.
 - [Export menus](https://rectlabel.com/export)
 - [Edit menus](https://rectlabel.com/edit)
 - [Core ML menus](https://rectlabel.com/coreml)
-- [ONNX menus](https://rectlabel.com/onnx)
 - [View menus](https://rectlabel.com/view)
 - [Pricing](https://rectlabel.com/pricing)
 - [Privacy Policy](https://rectlabel.com/privacy)
