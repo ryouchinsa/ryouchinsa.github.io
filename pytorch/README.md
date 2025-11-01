@@ -47,7 +47,7 @@ source ~/.bashrc
 
 conda create --name my_env python=3.10
 conda activate my_env
-conda install pytorch torchvision torchaudio pytorch-cuda -c pytorch -c nvidia
+pip install torch==2.8.0 torchvision --index-url https://download.pytorch.org/whl/cu128
 
 import torch
 torch.cuda.is_available()
