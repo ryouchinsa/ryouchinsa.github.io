@@ -10,6 +10,8 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [Interobserver reliability of Coronal Plane Alignment of the Knee (CPAK) phenotype classifcation](https://boneandjoint.org.uk/article/10.1302/2633-1462.611.BJO-2025-0153.R1/pdf)
+- [Deep learning-based non-invasive differential diagnosis of eyelid basal cell and sebaceous gland carcinomas using photographic images](https://link.springer.com/article/10.1007/s10792-025-03801-1)
 - [Fine-Tuning DeepForest for Forest Tree Detection in High-Resolution UAV Imagery](https://isprs-archives.copernicus.org/articles/XLVIII-4-W15-2025/39/2025/isprs-archives-XLVIII-4-W15-2025-39-2025.html)
 - [LivePyxel: Accelerating image annotations with a Python-integrated webcam live streaming](https://arxiv.org/abs/2509.13504)
 - [DeepSea MOT: A benchmark dataset for multi-object tracking on deep-sea video](https://arxiv.org/abs/2509.03499)
