@@ -116,6 +116,7 @@ Select a model.
 
 Select a create type.
 - box
+- rotated box
 - polygon
 - pixels
 
