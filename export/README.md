@@ -100,10 +100,16 @@ Annotation files are exported as a [COCO JSON file](http://cocodataset.org/#form
 
 For a box object, "segmentation" is exported as empty.
 
+To save a track id for each box, use an attribute of "Text input" type and combine with the object name such as "sneakers-1", the attribute name should be set as "track id" on the setting.
+
 ```
 "annotations": [
 {
     "area": 254521,
+    "attributes":
+    {
+        "track_id": 0
+    },
     "bbox": [2150, 419, 595, 428],
     "category_id": 14,
     "id": 1,
