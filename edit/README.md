@@ -133,9 +133,6 @@ Right click on the object.
 
 ![sam2_polygon](https://github.com/user-attachments/assets/cceff18f-1692-461b-b6e3-87379c580aea)
 ![sam2_pixels](https://github.com/user-attachments/assets/05c9ece6-1906-4196-9676-6b96053ee61f)
-![smooth01](https://github.com/user-attachments/assets/2131b912-a290-4b4d-bc38-bb3042b873f6)
-![smooth05](https://github.com/user-attachments/assets/f9361476-b656-42aa-9202-8db9851bff4a)
-![smooth10](https://github.com/user-attachments/assets/ab4e8f64-52de-43b9-b0fc-3512331f3a86)
 
 # Create polygon using Cellpose
 Read [Cellpose CPP Wrapper for macOS and Ubuntu GPU](https://github.com/ryouchinsa/cellpose-cpp).
@@ -149,7 +146,7 @@ Select a create type.
 - pixels
 
 Create using Cellpose.
-- The first channel is for the cytoplasm and the second channel is for the nuclear.
+- The first channel is for the cytoplasm and the second channel is for the nuclear. For gray images, please set the same one such as (Red, Red) for better detections.
 - Increase the diameter to detect larger cells, decrease the diameter to detect smaller cells.
 - Increase the flow threshold to increase the number of detections.
 - Increase the min size not to detect cells which are less than the min size.
