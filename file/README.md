@@ -55,6 +55,16 @@ Drag & drop the root folder to the open table, child images and annotations/labe
         └── labels
 ```
 
+Drag & drop the coco128-seg folder to the open table and check on "Read images folder recursively".
+
+```
+└── coco128-seg
+    ├── images
+    │   └── train2017
+    └── labels
+        └── train2017
+```
+
 <video src="https://github.com/user-attachments/assets/96b128b1-2605-4cd3-b0d4-3ed06030649a" controls="controls" muted="muted" class="width-fit" style="max-height:640px; min-height: 200px"></video>
 
 Once opened images and annotations folders, from the second launch, you can use command line arguments to RectLabel which image files should be opened.
