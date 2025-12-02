@@ -70,7 +70,7 @@ Settings menus.
 - "Show edit points between box corners" is to show edit points between box corners.
 - "Click 4 points when draw boxes" is to draw a box clicking xmin, xmax, ymin, and ymax of the object.
 
-![box2](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/354ca023-22df-451d-ade9-00b69e01315b)
+<video src="https://github.com/user-attachments/assets/4eef981b-a715-4d65-99a1-ee3c2633076a" controls="controls" muted="muted" class="width-fit" style="max-height:640px; min-height: 200px"></video>
 
 # Create box using Tracking
 Using the labels on the previous image, the tracking model predicts bounding boxes on the current image.
