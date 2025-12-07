@@ -91,7 +91,7 @@ All images are exported into object-named subfolders.
 ```
 
 # Export COCO JSON file
-Annotation files are exported as a [COCO JSON file](http://cocodataset.org/#format-data). This format is for [Detectron2](https://github.com/facebookresearch/detectron2).
+Annotation files are exported as a [COCO JSON file](http://cocodataset.org/#format-data). 
 - Specify the split ratio "80/10/10" so that images are split into train, validation, and test sets.
 - For "Image size", images are resized, if "Image size" is empty, images are not resized.
 - For "Export only used names", if checked on, all annotation files are scanned and the new objects table is created, based on the objects table, each object index is written in the COCO JSON file.
@@ -226,8 +226,11 @@ In "categories", "keypoints" and "skeleton" are exported.
 ```
 
 # Import COCO JSON file
+You can import the COCO JSON file of the [SA-Co/Gold](https://github.com/facebookresearch/sam3/blob/main/scripts/eval/gold/README.md) and [SA-Co/Silver](https://github.com/facebookresearch/sam3/blob/main/scripts/eval/silver/README.md) datasets.
 - The COCO JSON file is imported to annotation files in the current folder.
 - Before importing, be sure that you opened images folder and annotations folder.
+
+![Fathomnet](https://github.com/user-attachments/assets/8edf5a58-4f82-4e56-8601-e02cbc13a9c1)
 
 # Import COCO RLE JSON files
 You can import the COCO RLE JSON files of the [SA-1B dataset](https://github.com/facebookresearch/segment-anything).
