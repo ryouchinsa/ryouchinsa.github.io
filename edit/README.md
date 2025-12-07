@@ -50,6 +50,7 @@ Move the box.
 
 Select multiple boxes.
 - Drag a box pressing the command key, you can select multiple boxes.
+- To deselect all polygons, press the escape key.
 
 Change color.
 - To change the box color, use the color picker at the top-right corner.
