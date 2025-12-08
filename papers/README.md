@@ -11,6 +11,7 @@ Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
 - [Deep Learning-Based Missing Person Detection for Search and Rescue Using UAVs](https://www.researchgate.net/profile/Nuno-Pessanha-Santos/publication/398132118_Deep_Learning-Based_Missing_Person_Detection_for_Search_and_Rescue_Using_UAVs)
+- [A Review of Artificial Intelligence, Machine Learning, and Deep Learning and Their Applications in Detecting Wildlife Animals](https://link.springer.com/chapter/10.1007/978-3-031-91802-5_1)
 - [Interobserver reliability of Coronal Plane Alignment of the Knee (CPAK) phenotype classifcation](https://boneandjoint.org.uk/article/10.1302/2633-1462.611.BJO-2025-0153.R1/pdf)
 - [Deep learning-based non-invasive differential diagnosis of eyelid basal cell and sebaceous gland carcinomas using photographic images](https://link.springer.com/article/10.1007/s10792-025-03801-1)
 - [Review on Artificial Intelligence in Pharmacological Imaging Analysis: Transforming Drug Discovery and Patient Care](https://www.researchgate.net/profile/Vinita-Khatri/publication/391109728_Review_on_Artificial_Intelligence_in_Pharmacological_Imaging_Analysis_Transforming_Drug_Discovery_and_Patient_Care/links/68edc948220a341aa154f48c/Review-on-Artificial-Intelligence-in-Pharmacological-Imaging-Analysis-Transforming-Drug-Discovery-and-Patient-Care.pdf)
