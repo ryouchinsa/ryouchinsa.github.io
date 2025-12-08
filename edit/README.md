@@ -265,7 +265,7 @@ Rotate an object.
 Settings menu.
 - “Show the first point of the box” is to show the first point of the box.
 
-![draw_obb](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/73300c44-76e4-413e-9cff-66e7747c2700)
+![draw_obb](https://github.com/user-attachments/assets/9685d212-12bf-442e-9961-22fc443895e4)
 
 # Rotate the image right/left
 You can rotate the image and annotation to the right/left by 90 degrees.
