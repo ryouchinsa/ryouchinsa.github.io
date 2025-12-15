@@ -238,7 +238,7 @@ Settings menu.
 - “Add an image label when press an object hotkey” is to add an image label using hotkeys.
 
 # Create memo
-Create memo for the image and can be used for searching. This feature works for the PASCAL VOC xml format.
+Create memo for the image and can be used for searching. 
 
 # Move
 Select an object.
