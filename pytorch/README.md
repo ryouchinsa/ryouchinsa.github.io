@@ -59,8 +59,8 @@ Download ONNX Runtime.
 ```
 https://github.com/microsoft/onnxruntime/releases/
 
-wget https://github.com/microsoft/onnxruntime/releases/download/v1.20.0/onnxruntime-linux-x64-gpu-1.20.0.tgz
-tar -xzvpf onnxruntime-linux-x64-gpu-1.20.0.tgz
+wget https://github.com/microsoft/onnxruntime/releases/download/v1.23.2/onnxruntime-linux-x64-gpu-1.23.2.tgz
+tar -xzvpf onnxruntime-linux-x64-gpu-1.23.2.tgz
 ```
 
 
