@@ -14,6 +14,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Create box using Tracking](https://rectlabel.com/edit#create-box-using-tracking)
 - [Create polygon, cubic bezier, line, and point](https://rectlabel.com/edit#create-polygon-cubic-bezier-line-and-point)
 - [Create polygon using SAM](https://rectlabel.com/edit#create-polygon-using-sam)
+- [Create polygon using SAM3](https://rectlabel.com/edit#create-polygon-using-sam3)
 - [Create polygon using Cellpose](https://rectlabel.com/edit#create-polygon-using-cellpose)
 - [Create keypoints](https://rectlabel.com/edit#create-keypoints)
 - [Create pixels](https://rectlabel.com/edit#create-pixels)
@@ -28,6 +29,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Copy as erase mask](https://rectlabel.com/edit#copy-as-erase-mask)
 - [Cut using erase mask](https://rectlabel.com/edit#cut-using-erase-mask)
 - [Start SAM preprocessing](https://rectlabel.com/edit#start-sam-preprocessing)
+- [Start SAM3 preprocessing](https://rectlabel.com/edit#start-sam-preprocessing)
 - [Change brightness and contrast](https://rectlabel.com/edit#change-brightness-and-contrast)
 - [Change object color](https://rectlabel.com/edit#change-object-color)
 - [Clear object color](https://rectlabel.com/edit#clear-object-color)
@@ -131,9 +133,34 @@ Create using SAM.
 Right click on the object.
 - "Convert to box using SAM" to tighten selected boxes after preprocessing the image using SAM.
 - "Convert to polygon/pixels using SAM" to convert selected boxes to polygons/pixels after preprocessing the image using SAM.
-
+ 
 ![sam2_polygon](https://github.com/user-attachments/assets/cceff18f-1692-461b-b6e3-87379c580aea)
 ![sam2_pixels](https://github.com/user-attachments/assets/05c9ece6-1906-4196-9676-6b96053ee61f)
+
+# Create polygon using SAM3
+Select a create type.
+- box
+- rotated box
+- polygon
+- pixels
+
+Create using SAM3.
+- For the text prompt, describe objects to detect. Input empty, if you do not use the text prompt.
+- For the box prompt, you can draw positive and negative boxes. Check off the Use checkbox, if you do not use the box prompt.
+- For the threshold, increase to decrease detections, and decrese to increase detections.
+- Press start button to start downloading the SAM3 model, preprocessing the image, and decoding the mask results.
+- Dragging the smooth slider, the number of polygon points changes.
+- Press an enter key to finish drawing.
+- Press an escape key to cancel drawing.
+
+Right click on the box of the box prompt.
+- "Toggle positive and negative" to change the positive box to the negative box, and the negative box to the positive box.
+
+View menu.
+- "Hide SAM3 boxes" to toggle the Use checkbox of the box prompt.
+
+![sam3_polygon](https://github.com/user-attachments/assets/91a8c846-ed46-4a8e-bdd9-ac71332f00db)
+![sam3_pixels](https://github.com/user-attachments/assets/190c2454-3d22-4fa5-85ff-c6480c7cf7d6)
 
 # Create polygon using Cellpose
 Read [Cellpose CPP Wrapper for macOS and Ubuntu GPU](https://github.com/ryouchinsa/cellpose-cpp).
@@ -297,6 +324,9 @@ Cut the polygon using the erase mask.
 
 # Start SAM preprocessing
 Start downloading the SAM model and preprocessing the image.
+
+# Start SAM3 preprocessing
+Start downloading the SAM3 model, preprocessing the image, and decoding the mask results.
 
 # Change brightness and contrast
 Change the image brightness and contrast for dark images.
