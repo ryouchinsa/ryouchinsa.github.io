@@ -29,7 +29,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Copy as erase mask](https://rectlabel.com/edit#copy-as-erase-mask)
 - [Cut using erase mask](https://rectlabel.com/edit#cut-using-erase-mask)
 - [Start SAM preprocessing](https://rectlabel.com/edit#start-sam-preprocessing)
-- [Start SAM3 preprocessing](https://rectlabel.com/edit#start-sam-preprocessing)
+- [Start SAM3 preprocessing](https://rectlabel.com/edit#start-sam3-preprocessing)
 - [Change brightness and contrast](https://rectlabel.com/edit#change-brightness-and-contrast)
 - [Change object color](https://rectlabel.com/edit#change-object-color)
 - [Clear object color](https://rectlabel.com/edit#clear-object-color)
