@@ -18,6 +18,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Hide image name](https://rectlabel.com/view#hide-image-name)
 - [Hide cross hairs](https://rectlabel.com/view#hide-cross-hairs)
 - [Hide other boxes](https://rectlabel.com/view#hide-other-boxes)
+- [Hide SAM3 boxes](https://rectlabel.com/view#hide-sam3-boxes)
 - [Hide keypoints names](https://rectlabel.com/view#hide-keypoints-names)
 - [Hide keypoints boxes](https://rectlabel.com/view#hide-keypoints-boxes)
 - [Hide pixels](https://rectlabel.com/view#hide-pixels)
@@ -86,6 +87,9 @@ Hide cross hairs when creating box.
 
 # Hide other boxes
 Hide other boxes except the selected box.
+
+# Hide SAM3 boxes
+Hide SAM3 boxes to toggle the Use checkbox of the box prompt.
 
 # Hide keypoints names
 Hide keypoints names.
