@@ -24,6 +24,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Install CUDA, cuDNN, PyTorch, and ONNX Runtime on Ubuntu 24.04 in 30 minutes](https://rectlabel.com/pytorch)
 
 # Key features
+- Using text and box prompts of Segment Anything Model 3, multiple objects are labeled at once
 - Label polygons and pixels using Segment Anything Model 2
 - Label polygons and pixels using Cellpose model
 - Label bounding boxes using Tracking model
@@ -39,13 +40,16 @@ Have questions? Send an email to support@rectlabel.com.
 - Export indexed color mask image and grayscale mask images
 - Video to image frames, augment images, etc.
 
+![sam3_polygon](https://github.com/user-attachments/assets/93d92528-05b3-4e47-a137-585bbc5729b8)
+![sam3_pixels](https://github.com/user-attachments/assets/c6e068e0-1112-4377-8930-c9a28487ac3a)
 ![sam2_polygon](https://github.com/user-attachments/assets/1ff23220-a92f-42e0-afba-eb909f454832)
 ![sam2_pixels](https://github.com/user-attachments/assets/22f9ae41-c698-4685-bf0d-5358a2056aa8)
 ![cellpose_polygon](https://github.com/user-attachments/assets/2e50d051-3b6d-4799-ab5e-3e4f224fc117)
 ![coreml_polygon](https://github.com/user-attachments/assets/69f71ba4-0db8-4840-9dcc-0f0b360ef12e)
 ![ocr](https://github.com/user-attachments/assets/92916a99-26f2-42f7-9eee-40a763c7adab)
-![draw_obb](https://github.com/user-attachments/assets/5d857e18-66dc-423b-88f7-e9f567feff3e)
+![draw_obb](https://github.com/user-attachments/assets/2fe1c320-36e8-4f41-b0fd-7511b3177762)
 ![search5](https://github.com/user-attachments/assets/52279522-e97b-450c-9315-64b08ef4c569)
+
 
 
 
