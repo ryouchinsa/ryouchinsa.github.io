@@ -25,6 +25,8 @@ Have questions? Send an email to support@rectlabel.com.
 Auto label images using the loaded Core ML model.
 - You can change the confidence threshold.
 - if the model does not include the non-maximum suppression, you can change the overlap threshold.
+- If check on the "Auto" checkbox, when change the image, the image is automatically processed.
+- For the "Filter by class", if you put "person", RectLabel finds only "person" class.
 
 View menu.
 - “Show labels on boxes” to show confidences on boxes.
@@ -36,7 +38,7 @@ Settings menus.
 
 ![coreml](https://github.com/user-attachments/assets/049386e6-a816-4ca4-b5d7-18de63b51a8f)
 
-![coreml_polygon](https://github.com/user-attachments/assets/e5556c25-1d01-4f4b-977d-b9a830c92b64)
+![coreml_polygon](https://github.com/user-attachments/assets/fe44493f-bae6-4654-8bd8-972dadab7767)
 
 ![coreml_pixels](https://github.com/user-attachments/assets/b72fbe4b-810b-48e6-8026-dc13f5c64c36)
 
@@ -45,7 +47,7 @@ Using [Vision Framework](https://developer.apple.com/documentation/vision), auto
 - You can change the language.
 - You can change the type to lines or words.
 
-![ocr](https://github.com/user-attachments/assets/3bee6ece-acdb-4743-a226-68618f2ad299)
+![ocr](https://github.com/user-attachments/assets/c60f4e34-c943-4d3d-9b39-a8efc4ada93d)
 
 # Toggle auto process
 You can auto label when change the image if you check on the "Auto process" checkbox on the Core ML dialog.
