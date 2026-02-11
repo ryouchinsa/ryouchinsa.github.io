@@ -28,7 +28,7 @@ Have questions? Send an email to support@rectlabel.com.
 - Label polygons and pixels using Segment Anything Model 2
 - Label polygons and pixels using Cellpose model
 - Label bounding boxes using Tracking model
-- Automatic labeling using Core ML models
+- Automatic labeling using Core ML models including YOLO26
 - Automatic text recognition for lines and words
 - Label cubic bezier curves, line segments, and points
 - Label oriented bounding boxes in aerial images
