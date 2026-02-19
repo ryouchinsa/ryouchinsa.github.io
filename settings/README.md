@@ -28,7 +28,7 @@ A project contains an objects table and an attributes table.
 
 # Objects
 The objects table describes each object name and the object index.
-- You can assign 0-9 number keys and A-Z alphabet keys to object names.
+- You can assign 0-9 number keys, A-Z alphabet keys, and modifier flags such as command, control, and shift keys to object names.
 - You can drag & drop an object names file to the objects table.
 - Right click on the objects table header, "Sort alphabetically" menu appears.
 
@@ -40,7 +40,7 @@ The label "sneakers-converse-yellow" is a combination of the object name and att
 - If any objects are not using attributes, '-' in the object name is not replaced with '\_'.
 - The prefix is used such as '-' + prefix + attribute name.
 - Attribute types are "Single select", "Multiple select", and "Text input".
-- You can assign 0-9 number keys and A-Z alphabet keys to attribute names.
+- You can assign 0-9 number keys, A-Z alphabet keys, and modifier flags such as command, control, and shift keys to attribute names.
 - Right click on the attributes table header, "Sort alphabetically" menu appears.
 
 ![attributes](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/a4fb8154-3391-49c2-94d0-20513395a085)
