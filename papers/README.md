@@ -10,6 +10,7 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [Automatic bone age assessment: a deep learning case study on the Brazilian population with a supporting mobile application prototype](https://www.nature.com/articles/s41598-025-34651-7)
 - [Deep Learning-Based Missing Person Detection for Search and Rescue Using UAVs](https://www.researchgate.net/profile/Nuno-Pessanha-Santos/publication/398132118_Deep_Learning-Based_Missing_Person_Detection_for_Search_and_Rescue_Using_UAVs)
 - [A Review of Artificial Intelligence, Machine Learning, and Deep Learning and Their Applications in Detecting Wildlife Animals](https://link.springer.com/chapter/10.1007/978-3-031-91802-5_1)
 - [Interobserver reliability of Coronal Plane Alignment of the Knee (CPAK) phenotype classifcation](https://boneandjoint.org.uk/article/10.1302/2633-1462.611.BJO-2025-0153.R1/pdf)
