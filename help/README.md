@@ -21,6 +21,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Terms of Use](https://rectlabel.com/terms)
 - [About team](https://rectlabel.com/about)
 - [Papers cited RectLabel](https://rectlabel.com/papers)
+- [How to Train a YOLO26 Object Detection Model with Custom Data](https://rectlabel.com/yolo26_detection)
 - [Install CUDA, cuDNN, PyTorch, and ONNX Runtime on Ubuntu 24.04 in 30 minutes](https://rectlabel.com/pytorch)
 
 # Key features
@@ -45,12 +46,10 @@ Have questions? Send an email to support@rectlabel.com.
 ![sam2_polygon](https://github.com/user-attachments/assets/1ff23220-a92f-42e0-afba-eb909f454832)
 ![sam2_pixels](https://github.com/user-attachments/assets/22f9ae41-c698-4685-bf0d-5358a2056aa8)
 ![cellpose_polygon](https://github.com/user-attachments/assets/2e50d051-3b6d-4799-ab5e-3e4f224fc117)
-![coreml_polygon](https://github.com/user-attachments/assets/2dc57692-d0cf-45f7-b95c-f2439c6bc12c)
+![coreml_polygon](https://github.com/user-attachments/assets/1b63f036-8795-4b88-9174-ca03860652f8)
 ![ocr](https://github.com/user-attachments/assets/6f83a353-5463-4e7e-9d13-807bd4ba0aaf)
 ![draw_obb](https://github.com/user-attachments/assets/2fe1c320-36e8-4f41-b0fd-7511b3177762)
 ![search5](https://github.com/user-attachments/assets/52279522-e97b-450c-9315-64b08ef4c569)
-
-
 
 
 
