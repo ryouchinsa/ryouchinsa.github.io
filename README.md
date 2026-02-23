@@ -21,6 +21,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Terms of Use](https://rectlabel.com/terms)
 - [About team](https://rectlabel.com/about)
 - [Papers cited RectLabel](https://rectlabel.com/papers)
+- [How to Train a YOLO26 Object Detection Model with Custom Data](https://rectlabel.com/yolo26_detection)
 - [Install CUDA, cuDNN, PyTorch, and ONNX Runtime on Ubuntu 24.04 in 30 minutes](https://rectlabel.com/pytorch)
 
 # Key features
