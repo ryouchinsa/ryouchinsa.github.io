@@ -9,7 +9,9 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 
 Have questions? Send an email to support@rectlabel.com.
 
-# Train bounding boxes using a Faster R-CNN model on Detectron2
+# How to Train a YOLO26 Object Detection Model with Custom Data
+
+
 [Detectron2](https://github.com/facebookresearch/detectron2) is Facebook AI Research's next generation library that provides state-of-the-art detection and segmentation algorithms.
 
 [Install CUDA, cuDNN, and PyTorch](https://rectlabel.com/pytorch/).
