@@ -11,155 +11,50 @@ Have questions? Send an email to support@rectlabel.com.
 
 # How to Train a YOLO26 Object Detection Model with Custom Data
 
+We will show you how to train a [YOLO26](https://github.com/ultralytics/ultralytics) detection model with your images and annotations and export to a Core ML model which can be used for auto labeling on RectLabel.
 
-[Detectron2](https://github.com/facebookresearch/detectron2) is Facebook AI Research's next generation library that provides state-of-the-art detection and segmentation algorithms.
+We recommend working through this blog post side-by-side with the [YOLO26 Object Detection Colab notebook](https://colab.research.google.com/github/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_yolo26_object_detection_on_custom_dataset.ipynb
+).
 
-[Install CUDA, cuDNN, and PyTorch](https://rectlabel.com/pytorch/).
-
-Install Detectron2.
+Install YOLO26.
 ```
-git clone https://github.com/facebookresearch/detectron2.git
-python -m pip install -e detectron2
-```
-
-Download training/inference scripts.
-```
-wget https://huggingface.co/rectlabel/detectron2/resolve/main/detectron2_scripts.zip
-unzip detectron2_scripts.zip
-mv detectron2_scripts/my_train_*.py detectron2/tools
-mv detectron2_scripts/my_predictor_*.py detectron2/demo
-mv detectron2_scripts/visualizer.py detectron2/detectron2/utils
+pip install -q ultralytics
 ```
 
-Download person dataset.
+Download training images and annotations. You can use these or replace them with your own data.
 ```
-wget https://huggingface.co/datasets/rectlabel/datasets/resolve/main/person.zip
-unzip person.zip
-mv person detectron2/demo
-```
-
-To label your custom dataset, use Edit menus.
-- [Create box](https://rectlabel.com/edit/#create-box)
-
-To export your custom dataset, use Export menus.
-- [Export COCO JSON file](https://rectlabel.com/export/#export-coco-json-file)
-- [Export augmented images](https://rectlabel.com/export/#export-augmented-images)
-
-![augment_box](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/c2115227-f23d-46f7-ae7d-02c37ee09bf6)
-
-This is the training script.
-```
-import os
-
-from detectron2 import model_zoo
-from detectron2.config import get_cfg
-from detectron2.data.datasets import register_coco_instances
-from detectron2.engine import DefaultTrainer
-from detectron2.evaluation import COCOEvaluator
-
-class Trainer(DefaultTrainer):
-    @classmethod
-    def build_evaluator(cls, cfg, dataset_name, output_folder=None):
-        return COCOEvaluator(dataset_name, output_folder)
-
-def main():
-    images_path = "person/images"
-    annotations_path = "person/coco_polygon.json"
-    register_coco_instances("dataset_train", {}, annotations_path, images_path)
-    cfg = get_cfg()
-    cfg.merge_from_file(model_zoo.get_config_file("COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml"))
-    cfg.DATASETS.TRAIN = ("dataset_train",)
-    cfg.DATASETS.TEST = ()
-    cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url("COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml")
-    cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 128
-    cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
-    # cfg.MODEL.DEVICE = "cpu"
-    cfg.SOLVER.BASE_LR = 0.001
-    cfg.SOLVER.MAX_ITER = 10000 
-    cfg.SOLVER.IMS_PER_BATCH = 2
-    cfg.DATALOADER.NUM_WORKERS = 2
-    os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
-    trainer = Trainer(cfg)
-    trainer.resume_or_load(resume=True)
-    trainer.train()
-
-if __name__ == "__main__":
-    main()
+mkdir datasets
+cd datasets
+wget -q https://huggingface.co/datasets/rectlabel/datasets/resolve/main/converse_vans_detection.zip
+unzip -q converse_vans_detection.zip
+cd ..
 ```
 
-Run the training script.
+Create a workspace folder and start training from the workspace folder. Make sure the datasets path in the yaml file.
 ```
-cd detectron2/demo
-python ../tools/my_train_box.py
-```
-
-This is the inference script.
-```
-import cv2
-import glob
-import os
-from enum import Enum
-
-from detectron2 import model_zoo
-from detectron2.config import get_cfg
-from detectron2.data.datasets import register_coco_instances
-from detectron2.data import MetadataCatalog
-from detectron2.engine import DefaultPredictor
-from detectron2.utils.visualizer import Visualizer
-from detectron2.evaluation import COCOEvaluator, inference_on_dataset
-from detectron2.data import build_detection_test_loader
-
-class SaveType(Enum):
-    IMAGE = 1
-    COCO_JSON = 2
-
-def main():
-    images_path = "person/test"
-    MetadataCatalog.get("dataset_test").set(thing_classes=["person"])
-    cfg = get_cfg()
-    cfg.merge_from_file(model_zoo.get_config_file("COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml"))
-    cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "model_final.pth")
-    cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 128
-    cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
-    cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5
-    # cfg.MODEL.DEVICE = "cpu"
-    cfg.SOLVER.IMS_PER_BATCH = 1
-    predictor = DefaultPredictor(cfg)
-    os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
-    save_type = SaveType.COCO_JSON
-    if save_type == SaveType.IMAGE:
-        image_paths = glob.glob(os.path.join(images_path, "*.jpg"))
-        for image_path in image_paths:
-            image = cv2.imread(image_path)
-            outputs = predictor(image)
-            v = Visualizer(image[:, :, ::-1], MetadataCatalog.get("dataset_test"), scale=1.2)
-            out = v.draw_instance_predictions(outputs["instances"].to("cpu"))
-            output_path = os.path.join(cfg.OUTPUT_DIR, os.path.basename(image_path))
-            cv2.imwrite(output_path, out.get_image()[:, :, ::-1])
-    elif save_type == SaveType.COCO_JSON:
-        annotations_path = "person/coco_test.json"
-        register_coco_instances("dataset_test", {}, annotations_path, images_path)
-        evaluator = COCOEvaluator("dataset_test", cfg, False, output_dir=cfg.OUTPUT_DIR)
-        val_loader = build_detection_test_loader(cfg, "dataset_test")
-        inference_on_dataset(predictor.model, val_loader, evaluator)
-        
-if __name__ == "__main__":
-    main()
-
+mkdir workspace
+cd workspace
+mv ../datasets/converse_vans_detection/converse_vans_detection.yaml .
+yolo task=detect mode=train model=yolo26n.pt data=converse_vans_detection.yaml epochs=100 imgsz=640 plots=True
 ```
 
-Run the inference script.
+Move the best model to the current folder and export to a Core ML model.
 ```
-cd detectron2/demo
-python my_predictor_box.py
+mv runs/detect/train/weights/best.pt .
+yolo export model=best.pt format=coreml
 ```
 
-![clarke-sanders-ybPJ47PMT_M-unsplash](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/12e69945-c01a-4a31-9056-bce1e7e2f75f)
+Now you can auto label using the Core ML model on RectLabel.
 
-If you set `save_type = SaveType.COCO_JSON`, you can save the inference result as coco_instances_results.json in the output folder.
-To import the inference result to RectLabel, use Export menus -> Import COCO JSON file.
+![converse1](https://github.com/user-attachments/assets/36fc83c5-0d36-45b2-99a0-1ab39af20ab6)
 
-![inference_box](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/5a2266d2-7e78-4a3b-91f1-e07fe3bfed0c)
+![converse2](https://github.com/user-attachments/assets/850e081d-790c-4bfb-8aba-6d43310cf8c5)
+
+![vans1](https://github.com/user-attachments/assets/2246a6bf-bba4-414f-b471-10b47fdbea98)
+
+![vans2](https://github.com/user-attachments/assets/f2cb795a-f0d0-4604-9186-aad1cc0df095)
+
+
 
 
 
