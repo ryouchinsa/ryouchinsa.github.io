@@ -41,6 +41,7 @@ The label "sneakers-converse-yellow" is a combination of the object name and att
 - The prefix is used such as '-' + prefix + attribute name.
 - Attribute types are "Single select", "Multiple select", and "Text input".
 - You can assign 0-9 number keys, A-Z alphabet keys, and modifier flags such as command, control, and shift keys to attribute names.
+- For the Text input of the attribute type, you can input the number by such as Shift+{X}+{Y}.
 - Right click on the attributes table header, "Sort alphabetically" menu appears.
 
 ![attributes](https://github.com/ryouchinsa/ryouchinsa.github.io/assets/1954306/a4fb8154-3391-49c2-94d0-20513395a085)
