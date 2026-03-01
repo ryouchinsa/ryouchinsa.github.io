@@ -45,7 +45,7 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 source ~/.bashrc
 
-conda create --name my_env python=3.10
+conda create --name my_env python=3.12
 conda activate my_env
 pip install torch==2.8.0 torchvision --index-url https://download.pytorch.org/whl/cu128
 
