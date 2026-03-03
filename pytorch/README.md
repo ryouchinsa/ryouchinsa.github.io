@@ -24,7 +24,10 @@ Install CUDA and cuDNN.
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-keyring_1.1-1_all.deb
 sudo dpkg -i cuda-keyring_1.1-1_all.deb
 sudo apt-get update
+# latest
 sudo apt install cuda-drivers
+# specify version
+sudo apt install nvidia-driver-570
 nvidia-smi
 
 sudo apt install cuda-toolkit-12-8
@@ -48,19 +51,18 @@ source ~/.bashrc
 conda create --name my_env python=3.12
 conda activate my_env
 pip install torch==2.8.0 torchvision --index-url https://download.pytorch.org/whl/cu128
-
-import torch
-torch.cuda.is_available()
-
 pip install opencv-python onnx optimum[onnxruntime-gpu] onnxsim matplotlib numba
 ```
 
 Download ONNX Runtime.
 ```
 https://github.com/microsoft/onnxruntime/releases/
-
+# ubuntu
 wget https://github.com/microsoft/onnxruntime/releases/download/v1.23.2/onnxruntime-linux-x64-gpu-1.23.2.tgz
 tar -xzvpf onnxruntime-linux-x64-gpu-1.23.2.tgz
+# macos
+wget https://github.com/microsoft/onnxruntime/releases/download/v1.23.2/onnxruntime-osx-universal2-1.23.2.tgz
+tar -xzvpf onnxruntime-osx-universal2-1.23.2.tgz
 ```
 
 
