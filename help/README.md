@@ -22,6 +22,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [About team](https://rectlabel.com/about)
 - [Papers cited RectLabel](https://rectlabel.com/papers)
 - [How to Train a YOLO26 Object Detection Model with Custom Data](https://rectlabel.com/yolo26_detection)
+- [Segment Anything Model 2 CPP Wrapper for macOS and Ubuntu GPU](https://github.com/ryouchinsa/sam-cpp-macos)
 - [Install CUDA, cuDNN, PyTorch, and ONNX Runtime on Ubuntu 24.04 in 30 minutes](https://rectlabel.com/pytorch)
 
 # Key features
@@ -50,7 +51,3 @@ Have questions? Send an email to support@rectlabel.com.
 ![ocr](https://github.com/user-attachments/assets/6f83a353-5463-4e7e-9d13-807bd4ba0aaf)
 ![draw_obb](https://github.com/user-attachments/assets/2fe1c320-36e8-4f41-b0fd-7511b3177762)
 ![search5](https://github.com/user-attachments/assets/52279522-e97b-450c-9315-64b08ef4c569)
-
-
-
-
