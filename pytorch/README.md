@@ -50,8 +50,8 @@ source ~/.bashrc
 
 conda create --name my_env python=3.12
 conda activate my_env
-pip install torch==2.8.0 torchvision --index-url https://download.pytorch.org/whl/cu128
-pip install opencv-python onnx optimum[onnxruntime-gpu] onnxsim matplotlib numba
+pip install torch==2.8.0 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+pip install opencv-python onnx onnxruntime-gpu onnxsim onnxscript matplotlib numba
 ```
 
 Download ONNX Runtime.
