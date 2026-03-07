@@ -138,6 +138,8 @@ Right click on the object.
 ![sam2_pixels](https://github.com/user-attachments/assets/05c9ece6-1906-4196-9676-6b96053ee61f)
 
 # Create polygon using SAM3
+You can use text prompt and box prompt for [Segment Anything Model 3](https://github.com/facebookresearch/sam3).
+
 Select a create type.
 - box
 - rotated box
