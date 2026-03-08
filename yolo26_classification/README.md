@@ -13,7 +13,7 @@ Have questions? Send an email to support@rectlabel.com.
 
 We will show you how to train a [YOLO26](https://github.com/ultralytics/ultralytics) classification model with your images and annotations and export to a Core ML model which can be used for auto labeling on RectLabel.
 
-We recommend working through this blog post side-by-side with the [YOLO26 Object Detection Colab notebook](https://colab.research.google.com/github/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_yolo26_classification_on_custom_dataset.ipynb
+We recommend working through this blog post side-by-side with the [YOLO26 Object Classification Colab notebook](https://colab.research.google.com/github/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_yolo26_classification_on_custom_dataset.ipynb
 ).
 
 Install YOLO26.
@@ -40,13 +40,13 @@ yolo export model=best.pt format=coreml
 
 Now you can auto label using the Core ML model on RectLabel.
 
-![converse1](https://github.com/user-attachments/assets/36fc83c5-0d36-45b2-99a0-1ab39af20ab6)
+![converse1](https://github.com/user-attachments/assets/657d6d1d-c090-454c-bba6-b364f465cd7c)
 
-![converse2](https://github.com/user-attachments/assets/850e081d-790c-4bfb-8aba-6d43310cf8c5)
+![converse2](https://github.com/user-attachments/assets/4b03edf4-9488-4284-9441-b15e9c847399)
 
-![vans1](https://github.com/user-attachments/assets/2246a6bf-bba4-414f-b471-10b47fdbea98)
+![vans1](https://github.com/user-attachments/assets/e4b06774-024f-4518-a26e-ca50409c0346)
 
-![vans2](https://github.com/user-attachments/assets/f2cb795a-f0d0-4604-9186-aad1cc0df095)
+![vans2](https://github.com/user-attachments/assets/7ed1ff7a-af05-4655-8e8f-3dadf88d8863)
 
 
 
