@@ -46,6 +46,10 @@ yolo export model=best.pt format=coreml
 
 Now you can auto label using the Core ML model on RectLabel.
 
+![donut1](https://github.com/user-attachments/assets/1f6324cc-55d1-482b-b1ca-a24d1215aec4)
 
+![donut2](https://github.com/user-attachments/assets/a817db7b-b407-405a-b137-e9def6bd38db)
+
+![donut3](https://github.com/user-attachments/assets/a70ffb51-1afd-4da1-977c-005e3fdaa4dd)
 
 
