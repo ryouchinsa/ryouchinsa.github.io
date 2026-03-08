@@ -25,8 +25,8 @@ Download training images and annotations. You can use these or replace them with
 ```
 mkdir datasets
 cd datasets
-wget -q https://huggingface.co/datasets/rectlabel/datasets/resolve/main/segment.zip
-unzip -q segment.zip
+wget -q https://huggingface.co/datasets/rectlabel/datasets/resolve/main/donut.zip
+unzip -q donut.zip
 cd ..
 ```
 
@@ -34,8 +34,8 @@ Create a workspace folder and start training from the workspace folder. Make sur
 ```
 mkdir workspace
 cd workspace
-mv ../datasets/segment/segment.yaml .
-yolo segment train data=segment.yaml model=yolo26m-seg.pt epochs=100
+mv ../datasets/donut/donut.yaml .
+yolo segment train data=donut.yaml model=yolo26n-seg.pt epochs=100
 ```
 
 Move the best model to the current folder and export to a Core ML model.
