@@ -9,11 +9,11 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 
 Have questions? Send an email to support@rectlabel.com.
 
-# How to Train a YOLO26 Object Detection Model with Custom Data
+# How to Train a YOLO26 Classification Model with Custom Data
 
-We will show you how to train a [YOLO26](https://github.com/ultralytics/ultralytics) detection model with your images and annotations and export to a Core ML model which can be used for auto labeling on RectLabel.
+We will show you how to train a [YOLO26](https://github.com/ultralytics/ultralytics) classification model with your images and annotations and export to a Core ML model which can be used for auto labeling on RectLabel.
 
-We recommend working through this blog post side-by-side with the [YOLO26 Object Detection Colab notebook](https://colab.research.google.com/github/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_yolo26_object_detection_on_custom_dataset.ipynb
+We recommend working through this blog post side-by-side with the [YOLO26 Object Detection Colab notebook](https://colab.research.google.com/github/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_yolo26_classification_on_custom_dataset.ipynb
 ).
 
 Install YOLO26.
@@ -23,24 +23,18 @@ pip install -q ultralytics
 
 Download training images and annotations. You can use these or replace them with your own data.
 ```
-mkdir datasets
-cd datasets
-wget -q https://huggingface.co/datasets/rectlabel/datasets/resolve/main/converse_vans_detection.zip
-unzip -q converse_vans_detection.zip
-cd ..
+wget -q https://huggingface.co/datasets/rectlabel/datasets/resolve/main/converse_vans_classification.zip
+unzip -q converse_vans_classification.zip
 ```
 
-Create a workspace folder and start training from the workspace folder. Make sure the datasets path in the yaml file.
+Fine-tune YOLO26 on custom dataset.
 ```
-mkdir workspace
-cd workspace
-mv ../datasets/converse_vans_detection/converse_vans_detection.yaml .
-yolo task=detect mode=train model=yolo26n.pt data=converse_vans_detection.yaml epochs=100 imgsz=640 plots=True
+yolo classify train data=converse_vans_classification model=yolo26n-cls.pt epochs=100
 ```
 
 Move the best model to the current folder and export to a Core ML model.
 ```
-mv runs/detect/train/weights/best.pt .
+mv runs/classify/train/weights/best.pt .
 yolo export model=best.pt format=coreml
 ```
 
