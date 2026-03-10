@@ -126,7 +126,7 @@ Select a create type.
 Create using SAM.
 - Press start button to start downloading the model and preprocessing the image.
 - Click positive and negative points. Pressing the option key, you can switch the positive/negative mode.
-- Dragging the smooth slider, the number of polygon points changes.
+- Dragging the smooth slider, the number of polygon points changes. [Read more](https://rectlabel.com/mask_to_polygon)
 - Press an enter key to finish drawing.
 - Press an escape key to cancel drawing.
 
@@ -151,7 +151,7 @@ Create using SAM3.
 - For the box prompt, you can draw positive and negative boxes. Check off the Use checkbox, if you do not use the box prompt.
 - For the threshold, increase to decrease detections, and decrese to increase detections.
 - Press start button to start downloading the SAM3 model, preprocessing the image, and decoding the mask results.
-- Dragging the smooth slider, the number of polygon points changes.
+- Dragging the smooth slider, the number of polygon points changes. [Read more](https://rectlabel.com/mask_to_polygon)
 - Press an enter key to finish drawing.
 - Press an escape key to cancel drawing.
 
