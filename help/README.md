@@ -24,6 +24,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [How to Train a YOLO26 Object Detection Model with Custom Data](https://rectlabel.com/yolo26_detection)
 - [How to Train a YOLO26 Classification Model with Custom Data](https://rectlabel.com/yolo26_classification)
 - [How to Train a YOLO26 Instance Segmentation Model with Custom Data](https://rectlabel.com/yolo26_segmentation)
+- [Convert to pixels mask to polygon using the polygon smooth scrollbar](https://rectlabel.com/mask_to_polygon)
 - [Segment Anything Model 2 CPP Wrapper for macOS and Ubuntu GPU](https://github.com/ryouchinsa/sam-cpp-macos)
 - [Segment Anything Model 3 CPP Wrapper for macOS and Ubuntu GPU](https://github.com/ryouchinsa/sam3-cpp-macos)
 - [Install CUDA, cuDNN, PyTorch, and ONNX Runtime on Ubuntu 24.04 in 30 minutes](https://rectlabel.com/pytorch)
