@@ -113,7 +113,7 @@ You can show small pixels areas.
 You can show other pixels objects.
 
 # Show polygon smooth scrollbar
-Show polygon smooth scrollbar. 
+Show polygon smooth scrollbar. [Read more](https://rectlabel.com/mask_to_polygon)
 
 # Show labels on boxes
 Show labels on boxes and the confidence score when auto labeling.
