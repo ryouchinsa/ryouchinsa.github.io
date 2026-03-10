@@ -25,7 +25,7 @@ Have questions? Send an email to support@rectlabel.com.
 - [Hide superpixels](https://rectlabel.com/view#hide-superpixels)
 - [Show small pixels](https://rectlabel.com/view#show-small-pixels)
 - [Show other pixels](https://rectlabel.com/view#show-other-pixels)
-- [Show polygon smooth scrollbar](https://rectlabel.com/view#show-polygon-smoot-scroolbar)
+- [Show polygon smooth scrollbar](https://rectlabel.com/view#show-polygon-smooth-scroolbar)
 - [Show labels on boxes](https://rectlabel.com/view#show-labels-on-boxes)
 - [Show coordinates on boxes](https://rectlabel.com/view#show-coordinates-on-boxes)
 - [Show indexes on points](https://rectlabel.com/view#show-indexes-on-points)
