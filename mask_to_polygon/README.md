@@ -9,47 +9,62 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 
 Have questions? Send an email to support@rectlabel.com.
 
-# How to Train a YOLO26 Instance Segmentation Model with Custom Data
+# Convert to pixels mask to polygon using the polygon smooth scrollbar
 
-We will show you how to train a [YOLO26](https://github.com/ultralytics/ultralytics) instance segmentation model with your images and annotations and export to a Core ML model which can be used for auto labeling on RectLabel.
+There are 7 ticks on the polygon smooth scrollbar.
 
-We recommend working through this blog post side-by-side with the [YOLO26 Instance Segmentation Colab notebook](https://colab.research.google.com/github/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_yolo26_instance_segmentation_on_custom_dataset.ipynb
-).
+If the pixels mask does not have the inside structure, ticks 4 - 6 are the same as ticks 1 - 3.
 
-Install YOLO26.
-```
-pip install -q ultralytics
-```
+As default, tick 3, does not consider the inside structure of the pixels mask. This is compatible with external products.
 
-Download training images and annotations. You can use these or replace them with your own data.
-```
-mkdir datasets
-cd datasets
-wget -q https://huggingface.co/datasets/rectlabel/datasets/resolve/main/donut.zip
-unzip -q donut.zip
-cd ..
-```
+- 0: Convex hull
+- 1: External contour with fewer points
+- 2: External contour with medium points
+- 3: External contour with enough points
+- 4: External and inside contours with fewer points
+- 5: External and inside contours with medium points
+- 6: External and inside contours with enough points
 
-Create a workspace folder and start training from the workspace folder. Make sure the datasets path in the yaml file.
-```
-mkdir workspace
-cd workspace
-mv ../datasets/donut/donut.yaml .
-yolo segment train data=donut.yaml model=yolo26n-seg.pt epochs=200
-```
+tick 0:
 
-Move the best model to the current folder and export to a Core ML model.
-```
-mv runs/segment/train/weights/best.pt .
-yolo export model=best.pt format=coreml
-```
+![zebra_tick0](https://github.com/user-attachments/assets/73a42507-2ad9-4b65-b755-2826b7064646)
 
-Now you can auto label using the Core ML model on RectLabel.
+tick 1:
 
-![donut1](https://github.com/user-attachments/assets/1f6324cc-55d1-482b-b1ca-a24d1215aec4)
+![zebra_tick1](https://github.com/user-attachments/assets/3ada49be-f04e-46a5-a7a0-3fce3f77a41a)
 
-![donut2](https://github.com/user-attachments/assets/a817db7b-b407-405a-b137-e9def6bd38db)
+tick 2:
 
-![donut3](https://github.com/user-attachments/assets/a70ffb51-1afd-4da1-977c-005e3fdaa4dd)
+![zebra_tick2](https://github.com/user-attachments/assets/cafed2c4-6237-4f68-9193-999dafe11fda)
 
+tick 3:
 
+![zebra_tick3](https://github.com/user-attachments/assets/fcc2a040-130e-4409-bfa5-79ba01aef1df)
+
+tick 0:
+
+![donut_tick0](https://github.com/user-attachments/assets/04d8338b-7f54-4f7c-83d7-4a2fa7061c62)
+
+tick 1:
+
+![donut_tick1](https://github.com/user-attachments/assets/6d24e6b1-e090-457c-8e7d-806ef98e4329)
+
+tick 2:
+
+![donut_tick2](https://github.com/user-attachments/assets/d3458a24-f473-4e57-8221-de5c1861e7b6)
+
+tick 3:
+
+![donut_tick3](https://github.com/user-attachments/assets/8847adea-ad20-4f38-80e2-b03ba5c4227a)
+
+tick 4:
+
+![donut_tick4](https://github.com/user-attachments/assets/659d923e-53bc-484d-8faf-86ebb8a07a8b)
+
+tick 5:
+
+![donut_tick5](https://github.com/user-attachments/assets/58a8b969-5507-4a45-b61a-b187a349d7c6)
+
+tick 6:
+
+![donut_tick6](https://github.com/user-attachments/assets/7754f11d-e70e-4419-81fc-ba5fb0443b1b)
