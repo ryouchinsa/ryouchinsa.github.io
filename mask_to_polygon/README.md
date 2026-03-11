@@ -9,7 +9,7 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 
 Have questions? Send an email to support@rectlabel.com.
 
-# Convert to pixels mask to polygon using the polygon smooth scrollbar
+# Convert pixels mask to polygon using the polygon smooth scrollbar
 
 There are 7 ticks on the polygon smooth scrollbar.
 
