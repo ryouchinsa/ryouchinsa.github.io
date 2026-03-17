@@ -10,6 +10,7 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 Have questions? Send an email to support@rectlabel.com.
 
 # Papers cited RectLabel
+- [From Captive to Wild Jaguars: Automated Behavioral Classification and Space Use Monitoring with Machine Learning](https://www.preprints.org/manuscript/202603.0025)
 - [Surrogate measurement of traffic safety with insights from pavement condition, sensor fusion, and machine learning](https://www.nature.com/articles/s41598-025-31489-x)
 - [CrabFormer: RGB-D segmentation and pose estimation for front-End loading of piled Chesapeake blue crabs](https://www.sciencedirect.com/science/article/abs/pii/S0168169926001833)
 - [Automatic bone age assessment: a deep learning case study on the Brazilian population with a supporting mobile application prototype](https://www.nature.com/articles/s41598-025-34651-7)
