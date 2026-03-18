@@ -147,7 +147,7 @@ Select a create type.
 - pixels
 
 Create using SAM3.
-- For the text prompt, describe objects to detect. Input empty, if you do not use the text prompt.
+- For the text prompt, describe the object name such as "zebra", "water", and "tree". if you do not use the text prompt, set empty.
 - For the box prompt, you can draw positive and negative boxes. Check off the Use checkbox, if you do not use the box prompt.
 - For the threshold, increase to decrease detections, and decrese to increase detections.
 - Press start button to start downloading the SAM3 model, preprocessing the image, and decoding the mask results.
@@ -207,6 +207,7 @@ Right click on the point.
 - "Make not labeled" to make the point not labeled.
 - "Make labeled but not visible" to make the point as labeled but not visible.
 - "Delete edge" to delete the edge connected with the point.
+- “Delete this point” to delete the point from the skeleton and from all keypoints objects in annotation folders,
 
 Right click on the object.
 - "Set bounding box from the next polygon" to set the bounding box from the next polygon or pixels object.
