@@ -36,11 +36,11 @@ Settings menus.
 - “Clear existing labels when auto label all images” is to clear existing labels when auto label all images.
 - “Save confidence values when YOLO format” is to save confidence values when YOLO format.
 
-![coreml](https://github.com/user-attachments/assets/e1276709-2a43-45cc-9cf6-95255b693df9)
+![coreml](https://github.com/user-attachments/assets/2febf5a3-f85b-423f-a6a8-45e74dec7e5e)
 
-![coreml_polygon](https://github.com/user-attachments/assets/e5cb7140-10da-4b8e-bad7-8f55091917a4)
+![coreml_polygon](https://github.com/user-attachments/assets/25bd2696-b6b2-4cd4-aedd-b42bd4f136f5)
 
-![coreml_pixels](https://github.com/user-attachments/assets/55457942-a20c-4673-b36a-8c9d97cc35a4)
+![coreml_pixels](https://github.com/user-attachments/assets/1c8e0ffe-2ecf-4801-8b43-247135a02372)
 
 # Auto text recognition for lines and words
 Using [Vision Framework](https://developer.apple.com/documentation/vision), automatic text recognition is performed.
