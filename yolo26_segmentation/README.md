@@ -35,7 +35,7 @@ Create a workspace folder and start training from the workspace folder. Make sur
 mkdir workspace
 cd workspace
 mv ../datasets/donut/donut.yaml .
-yolo segment train data=donut.yaml model=yolo26n-seg.pt epochs=200
+yolo segment train data=donut.yaml model=yolo26n-seg.pt epochs=100
 ```
 
 Move the best model to the current folder and export to a Core ML model.
