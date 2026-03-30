@@ -13,7 +13,7 @@ Have questions? Send an email to support@rectlabel.com.
 
 We will show you how to train a [RF-DETR](https://github.com/roboflow/rf-detr) object detection model with your images and annotations and export to a Core ML model which can be used for auto labeling on RectLabel.
 
-We recommend working through this blog post side-by-side with the Colab notebook of [RF-DETR 1.5.1](https://github.com/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_rf_detr_object_detection_on_custom_dataset.ipynb) and [RF-DETR 1.6.0](https://github.com/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_rf_detr160_object_detection_on_custom_dataset.ipynb).
+We recommend working through this blog post side-by-side with the Colab notebook of [RF-DETR 1.5.1 Object Detection](https://github.com/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_rf_detr_object_detection_on_custom_dataset.ipynb) and [RF-DETR 1.6.0 Object Detection](https://github.com/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_rf_detr160_object_detection_on_custom_dataset.ipynb).
 
 Install RF-DETR.
 ```
