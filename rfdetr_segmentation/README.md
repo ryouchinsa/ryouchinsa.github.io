@@ -9,47 +9,92 @@ Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-
 
 Have questions? Send an email to support@rectlabel.com.
 
-# How to Train a YOLO26 Instance Segmentation Model with Custom Data
+# How to Train a RF-DETR Instance Segmentation Model with Custom Data
 
-We will show you how to train a [YOLO26](https://github.com/ultralytics/ultralytics) instance segmentation model with your images and annotations and export to a Core ML model which can be used for auto labeling on RectLabel.
+We will show you how to train a [RF-DETR](https://github.com/roboflow/rf-detr) instance segmentation model with your images and annotations and export to a Core ML model which can be used for auto labeling on RectLabel.
 
-We recommend working through this blog post side-by-side with the [YOLO26 Instance Segmentation Colab notebook](https://colab.research.google.com/github/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_yolo26_instance_segmentation_on_custom_dataset.ipynb
-).
+We recommend working through this blog post side-by-side with the Colab notebook of [RF-DETR 1.5.1 Instance Segmentation](https://github.com/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_rf_detr_instance_segmentation_on_custom_dataset.ipynb) and [RF-DETR 1.6.0 Instance Segmentation](https://github.com/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_rf_detr160_instance_segmentation_on_custom_dataset.ipynb).
 
-Install YOLO26.
+Install RF-DETR.
 ```
-pip install -q ultralytics
+# 1.5.1
+pip install -q rfdetr==1.5.1
+
+# 1.6.0
+pip install -q rfdetr[train,loggers]==1.6.0
 ```
 
 Download training images and annotations. You can use these or replace them with your own data.
 ```
 mkdir datasets
 cd datasets
-wget -q https://huggingface.co/datasets/rectlabel/datasets/resolve/main/donut.zip
-unzip -q donut.zip
+wget -q https://huggingface.co/datasets/rectlabel/datasets/resolve/main/donut_coco.zip
+unzip -q donut_coco.zip
 cd ..
 ```
 
-Create a workspace folder and start training from the workspace folder. Make sure the datasets path in the yaml file.
+Fine-tune RF-DETR on custom dataset. 
 ```
-mkdir workspace
-cd workspace
-mv ../datasets/donut/donut.yaml .
-yolo segment train data=donut.yaml model=yolo26n-seg.pt epochs=100
+from rfdetr import RFDETRSegNano
+
+model = RFDETRSegNano()
+dataset_dir = "datasets/donut_coco"
+model.train(dataset_dir=dataset_dir, epochs=10, batch_size=4, grad_accum_steps=4)
+```
+
+The trained model is checkpoint_best_total.pth.
+```
+ls -la /content/output
+
+total 1956476
+drwxr-xr-x 3 root root      4096 Mar 29 15:02 .
+drwxr-xr-x 1 root root      4096 Mar 29 14:57 ..
+-rw-r--r-- 1 root root 534398511 Mar 29 15:01 checkpoint0009.pth
+-rw-r--r-- 1 root root 399873726 Mar 29 15:00 checkpoint_best_ema.pth
+-rw-r--r-- 1 root root 401162890 Mar 29 14:59 checkpoint_best_regular.pth
+-rw------- 1 root root 133248663 Mar 29 15:01 checkpoint_best_total.pth
+-rw-r--r-- 1 root root 534387619 Mar 29 15:01 checkpoint.pth
+drwxr-xr-x 2 root root      4096 Mar 29 14:57 eval
+-rw-r--r-- 1 root root      4412 Mar 29 15:01 events.out.tfevents.1774796221.326de40b558e.1060.0
+-rw-r--r-- 1 root root    111680 Mar 29 15:01 log.txt
+-rw-r--r-- 1 root root    196723 Mar 29 15:02 metrics_plot.png
+-rw-r--r-- 1 root root       755 Mar 29 15:02 results.json
+```
+
+If you installed RF-DETR 1.6.0, before exporting to a Core ML model, edit a line of transformer.py.
+```
+path = "/usr/local/lib/python3.12/dist-packages/rfdetr/models/transformer.py"
+with open(path, "r") as f:
+    content = f.read()
+modified_content = content.replace("mask_flatten, spatial_shapes_hw", "mask_flatten, spatial_shapes")
+with open(path, "w") as f:
+    f.write(modified_content)
+```
+
+Install RF-DETR to CoreML.
+```
+git clone https://github.com/landchenxuan/rf-detr-to-coreml.git
+cd rf-detr-to-coreml
+pip install -q -e .
 ```
 
 Move the best model to the current folder and export to a Core ML model.
 ```
-mv runs/segment/train/weights/best.pt .
-yolo export model=best.pt format=coreml
+mv /content/output/checkpoint_best_total.pth .
+rfdetr-coreml --model seg-nano --weights checkpoint_best_total.pth
+
+ls -la output
+
+total 12
+drwxr-xr-x 3 root root 4096 Mar 29 15:03 .
+drwxr-xr-x 7 root root 4096 Mar 29 15:03 ..
+drwxr-xr-x 3 root root 4096 Mar 29 15:03 rf-detr-seg-nano-checkpoint_best_total-fp32.mlpackage
 ```
 
 Now you can auto label using the Core ML model on RectLabel.
 
-![donut1](https://github.com/user-attachments/assets/1f6324cc-55d1-482b-b1ca-a24d1215aec4)
+![rfdetr151_0](https://github.com/user-attachments/assets/3cbe23cc-5fe2-42e2-a10a-60bfd270c2ff)
 
-![donut2](https://github.com/user-attachments/assets/a817db7b-b407-405a-b137-e9def6bd38db)
+![rfdetr151_1](https://github.com/user-attachments/assets/39e23d49-d6bd-4d9d-b476-1d783c811f0d)
 
-![donut3](https://github.com/user-attachments/assets/a70ffb51-1afd-4da1-977c-005e3fdaa4dd)
-
-
+![rfdetr151_2](https://github.com/user-attachments/assets/120f3407-0a8f-48de-b968-47853a1c9453)
