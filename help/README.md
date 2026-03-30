@@ -21,6 +21,8 @@ Have questions? Send an email to support@rectlabel.com.
 - [Terms of Use](https://rectlabel.com/terms)
 - [About team](https://rectlabel.com/about)
 - [Papers cited RectLabel](https://rectlabel.com/papers)
+- [How to Train a RF-DETR Object Detection Model with Custom Data](https://rectlabel.com/rfdetr_detection)
+- [How to Train a RF-DETR Instance Segmentation Model with Custom Data](https://rectlabel.com/rfdetr_segmentation)
 - [How to Train a YOLO26 Object Detection Model with Custom Data](https://rectlabel.com/yolo26_detection)
 - [How to Train a YOLO26 Classification Model with Custom Data](https://rectlabel.com/yolo26_classification)
 - [How to Train a YOLO26 Instance Segmentation Model with Custom Data](https://rectlabel.com/yolo26_segmentation)
