@@ -89,3 +89,14 @@ drwxr-xr-x 3 root root 4096 Mar 29 15:03 rf-detr-nano-checkpoint_best_total-fp32
 
 Now you can auto label using the Core ML model on RectLabel.
 
+![converse2](https://github.com/user-attachments/assets/fb610851-c1d3-43c5-8d11-1e74438ee89f)
+
+![converse1](https://github.com/user-attachments/assets/1062bdfd-5449-4ae4-b44a-872b8a9abdbe)
+
+![vans2](https://github.com/user-attachments/assets/42c9c36e-3740-4aaa-a185-eb10831904d0)
+
+![vans1](https://github.com/user-attachments/assets/05c6e6e2-4d5b-4811-8e65-08a0c27b6460)
+
+
+
+
