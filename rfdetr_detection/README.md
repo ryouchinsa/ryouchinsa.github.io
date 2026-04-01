@@ -13,14 +13,10 @@ Have questions? Send an email to support@rectlabel.com.
 
 We will show you how to train a [RF-DETR](https://github.com/roboflow/rf-detr) object detection model with your images and annotations and export to a Core ML model which can be used for auto labeling on RectLabel.
 
-We recommend working through this blog post side-by-side with the Colab notebook of [RF-DETR 1.5.1 Object Detection](https://github.com/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_rf_detr_object_detection_on_custom_dataset.ipynb) and [RF-DETR 1.6.0 Object Detection](https://github.com/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_rf_detr160_object_detection_on_custom_dataset.ipynb).
+We recommend working through this blog post side-by-side with the [RF-DETR Object Detection Colab notebook](https://github.com/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_rf_detr_object_detection_on_custom_dataset.ipynb).
 
 Install RF-DETR.
 ```
-# 1.5.1
-pip install -q rfdetr==1.5.1
-
-# 1.6.0
 pip install -q rfdetr[train,loggers]==1.6.0
 ```
 
@@ -37,9 +33,9 @@ Fine-tune RF-DETR on custom dataset.
 ```
 from rfdetr import RFDETRNano
 
-model = RFDETRNano()
+model = RFDETRNano(num_classes=2)
 dataset_dir = "datasets/converse_vans_detection_coco"
-model.train(dataset_dir=dataset_dir, epochs=100, batch_size=4, grad_accum_steps=4)
+model.train(dataset_dir=dataset_dir, epochs=10, batch_size=4, grad_accum_steps=4)
 ```
 
 The trained model is checkpoint_best_total.pth.
@@ -61,7 +57,7 @@ drwxr-xr-x 2 root root      4096 Mar 29 14:57 eval
 -rw-r--r-- 1 root root       755 Mar 29 15:02 results.json
 ```
 
-If you installed RF-DETR 1.6.0, before exporting to a Core ML model, edit a line of transformer.py.
+Before exporting to a Core ML model, edit a line of transformer.py.
 ```
 path = "/usr/local/lib/python3.12/dist-packages/rfdetr/models/transformer.py"
 with open(path, "r") as f:
@@ -73,7 +69,7 @@ with open(path, "w") as f:
 
 Install RF-DETR to CoreML.
 ```
-git clone https://github.com/landchenxuan/rf-detr-to-coreml.git
+git clone https://github.com/ryouchinsa/rf-detr-to-coreml.git
 cd rf-detr-to-coreml
 pip install -q -e .
 ```
@@ -81,7 +77,7 @@ pip install -q -e .
 Move the best model to the current folder and export to a Core ML model.
 ```
 mv /content/output/checkpoint_best_total.pth .
-rfdetr-coreml --model nano --weights checkpoint_best_total.pth
+python export_coreml.py --model nano --weights checkpoint_best_total.pth
 
 ls -la output
 
