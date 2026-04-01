@@ -77,7 +77,7 @@ pip install -q -e .
 Move the best model to the current folder and export to a Core ML model.
 ```
 mv /content/output/checkpoint_best_total.pth .
-rfdetr-coreml --model seg-nano --weights checkpoint_best_total.pth
+python export_coreml.py --model seg-nano --weights checkpoint_best_total.pth
 
 ls -la output
 
