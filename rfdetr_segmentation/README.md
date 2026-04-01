@@ -13,14 +13,10 @@ Have questions? Send an email to support@rectlabel.com.
 
 We will show you how to train a [RF-DETR](https://github.com/roboflow/rf-detr) instance segmentation model with your images and annotations and export to a Core ML model which can be used for auto labeling on RectLabel.
 
-We recommend working through this blog post side-by-side with the Colab notebook of [RF-DETR 1.5.1 Instance Segmentation](https://github.com/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_rf_detr_instance_segmentation_on_custom_dataset.ipynb) and [RF-DETR 1.6.0 Instance Segmentation](https://github.com/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_rf_detr160_instance_segmentation_on_custom_dataset.ipynb).
+We recommend working through this blog post side-by-side with the [RF-DETR Instance Segmentation Colab notebook](https://github.com/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_rf_detr_instance_segmentation_on_custom_dataset.ipynb).
 
 Install RF-DETR.
 ```
-# 1.5.1
-pip install -q rfdetr==1.5.1
-
-# 1.6.0
 pip install -q rfdetr[train,loggers]==1.6.0
 ```
 
@@ -37,7 +33,7 @@ Fine-tune RF-DETR on custom dataset.
 ```
 from rfdetr import RFDETRSegNano
 
-model = RFDETRSegNano()
+model = RFDETRSegNano(num_classes=1)
 dataset_dir = "datasets/donut_coco"
 model.train(dataset_dir=dataset_dir, epochs=10, batch_size=4, grad_accum_steps=4)
 ```
@@ -61,7 +57,7 @@ drwxr-xr-x 2 root root      4096 Mar 29 14:57 eval
 -rw-r--r-- 1 root root       755 Mar 29 15:02 results.json
 ```
 
-If you installed RF-DETR 1.6.0, before exporting to a Core ML model, edit a line of transformer.py.
+Before exporting to a Core ML model, edit a line of transformer.py.
 ```
 path = "/usr/local/lib/python3.12/dist-packages/rfdetr/models/transformer.py"
 with open(path, "r") as f:
@@ -73,7 +69,7 @@ with open(path, "w") as f:
 
 Install RF-DETR to CoreML.
 ```
-git clone https://github.com/landchenxuan/rf-detr-to-coreml.git
+git clone https://github.com/ryouchinsa/rf-detr-to-coreml.git
 cd rf-detr-to-coreml
 pip install -q -e .
 ```
