@@ -13,7 +13,7 @@ Have questions? Send an email to support@rectlabel.com.
 
 We will show you how to train a [RF-DETR](https://github.com/roboflow/rf-detr) instance segmentation model with your images and annotations and export to a Core ML model which can be used for auto labeling on RectLabel.
 
-We recommend working through this blog post side-by-side with the [RF-DETR Instance Segmentation Colab notebook](https://github.com/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_rf_detr_instance_segmentation_on_custom_dataset.ipynb).
+We recommend working through this blog post side-by-side with the [RF-DETR Instance Segmentation Colab notebook](https://colab.research.google.com/github/ryouchinsa/Rectlabel-support/blob/master/notebooks/train_rf_detr_instance_segmentation_on_custom_dataset.ipynb).
 
 Install RF-DETR.
 ```
