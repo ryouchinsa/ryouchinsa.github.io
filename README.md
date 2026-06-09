@@ -7,7 +7,7 @@ To download RectLabel apps.
 
 Post the problem to our [Github issues](https://github.com/ryouchinsa/Rectlabel-support/issues).
 
-Have questions? Send an email to support@rectlabel.com.
+If you need to implement RectLabel-like app in your system, please contact us. support@rectlabel.com
 
 # Help
 - [Settings menus](https://rectlabel.com/settings)
