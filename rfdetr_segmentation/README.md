@@ -17,7 +17,7 @@ We recommend working through this blog post side-by-side with the [RF-DETR Insta
 
 Install RF-DETR.
 ```
-pip install -q rfdetr[train,loggers]==1.6.0
+pip install -q rfdetr[train,loggers]==1.7.1
 ```
 
 Download training images and annotations. You can use these or replace them with your own data.
@@ -55,16 +55,6 @@ drwxr-xr-x 2 root root      4096 Mar 29 14:57 eval
 -rw-r--r-- 1 root root    111680 Mar 29 15:01 log.txt
 -rw-r--r-- 1 root root    196723 Mar 29 15:02 metrics_plot.png
 -rw-r--r-- 1 root root       755 Mar 29 15:02 results.json
-```
-
-Before exporting to a Core ML model, edit a line of transformer.py.
-```
-path = "/usr/local/lib/python3.12/dist-packages/rfdetr/models/transformer.py"
-with open(path, "r") as f:
-    content = f.read()
-modified_content = content.replace("mask_flatten, spatial_shapes_hw", "mask_flatten, spatial_shapes")
-with open(path, "w") as f:
-    f.write(modified_content)
 ```
 
 Install RF-DETR to CoreML.
