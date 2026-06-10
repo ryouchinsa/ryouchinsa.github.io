@@ -17,7 +17,7 @@ We recommend working through this blog post side-by-side with the [RF-DETR Objec
 
 Install RF-DETR.
 ```
-pip install -q rfdetr[train]
+pip install -q rfdetr[train,loggers]==1.7.1
 ```
 
 Download training images and annotations. You can use these or replace them with your own data.
@@ -59,7 +59,7 @@ drwxr-xr-x 2 root root      4096 Mar 29 14:57 eval
 
 Install RF-DETR to CoreML.
 ```
-git clone https://github.com/landchenxuan/rf-detr-to-coreml.git
+git clone https://github.com/ryouchinsa/rf-detr-to-coreml.git
 cd rf-detr-to-coreml
 pip install -q -e .
 ```
